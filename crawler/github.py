@@ -52,17 +52,32 @@ class GitHub:
                 raise
         return None
 
-    def search_repos(self, query, per_page=50):
-        data = self._get(
-            "/search/repositories",
-            {"q": query, "sort": "stars", "order": "desc", "per_page": per_page},
-        )
-        # Search API allows 30 requests/minute when authenticated.
-        time.sleep(2.2)
-        return (data or {}).get("items", [])
+    def search_repos(self, query, limit=300):
+        """Return up to `limit` results, paging 100 at a time (GitHub stops at 1000)."""
+        items, page = [], 1
+        while len(items) < limit:
+            data = self._get(
+                "/search/repositories",
+                {"q": query, "sort": "stars", "order": "desc", "per_page": 100, "page": page},
+            )
+            # Search API allows 30 requests/minute when authenticated.
+            time.sleep(2.2)
+            batch = (data or {}).get("items", [])
+            items += batch
+            if len(batch) < 100 or page * 100 >= 1000:
+                break
+            page += 1
+        if len(items) >= limit:
+            print(f"  note: hit the {limit}-result limit, query may be too broad: {query!r}")
+        return items[:limit]
 
     def repo(self, full_name):
+        """Lookup by name (urllib follows GitHub's rename redirect)."""
         return self._get(f"/repos/{full_name}")
+
+    def repo_by_id(self, repo_id):
+        """Lookup by numeric id, which survives renames and transfers."""
+        return self._get(f"/repositories/{repo_id}")
 
     def readme(self, full_name, limit=4000):
         data = self._get(f"/repos/{full_name}/readme")
@@ -78,6 +93,7 @@ class GitHub:
 def slim(item):
     """Keep only the repo fields we store."""
     return {
+        "id": item.get("id"),
         "full_name": item["full_name"],
         "url": item["html_url"],
         "description": (item.get("description") or "")[:300],

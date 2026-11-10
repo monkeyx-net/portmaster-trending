@@ -51,6 +51,22 @@ def record_stars(entry, stars, ts):
         del hist[:-30]
 
 
+def rename(wl, old, new):
+    """Move a renamed/transferred repo's entry from `old` to `new`. If both
+    names already have entries (a duplicate from before ids were tracked),
+    the one seen first keeps its history and the other is dropped."""
+    e = wl["repos"].pop(old)
+    other = wl["repos"].get(new)
+    if other is not None and (other.get("first_seen") or "") <= (e.get("first_seen") or ""):
+        print(f"  renamed {old} -> {new} (merged into existing entry)")
+        return other
+    print(f"  renamed {old} -> {new}")
+    e["renamed_from"] = old
+    e["full_name"] = new
+    wl["repos"][new] = e
+    return e
+
+
 def discover(gh, wl, ts):
     since = (datetime.now(timezone.utc) - timedelta(days=config.LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     found = {}
@@ -65,8 +81,12 @@ def discover(gh, wl, ts):
         for it in items:
             found[it["full_name"]] = slim(it)
 
+    by_id = {e["id"]: n for n, e in wl["repos"].items() if e.get("id")}
     new = []
     for name, data in found.items():
+        old = by_id.get(data["id"])
+        if old and old != name and old in wl["repos"]:
+            rename(wl, old, name)
         entry = wl["repos"].get(name)
         if entry is None:
             entry = dict(data, first_seen=ts, classification=None)
@@ -86,30 +106,39 @@ def recheck(gh, wl, ts, skip):
     ]
     tracked.sort(key=lambda e: e.get("last_checked") or "")
     for e in tracked[: config.MAX_RECHECK]:
-        data = gh.repo(e["full_name"])
+        data = gh.repo_by_id(e["id"]) if e.get("id") else gh.repo(e["full_name"])
         if data is None:
             e["gone"] = True
             continue
         s = slim(data)
+        if s["full_name"] != e["full_name"] and e["full_name"] in wl["repos"]:
+            e = rename(wl, e["full_name"], s["full_name"])
+        e.pop("gone", None)
         e.update({k: v for k, v in s.items() if k != "stars"})
         record_stars(e, s["stars"], ts)
         e["last_checked"] = ts
     return len(tracked[: config.MAX_RECHECK])
 
 
-def run_classify(gh, wl, names):
-    pending = [n for n in names if wl["repos"][n].get("classification") is None]
-    # Also retry earlier failures.
-    pending += [n for n, e in wl["repos"].items() if e.get("classification") is None and n not in pending]
-    pending.sort(key=lambda n: -wl["repos"][n]["stars"])
-    done = 0
+def needs_classify(e):
+    c = e.get("classification")
+    return c is None or c.get("version", 1) < config.CLASSIFIER_VERSION
+
+
+def run_classify(gh, wl):
+    """Classify new repos, retry earlier failures, and redo verdicts from an
+    older CLASSIFIER_VERSION. Returns the names classified this run."""
+    pending = [n for n, e in wl["repos"].items() if needs_classify(e) and not e.get("gone")]
+    # Never-classified repos first, then outdated verdicts; most stars first.
+    pending.sort(key=lambda n: (wl["repos"][n].get("classification") is not None, -wl["repos"][n]["stars"]))
+    done = []
     for name in pending[: config.MAX_CLASSIFY]:
         e = wl["repos"][name]
         try:
             readme = gh.readme(name)
             e["classification"] = classify(e, readme)
             e["classified_at"] = now_iso()
-            done += 1
+            done.append(name)
             c = e["classification"]
             print(f"  {'+' if c['relevant'] else '-'} {name}: {c['category']}")
         except AuthError as ex:
@@ -118,6 +147,9 @@ def run_classify(gh, wl, names):
             print(f"  ! {name}: {ex}")
     if pending and not done:
         sys.exit("::error::Every Claude classification failed; see errors above.")
+    left = len(pending) - len(done)
+    if left:
+        print(f"  {left} left for next run")
     return done
 
 
@@ -126,16 +158,22 @@ def is_candidate(e):
     return c.get("relevant") and not e.get("gone") and not e.get("archived")
 
 
-def promote(wl, new_names, ts):
-    new = [wl["repos"][n] for n in new_names if is_candidate(wl["repos"][n])]
-    rising = []
-    for n, e in wl["repos"].items():
-        if n in new_names or not is_candidate(e):
+def promote(wl):
+    """New = candidates that have never been shown, however long ago they were
+    discovered (e.g. classification failed or was capped on an earlier run).
+    Rising = already-shown candidates that grew enough since last shown."""
+    new, rising = [], []
+    for e in wl["repos"].values():
+        if not is_candidate(e):
             continue
-        base = e.get("shown_stars", e.get("star_history", [[None, e["stars"]]])[0][1])
+        if not e.get("shown_at"):
+            new.append(e)
+            continue
+        base = e.get("shown_stars", e["stars"])
         gain = e["stars"] - base
-        if gain >= config.RISING_MIN_GAIN and gain >= base * config.RISING_MIN_RATIO:
-            e["shown_stars"] = base  # used for the "+N" label, updated below
+        if gain >= config.RISING_MIN_GAIN and (
+            gain >= base * config.RISING_MIN_RATIO or gain >= config.RISING_HIGH_GAIN
+        ):
             rising.append(e)
     rising.sort(key=lambda e: -(e["stars"] - e["shown_stars"]))
     return new, rising
@@ -163,27 +201,31 @@ def main():
     rechecked = recheck(gh, wl, ts, set(found))
     print(f"  {rechecked} tracked repos refreshed")
 
-    classified = 0
+    classified = []
     if not args.no_classify:
         print("Classify")
-        classified = run_classify(gh, wl, new_names)
+        classified = run_classify(gh, wl)
+    excluded = sorted(
+        (wl["repos"][n] for n in classified if not wl["repos"][n]["classification"].get("relevant")),
+        key=lambda e: -e["stars"],
+    )
 
     print("Promote")
-    new, rising = promote(wl, new_names, ts)
+    new, rising = promote(wl)
     print(f"  {len(new)} new candidates, {len(rising)} rising")
 
     print("Render")
     os.makedirs(BUILD, exist_ok=True)
     tracked = [e for e in wl["repos"].values() if is_candidate(e)]
-    stats = {"scanned": len(found), "classified": classified}
-    render(new, rising, tracked, stats, os.path.join(BUILD, "index.html"))
+    stats = {"scanned": len(found), "classified": len(classified)}
+    render(new, rising, tracked, excluded, stats, os.path.join(BUILD, "index.html"))
     # Remember what each candidate looked like when shown, for next week's Rising.
     for e in new + rising:
         e["shown_stars"] = e["stars"]
         e["shown_at"] = ts
 
     print("Save")
-    wl["runs"].append({"at": ts, "scanned": len(found), "new": len(new), "rising": len(rising), "classified": classified})
+    wl["runs"].append({"at": ts, "scanned": len(found), "new": len(new), "rising": len(rising), "classified": len(classified), "excluded": len(excluded)})
     del wl["runs"][:-52]
     save_watchlist(wl)
     print("Done: build/index.html")

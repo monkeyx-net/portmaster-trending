@@ -48,7 +48,26 @@ def section(title, repos, badge=None, empty="Nothing this week."):
     return f'<section><h2>{esc(title)} <small>{len(repos)}</small></h2><div class="grid">{"".join(card(r, badge) for r in repos)}</div></section>'
 
 
-def render(new, rising, tracked, stats, path):
+def excluded_section(repos):
+    """Repos Claude rejected this run, collapsed, so wrong rejections are easy to spot."""
+    if not repos:
+        return ""
+    rows = "".join(
+        f'''<tr class="xrow" data-text="{esc((r['full_name'] + ' ' + r.get('description','') + ' ' + r['classification'].get('reason','')).lower())}">
+  <td><a href="{esc(r['url'])}" target="_blank" rel="noopener">{esc(r['full_name'])}</a></td>
+  <td class="num">{r['stars']}</td>
+  <td>{esc(r['classification'].get('category'))}</td>
+  <td>{esc(r['classification'].get('reason'))}</td>
+</tr>'''
+        for r in repos
+    )
+    return f'''<section><details><summary><h2>Excluded this run <small>{len(repos)}</small></h2></summary>
+<p class="empty">Repos Claude classified as not relevant this run, with its reason. Use this to spot wrong rejections.</p>
+<div class="xwrap"><table class="xtable"><thead><tr><th>Repo</th><th>★</th><th>Category</th><th>Reason</th></tr></thead><tbody>{rows}</tbody></table></div>
+</details></section>'''
+
+
+def render(new, rising, tracked, excluded, stats, path):
     now = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
     by_cat = sorted(new, key=lambda r: (ORDER.index(r["classification"]["category"]) if r["classification"]["category"] in ORDER else 99, -r["stars"]))
     tracked = sorted(tracked, key=lambda r: -r["stars"])
@@ -96,6 +115,18 @@ h2 small {{ color:var(--dim); font-weight:400; font-size:14px; margin-left:6px; 
 .p-low {{ color:var(--bad); border-color:#5c2e2e; }}
 .empty {{ color:var(--dim); }}
 .hide {{ display:none !important; }}
+details summary {{ cursor:pointer; list-style:none; }}
+details summary::-webkit-details-marker {{ display:none; }}
+details summary h2::before {{ content:"▸ "; color:var(--dim); }}
+details[open] summary h2::before {{ content:"▾ "; }}
+.xwrap {{ overflow-x:auto; }}
+.xtable {{ width:100%; border-collapse:collapse; font-size:13px; }}
+.xtable th, .xtable td {{ text-align:left; vertical-align:top; padding:6px 8px; border-bottom:1px solid var(--line); }}
+.xtable th {{ color:var(--dim); font-weight:600; }}
+.xtable td a {{ color:var(--fg); text-decoration:none; word-break:break-all; }}
+.xtable td a:hover {{ color:var(--acc); }}
+.xtable td.num {{ color:var(--mid); white-space:nowrap; }}
+.xtable td:last-child {{ color:var(--dim); }}
 .foot {{ color:var(--dim); font-size:13px; margin-top:40px; border-top:1px solid var(--line); padding-top:12px; }}
 .foot a {{ color:var(--dim); }}
 </style>
@@ -110,6 +141,7 @@ h2 small {{ color:var(--dim); font-weight:400; font-size:14px; margin-left:6px; 
     <div class="stat"><b>{len(new)}</b><span>new candidates</span></div>
     <div class="stat"><b>{len(rising)}</b><span>rising</span></div>
     <div class="stat"><b>{len(tracked)}</b><span>tracked in total</span></div>
+    <div class="stat"><b>{len(excluded)}</b><span>excluded this run</span></div>
   </div>
   <div class="tools">
     <input id="q" type="search" placeholder="Filter by name or text…">
@@ -118,7 +150,8 @@ h2 small {{ color:var(--dim); font-weight:400; font-size:14px; margin-left:6px; 
   {section("Rising", rising, "rising", "No tracked repo grew enough this week.")}
   {section("New this week", by_cat)}
   {section("All tracked candidates", tracked, empty="Nothing tracked yet.")}
-  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Rising = tracked repos that gained enough stars since they last appeared. Data: <a href="https://github.com/monkeyx-net/portmaster-trending">monkeyx-net/portmaster-trending</a>. Inspired by <a href="https://github.com/Cebion/gh_trending_reports">Cebion/gh_trending_reports</a>.</p>
+  {excluded_section(excluded)}
+  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Rising = tracked repos that gained enough stars since they last appeared. Excluded = repos rejected this run. Data: <a href="https://github.com/monkeyx-net/portmaster-trending">monkeyx-net/portmaster-trending</a>. Inspired by <a href="https://github.com/Cebion/gh_trending_reports">Cebion/gh_trending_reports</a>.</p>
 </div>
 <script>
 const q = document.getElementById('q');
@@ -128,6 +161,10 @@ function apply() {{
   document.querySelectorAll('.card').forEach(c => {{
     const ok = (!cat || c.dataset.cat === cat) && (!t || c.dataset.text.includes(t));
     c.classList.toggle('hide', !ok);
+  }});
+  // Excluded rows follow the text search only; category buttons are for candidates.
+  document.querySelectorAll('.xrow').forEach(r => {{
+    r.classList.toggle('hide', !!t && !r.dataset.text.includes(t));
   }});
 }}
 q.addEventListener('input', apply);

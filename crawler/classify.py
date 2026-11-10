@@ -6,7 +6,7 @@ import time
 import urllib.error
 import urllib.request
 
-from .config import CLAUDE_MODEL
+from .config import CLASSIFIER_VERSION, CLAUDE_MODEL
 
 API_URL = "https://api.anthropic.com/v1/messages"
 
@@ -112,5 +112,6 @@ def classify(repo, readme, api_key=None):
         if block.get("type") == "tool_use":
             result = block["input"]
             result["model"] = CLAUDE_MODEL
+            result["version"] = CLASSIFIER_VERSION
             return result
     raise RuntimeError("Claude returned no classification")

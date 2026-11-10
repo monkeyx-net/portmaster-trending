@@ -3,14 +3,20 @@
 # Claude model used to classify candidates.
 CLAUDE_MODEL = "claude-haiku-5-5"
 
+# Bump when the classifier prompt or schema changes meaningfully. Stored
+# classifications from an older version are redone on the next runs (still
+# capped by MAX_CLASSIFY). Entries without a version count as version 1.
+CLASSIFIER_VERSION = 1
+
 # How far back to look for newly created repos on each run.
 LOOKBACK_DAYS = 14
 
 # Minimum stars for a brand-new repo to be considered at all.
 MIN_STARS_NEW = 5
 
-# Max results kept per search query (GitHub caps at 100 per page).
-PER_QUERY = 50
+# Max results kept per search query. Results are paged 100 at a time
+# (GitHub stops at 1000); each extra page is one more search call.
+PER_QUERY = 300
 
 # Max new candidates sent to Claude per run (keeps cost predictable).
 MAX_CLASSIFY = 120
@@ -19,9 +25,12 @@ MAX_CLASSIFY = 120
 MAX_RECHECK = 300
 
 # A tracked repo is "Rising" when, since it was last shown, it gained at least
-# RISING_MIN_GAIN stars AND grew by at least RISING_MIN_RATIO.
-RISING_MIN_GAIN = 25
+# RISING_MIN_GAIN stars AND either grew by RISING_MIN_RATIO (0.5 = +50%) or
+# gained RISING_HIGH_GAIN stars. The second path lets bigger repos with
+# steady growth qualify without needing to grow by half.
+RISING_MIN_GAIN = 10
 RISING_MIN_RATIO = 0.5
+RISING_HIGH_GAIN = 50
 
 # GitHub search qualifiers. "{since}" is replaced with the lookback date.
 SEARCH_QUERIES = [
