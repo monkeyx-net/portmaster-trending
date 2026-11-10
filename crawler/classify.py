@@ -59,6 +59,10 @@ TOOL = {
 }
 
 
+class AuthError(RuntimeError):
+    pass
+
+
 def _call(payload, api_key, retries=4):
     body = json.dumps(payload).encode()
     headers = {
@@ -77,11 +81,15 @@ def _call(payload, api_key, retries=4):
                 time.sleep(min(wait, 60))
                 continue
             detail = e.read().decode(errors="replace")[:300]
+            if e.code in (401, 403):
+                raise AuthError(f"Claude API rejected the key ({e.code}): {detail}") from e
+            if e.code == 400 and "credit balance" in detail:
+                raise AuthError(f"Claude API has no credits: {detail}") from e
             raise RuntimeError(f"Claude API error {e.code}: {detail}") from e
 
 
 def classify(repo, readme, api_key=None):
-    api_key = api_key or os.environ["ANTHROPIC_API_KEY"]
+    api_key = (api_key or os.environ["ANTHROPIC_API_KEY"]).strip()
     info = (
         f"Repository: {repo['full_name']}\n"
         f"Description: {repo.get('description') or '(none)'}\n"

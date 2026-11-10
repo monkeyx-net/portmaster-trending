@@ -16,7 +16,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 
 from crawler import config
-from crawler.classify import classify
+from crawler.classify import AuthError, classify
 from crawler.github import GitHub, slim
 from crawler.report import render
 
@@ -112,8 +112,12 @@ def run_classify(gh, wl, names):
             done += 1
             c = e["classification"]
             print(f"  {'+' if c['relevant'] else '-'} {name}: {c['category']}")
+        except AuthError as ex:
+            sys.exit(f"::error::{ex}\nCheck the ANTHROPIC_API_KEY secret (and that API credits are linked).")
         except Exception as ex:
             print(f"  ! {name}: {ex}")
+    if pending and not done:
+        sys.exit("::error::Every Claude classification failed; see errors above.")
     return done
 
 
