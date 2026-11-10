@@ -18,8 +18,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "0xd34db8/LF2-decomp",
+   "id": 1440329873,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-07T04:03:56Z",
    "star_history": [
@@ -46,15 +47,26 @@
   },
   "1234bpv/PS1Emulator": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Symbian S60 phones, which are not PortMaster handheld targets; the Symbian-specific platform layer would not transfer to ARM Linux handhelds.",
+    "relevant": false,
+    "summary": "A PlayStation 1 emulator for Nokia Symbian S60 3rd Edition keypad phones, a port of PCSX-ReARMed.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:50Z",
    "created_at": "2026-11-05T23:52:47Z",
    "description": "PlayStation emulator for Nokia keypad phones with Symbian 9.1-9.3 (S60 3rd Edition): a port of PCSX-ReARMed with its ARM dynamic recompiler",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 1,
    "full_name": "1234bpv/PS1Emulator",
+   "id": 1447636282,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-08T17:52:38Z",
    "star_history": [
@@ -77,15 +89,26 @@
   },
   "1RedOne/FoxDeploy-Trace": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a general log-viewing tool, not a game or game engine, and it targets Windows x64 with .NET Desktop Runtime.",
+    "relevant": false,
+    "summary": "A Windows-only C# log viewer that reimplements CMTrace for reading large log files.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:52Z",
    "created_at": "2026-11-02T16:46:42Z",
    "description": "A reimplementation of CM Trace, made to be SUPER fast at huge log files",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "1RedOne/FoxDeploy-Trace",
+   "id": 1443226588,
    "language": "C#",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-02T17:27:26Z",
    "star_history": [
@@ -116,10 +139,11 @@
    "fork": false,
    "forks": 14,
    "full_name": "Anime-Vanguards/roblox-engine-emulator",
+   "id": 1448629336,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-09T22:15:37Z",
+   "pushed_at": "2026-11-10T11:13:52Z",
    "star_history": [
     [
      "2026-11-10",
@@ -154,8 +178,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "Ariasmaze29819/pc-rpgmaker3-resp",
+   "id": 1446941932,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T11:58:29Z",
    "star_history": [
@@ -199,19 +224,161 @@
    "fork": false,
    "forks": 0,
    "full_name": "C-GBL/P3FES-Decompilation",
+   "id": 1439726756,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-10-31T17:09:10Z",
    "star_history": [
     [
      "2026-11-10",
      23
+    ],
+    [
+     "2026-11-10",
+     24
     ]
    ],
-   "stars": 23,
+   "stars": 24,
    "topics": [],
    "url": "https://github.com/C-GBL/P3FES-Decompilation"
+  },
+  "CYBERPUNK20/godfather-nx": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "Recompiled native binary that is already playable on Switch (ARM), so it is a strong candidate, though it needs the user's own Xbox dump and the Switch-specific Deko3D renderer means porting to handheld Linux would be non-trivial.",
+    "relevant": true,
+    "summary": "A static recompilation of The Godfather (Xbox, 2006) for the Nintendo Switch, built on the street-nx base project and rendering through Deko3D.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:41Z",
+   "created_at": "2026-11-02T14:57:29Z",
+   "description": "The Godfather (Xbox, 2006) on the Nintendo Switch: statically recompiled from the original Xbox executable, no emulator. Bring your own copy of the game.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "CYBERPUNK20/godfather-nx",
+   "id": 1443102468,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-06T23:41:09Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 6,
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/CYBERPUNK20/godfather-nx"
+  },
+  "Ch0nbo/Our64": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It targets Wii U PowerPC/GX2 graphics and Aroma APIs, so it is not portable to handheld ARM Linux without a full graphics and CPU backend rewrite; it also needs user-supplied N64 ROMs.",
+    "relevant": false,
+    "summary": "Our64 is an N64 emulator for the Nintendo Wii U that runs natively under the Aroma homebrew environment.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:24Z",
+   "created_at": "2026-11-01T17:14:31Z",
+   "description": "A Nintendo 64 emulator for the Wii U, running natively under Aroma",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Ch0nbo/Our64",
+   "id": 1442052452,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-08T21:44:04Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     21
+    ]
+   ],
+   "stars": 21,
+   "topics": [],
+   "url": "https://github.com/Ch0nbo/Our64"
+  },
+  "CheezerWheezer/CheezyEmu": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "relevant": false,
+    "summary": "CheezyEmu is a Nintendo Switch emulator forked from Eden/yuzu-family code, tuned for AMD desktop GPUs with FSR 4 and frame generation.</summary>\n<parameter name=\"reason\">Switch emulator targeting Windows desktop AMD GPUs with heavy Vulkan/desktop GPU features; not a handheld candidate and Switch emulation is outside PortMaster's retro scope.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:26Z",
+   "created_at": "2026-11-09T10:15:41Z",
+   "description": "CheezyEmu: a Nintendo Switch and Switch 2 emulator tuned for AMD GPUs (FSR 4, AMD frame generation, saved shaders)",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "CheezerWheezer/CheezyEmu",
+   "id": 1451212456,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T12:05:56Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     17
+    ]
+   ],
+   "stars": 17,
+   "topics": [],
+   "url": "https://github.com/CheezerWheezer/CheezyEmu"
+  },
+  "Clarke365/Eden-NX2": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Large Qt/Vulkan desktop emulator with heavy RAM and GPU requirements, unsuitable for handheld ARM ports; this is a personal fork with no distinct value over upstream Eden.",
+    "relevant": false,
+    "summary": "A fork of the Eden Nintendo Switch emulator with experimental Switch 2 support, written in C++.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:34Z",
+   "created_at": "2026-11-01T23:52:53Z",
+   "description": "The Eden Nintendo Switch Emulator experimental switch 2 support",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 8,
+   "full_name": "Clarke365/Eden-NX2",
+   "id": 1442330708,
+   "language": null,
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-31T13:06:17Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     13
+    ]
+   ],
+   "stars": 13,
+   "topics": [],
+   "url": "https://github.com/Clarke365/Eden-NX2"
   },
   "CoastRedWood/splashdown": {
    "archived": false,
@@ -231,10 +398,13 @@
    "fork": false,
    "forks": 0,
    "full_name": "CoastRedWood/splashdown",
+   "id": 1443254334,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-03T00:03:55Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 10,
    "star_history": [
     [
      "2026-11-10",
@@ -272,17 +442,22 @@
    "fork": false,
    "forks": 4,
    "full_name": "Computershik73/megler-w10m",
+   "id": 1442237659,
    "language": "Java",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T22:25:23Z",
    "star_history": [
     [
      "2026-11-10",
      58
+    ],
+    [
+     "2026-11-10",
+     61
     ]
    ],
-   "stars": 58,
+   "stars": 61,
    "topics": [],
    "url": "https://github.com/Computershik73/megler-w10m"
   },
@@ -304,8 +479,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "DEGROUCHO/xendroid-mali",
+   "id": 1440866183,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T15:17:16Z",
    "star_history": [
@@ -333,15 +509,26 @@
   },
   "DRCRecoveryData/JPEG_Recovery": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a general data-recovery utility unrelated to games, and it is a PyQt6 desktop app, not a game or emulator suitable for handheld porting.",
+    "relevant": false,
+    "summary": "A Python Windows GUI tool that repairs JPEG files whose headers were destroyed by ransomware.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:54Z",
    "created_at": "2026-10-28T13:24:36Z",
    "description": "An independent, functional reimplementation of the original Anti-Ransomware Edition workflow. It rebuilds JPEG files whose headers and first part of the compressed scan were destroyed by ransomware.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "DRCRecoveryData/JPEG_Recovery",
+   "id": 1437120185,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-10-30T09:04:54Z",
    "star_history": [
@@ -353,6 +540,74 @@
    "stars": 5,
    "topics": [],
    "url": "https://github.com/DRCRecoveryData/JPEG_Recovery"
+  },
+  "DevanshSampat/android-emulator-windows-arm64": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a Windows-only Android Studio emulator replacement that depends on WHPX, gRPC bridges and Android Studio, with no handheld-portable target or playable game content.",
+    "relevant": false,
+    "summary": "A QEMU/WHPX-based Android emulator launcher and bridge for running Android Virtual Devices on Windows 11 ARM64 PCs.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:14Z",
+   "created_at": "2026-11-06T10:57:48Z",
+   "description": "Android Emulator for Windows 11 ARM64: QEMU with WHPX, gfxstream, and stock Android images",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "DevanshSampat/android-emulator-windows-arm64",
+   "id": 1448152399,
+   "language": "Java",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-08T20:19:10Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [],
+   "url": "https://github.com/DevanshSampat/android-emulator-windows-arm64"
+  },
+  "DevanshSampat/android-studio-arm64-releases": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "A Windows-only developer IDE distribution, not a game, emulator for games, or engine; no PortMaster relevance.",
+    "relevant": false,
+    "summary": "Unofficial Windows ARM64 installer builds of Android Studio with an Android Emulator.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:27Z",
+   "created_at": "2026-10-28T04:08:09Z",
+   "description": "Unofficial, independent Windows ARM64 builds of Android Studio with an Android Emulator. Not affiliated with Google.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "DevanshSampat/android-studio-arm64-releases",
+   "id": 1436582567,
+   "language": null,
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-09T13:37:51Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     15
+    ]
+   ],
+   "stars": 15,
+   "topics": [],
+   "url": "https://github.com/DevanshSampat/android-studio-arm64-releases"
   },
   "EddizEge/Anka": {
    "archived": false,
@@ -372,17 +627,22 @@
    "fork": false,
    "forks": 2,
    "full_name": "EddizEge/Anka",
+   "id": 1447556771,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T12:26:02Z",
    "star_history": [
     [
      "2026-11-10",
      110
+    ],
+    [
+     "2026-11-10",
+     111
     ]
    ],
-   "stars": 110,
+   "stars": 111,
    "topics": [
     "emulator",
     "nintendo-switch-2",
@@ -407,12 +667,13 @@
    "description": "VERY experimental Nintendo Switch 2 emulator",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 615,
+   "forks": 617,
    "full_name": "Eglantine-Community/Eglantine",
+   "id": 1437774066,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-09T23:47:39Z",
+   "pushed_at": "2026-11-10T16:08:05Z",
    "star_history": [
     [
      "2026-11-10",
@@ -421,11 +682,49 @@
     [
      "2026-11-10",
      5685
+    ],
+    [
+     "2026-11-10",
+     5742
     ]
    ],
-   "stars": 5685,
+   "stars": 5742,
    "topics": [],
    "url": "https://github.com/Eglantine-Community/Eglantine"
+  },
+  "Ehco/LocalExile2": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a server for a commercial online game that needs the original client, not a portable game or engine; it runs on desktop .NET and is far from playable on handhelds.",
+    "relevant": false,
+    "summary": "A C# .NET 10 local server emulator for the Path of Exile 2 (3.29.3b) client's network protocol.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:15Z",
+   "created_at": "2026-10-31T01:17:56Z",
+   "description": "Path of Exile 2 local server emulator \u2014 LocalExile ported to the PoE2 client",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 7,
+   "full_name": "Ehco/LocalExile2",
+   "id": 1440388691,
+   "language": "C#",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-10-31T05:51:28Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/Ehco/LocalExile2"
   },
   "EliasFD3S/openslrr": {
    "archived": false,
@@ -445,10 +744,13 @@
    "fork": false,
    "forks": 1,
    "full_name": "EliasFD3S/openslrr",
+   "id": 1444746666,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-09T23:41:45Z",
+   "pushed_at": "2026-11-10T15:28:28Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 14,
    "star_history": [
     [
      "2026-11-10",
@@ -481,8 +783,9 @@
    "fork": false,
    "forks": 7,
    "full_name": "Forcevacavity/ps5-emulator-pc",
+   "id": 1449558121,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T17:34:16Z",
    "star_history": [
@@ -568,10 +871,11 @@
    "fork": false,
    "forks": 1,
    "full_name": "Glenn332/Empire-At-War-Browser-Edition",
+   "id": 1438670890,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-09T23:13:11Z",
+   "pushed_at": "2026-11-10T12:03:49Z",
    "star_history": [
     [
      "2026-11-10",
@@ -611,8 +915,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "GreenKaelup/Respocket-Yuzu-Emulator-Reworked-v2",
+   "id": 1446943171,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T11:59:52Z",
    "star_history": [
@@ -638,6 +943,55 @@
    ],
    "url": "https://github.com/GreenKaelup/Respocket-Yuzu-Emulator-Reworked-v2"
   },
+  "Guuzzeji/otogi-xunchain": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Recompilation project producing a native exe, which fits the recomp category, but it targets Windows, uses Direct3D 8 translated via ANGLE, and needs a large build step, so handheld ARM porting looks hard; still worth showing for the recomp approach.",
+    "relevant": true,
+    "summary": "A static recompilation of the original Xbox game Otogi: Myth of Demons into a native Windows PC executable, built from the user's own disc.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:57Z",
+   "created_at": "2026-11-08T03:33:59Z",
+   "description": "Otogi: Myth of Demons natively recompiled for Windows PC. Static recompilation of the original Xbox game (no emulator) with widescreen, high frame rates and up to 4x resolution. Bring your own disc.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Guuzzeji/otogi-xunchain",
+   "id": 1449942986,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-08T04:08:11Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 10,
+   "star_history": [
+    [
+     "2026-11-10",
+     10
+    ]
+   ],
+   "stars": 10,
+   "topics": [
+    "angle",
+    "fromsoftware",
+    "game-preservation",
+    "opengl-es",
+    "original-xbox",
+    "otogi",
+    "otogi-myth-of-demons",
+    "pc-port",
+    "recomp",
+    "recompilation",
+    "static-recompilation",
+    "xbox"
+   ],
+   "url": "https://github.com/Guuzzeji/otogi-xunchain"
+  },
   "HiramRG/Delphis": {
    "archived": false,
    "classification": {
@@ -656,17 +1010,22 @@
    "fork": false,
    "forks": 0,
    "full_name": "HiramRG/Delphis",
+   "id": 1446389496,
    "language": "Kotlin",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-10T06:36:44Z",
+   "pushed_at": "2026-11-10T16:23:22Z",
    "star_history": [
     [
      "2026-11-10",
      20
+    ],
+    [
+     "2026-11-10",
+     21
     ]
    ],
-   "stars": 20,
+   "stars": 21,
    "topics": [],
    "url": "https://github.com/HiramRG/Delphis"
   },
@@ -688,8 +1047,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "HyperaebaseAlpha/infamous2-pc-respocket",
+   "id": 1451184124,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T09:45:54Z",
    "star_history": [
@@ -715,6 +1075,40 @@
    ],
    "url": "https://github.com/HyperaebaseAlpha/infamous2-pc-respocket"
   },
+  "JU57FL1P/NBT_Emulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Windows x64 with QEMU, WHPX, ANGLE D3D11 and LLVM toolchain dependencies make it unportable to handhelds, and it requires proprietary BMW firmware and is not a playable game.",
+    "relevant": false,
+    "summary": "A Windows-only QEMU-based virtual machine that boots BMW NBT car head-unit firmware with user-supplied proprietary firmware.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:01Z",
+   "created_at": "2026-10-30T12:16:01Z",
+   "description": "a regular NBT emulator built by AI vibecoding",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "JU57FL1P/NBT_Emulator",
+   "id": 1439686419,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-10-30T12:56:38Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     9
+    ]
+   ],
+   "stars": 9,
+   "topics": [],
+   "url": "https://github.com/JU57FL1P/NBT_Emulator"
+  },
   "JaviiDeveloper/eden-nx2-android": {
    "archived": false,
    "classification": {
@@ -733,17 +1127,22 @@
    "fork": false,
    "forks": 2,
    "full_name": "JaviiDeveloper/eden-nx2-android",
+   "id": 1441609474,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-03T16:14:55Z",
    "star_history": [
     [
      "2026-11-10",
      48
+    ],
+    [
+     "2026-11-10",
+     49
     ]
    ],
-   "stars": 48,
+   "stars": 49,
    "topics": [],
    "url": "https://github.com/JaviiDeveloper/eden-nx2-android"
   },
@@ -763,19 +1162,24 @@
    "description": "A free fan mod for Balatro: online multiplayer, new modes, integrated mod support, cross platform, and much more !",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 1,
+   "forks": 2,
    "full_name": "JupiterianSoul/Balatro-Overhaul",
-   "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
-   "license": "NOASSERTION",
-   "pushed_at": "2026-11-09T23:06:54Z",
+   "id": 1450596767,
+   "language": "Lua",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T11:38:03Z",
    "star_history": [
     [
      "2026-11-10",
      27
+    ],
+    [
+     "2026-11-10",
+     33
     ]
    ],
-   "stars": 27,
+   "stars": 33,
    "topics": [
     "balatro",
     "balatro-mod",
@@ -783,6 +1187,40 @@
     "multiplayer"
    ],
    "url": "https://github.com/JupiterianSoul/Balatro-Overhaul"
+  },
+  "Kiasora/menu-bar-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a Swift/macOS-only frontend for Apple Silicon and macOS 26 with no PortMaster-style handheld path; the emulator cores it wraps are already packaged separately for handhelds.",
+    "relevant": false,
+    "summary": "A macOS menu bar app that wraps several emulator cores (mGBA, melonDS, bsnes and others) to play retro games from the menu bar.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:30Z",
+   "created_at": "2026-10-30T05:22:47Z",
+   "description": "Game Boy, Game Boy Color, Game Boy Advance and Nintendo DS games in your Mac's menu bar",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "Kiasora/menu-bar-emulator",
+   "id": 1439310296,
+   "language": "Swift",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-02T03:14:49Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     14
+    ]
+   ],
+   "stars": 14,
+   "topics": [],
+   "url": "https://github.com/Kiasora/menu-bar-emulator"
   },
   "LakoMoor/portcode": {
    "archived": false,
@@ -802,8 +1240,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "LakoMoor/portcode",
+   "id": 1445008689,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T07:38:08Z",
    "star_history": [
@@ -843,12 +1282,13 @@
    "description": "Emulate macOS on iOS and iPadOS",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 125,
+   "forks": 139,
    "full_name": "Leviidev/Henge",
+   "id": 1442375804,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-10T07:01:12Z",
+   "pushed_at": "2026-11-10T16:30:42Z",
    "star_history": [
     [
      "2026-11-10",
@@ -857,9 +1297,13 @@
     [
      "2026-11-10",
      1716
+    ],
+    [
+     "2026-11-10",
+     1815
     ]
    ],
-   "stars": 1716,
+   "stars": 1815,
    "topics": [],
    "url": "https://github.com/Leviidev/Henge"
   },
@@ -881,8 +1325,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "LightCursedorc/cat-rpocket-paw",
+   "id": 1446937707,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T11:54:27Z",
    "star_history": [
@@ -926,8 +1371,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "LomoXSoft/AfroSamuraiRecomp",
+   "id": 1444998332,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-10T00:23:50Z",
    "star_history": [
@@ -966,8 +1412,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "Luminger/balatro-switch-rce",
+   "id": 1444193621,
    "language": "Lua",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-06T15:36:07Z",
    "star_history": [
@@ -1011,8 +1458,9 @@
    "fork": false,
    "forks": 68,
    "full_name": "Manaclenodisconnect/Lichii-Enhanced",
+   "id": 1450621141,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-08T20:34:47Z",
    "star_history": [
@@ -1056,10 +1504,13 @@
    "fork": false,
    "forks": 0,
    "full_name": "MattyKen619/Pikmin-PS3-Port",
+   "id": 1442376523,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-02T01:47:13Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 12,
    "star_history": [
     [
      "2026-11-10",
@@ -1069,6 +1520,53 @@
    "stars": 12,
    "topics": [],
    "url": "https://github.com/MattyKen619/Pikmin-PS3-Port"
+  },
+  "Menrix/NFC_Apdu_Spy": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a Flipper Zero-specific NFC debugging tool, not a playable game, emulator, or engine, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A Flipper Zero app that emulates an ISO14443-4A NFC tag and logs APDU exchanges with a phone or reader.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:45Z",
+   "created_at": "2026-10-29T12:11:31Z",
+   "description": "Emulate an NFC tag on the Flipper Zero and log every APDU a phone sends, plus the tag's reply \u2014 capture both sides to reverse-engineer your own NFC devices.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Menrix/NFC_Apdu_Spy",
+   "id": 1438371376,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-05T09:32:25Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     12
+    ]
+   ],
+   "stars": 12,
+   "topics": [
+    "apdu",
+    "card-emulation",
+    "card-emulator",
+    "flipper-zero",
+    "flipperzero",
+    "gooddisplay",
+    "iso-dep",
+    "iso14443",
+    "iso14443-4",
+    "nfc",
+    "nfc-tag",
+    "reverse-engineering-tool"
+   ],
+   "url": "https://github.com/Menrix/NFC_Apdu_Spy"
   },
   "MinotaurnardRuby/mod-rpocket-team-personal-loot": {
    "archived": false,
@@ -1088,8 +1586,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "MinotaurnardRuby/mod-rpocket-team-personal-loot",
+   "id": 1446941388,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T11:57:55Z",
    "star_history": [
@@ -1129,8 +1628,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "MistblastClear/UEBulkExport-rpocket",
+   "id": 1440889250,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-10-31T13:34:02Z",
    "star_history": [
@@ -1156,6 +1656,40 @@
    ],
    "url": "https://github.com/MistblastClear/UEBulkExport-rpocket"
   },
+  "MohneeshVaidya/Chip8_Emulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "high",
+    "reason": "A small learning project; CHIP-8 is trivial to run and not a notable emulator target, and the README is Windows-focused with only 6 stars, so it is not worth porting.",
+    "relevant": false,
+    "summary": "A CHIP-8 interpreter written in C with an SDL3 frontend.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:32Z",
+   "created_at": "2026-11-01T07:24:09Z",
+   "description": "Chip8 emulator written in C and SDL3",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "MohneeshVaidya/Chip8_Emulator",
+   "id": 1441581778,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-01T07:45:46Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/MohneeshVaidya/Chip8_Emulator"
+  },
   "MythosOfs/Orchid": {
    "archived": false,
    "classification": {
@@ -1174,17 +1708,22 @@
    "fork": false,
    "forks": 26,
    "full_name": "MythosOfs/Orchid",
+   "id": 1442028650,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T07:03:45Z",
+   "pushed_at": "2026-11-10T16:36:43Z",
    "star_history": [
     [
      "2026-11-10",
      398
+    ],
+    [
+     "2026-11-10",
+     399
     ]
    ],
-   "stars": 398,
+   "stars": 399,
    "topics": [],
    "url": "https://github.com/MythosOfs/Orchid"
   },
@@ -1206,10 +1745,13 @@
    "fork": false,
    "forks": 0,
    "full_name": "NitrosGits/Lemmings-For-Windows-95",
+   "id": 1448950706,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T10:03:52Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 9,
    "star_history": [
     [
      "2026-11-10",
@@ -1222,17 +1764,30 @@
   },
   "OpenThievius/sly1-decomp": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Decompilation project, but it targets PS2 MIPS code built with the original compiler, so porting to a handheld would mean a large rewrite and it needs the original game data.",
+    "relevant": true,
+    "summary": "A matching decompilation of Sly Cooper and the Thievius Raccoonus for PlayStation 2, rebuilding the retail executable as C++.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:56Z",
    "created_at": "2026-10-29T04:28:15Z",
    "description": "Decompilation for Sly Cooper and the Thievius Raccoonus for the Playstation 2.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 2,
    "full_name": "OpenThievius/sly1-decomp",
+   "id": 1437944368,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "AGPL-3.0",
-   "pushed_at": "2026-11-10T02:17:39Z",
+   "pushed_at": "2026-11-10T16:06:26Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 5,
    "star_history": [
     [
      "2026-11-10",
@@ -1261,17 +1816,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "OpokXeno/xsg-ii-decomp",
+   "id": 1447109249,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-09T06:27:08Z",
+   "pushed_at": "2026-11-10T16:18:29Z",
    "star_history": [
     [
      "2026-11-10",
      15
+    ],
+    [
+     "2026-11-10",
+     16
     ]
    ],
-   "stars": 15,
+   "stars": 16,
    "topics": [],
    "url": "https://github.com/OpokXeno/xsg-ii-decomp"
   },
@@ -1293,10 +1853,13 @@
    "fork": false,
    "forks": 1,
    "full_name": "PeterRichardsonGolf/Halo-CE-Arena-Evolved",
+   "id": 1440904719,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-10T07:10:50Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 25,
    "star_history": [
     [
      "2026-11-10",
@@ -1320,6 +1883,87 @@
    ],
    "url": "https://github.com/PeterRichardsonGolf/Halo-CE-Arena-Evolved"
   },
+  "Philip-Bos/echofield-fm1": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is firmware for a music synth device, not a game or emulator, and it does not target handheld retro consoles.",
+    "relevant": false,
+    "summary": "Open-source granular sampler firmware for the M-VAVE FM-1 synth hardware, with a browser emulator, flasher and companion app.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:32Z",
+   "created_at": "2026-11-02T18:07:04Z",
+   "description": "A free, open-source granular sampler firmware for the M-VAVE FM-1: a few seconds of any sound become clouds, sparkles, tape loops and swells. With a browser emulator, flasher and companion app.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Philip-Bos/echofield-fm1",
+   "id": 1443313090,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-10T16:30:17Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     14
+    ]
+   ],
+   "stars": 14,
+   "topics": [],
+   "url": "https://github.com/Philip-Bos/echofield-fm1"
+  },
+  "Pisosenie/vif": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a general-purpose terminal application, not a game, emulator, or game engine, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "vif is a GPU terminal emulator written in Rust for Linux and macOS, with command blocks, persistent sessions, and a quick terminal.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:45Z",
+   "created_at": "2026-11-02T07:36:42Z",
+   "description": "Fast GPU terminal emulator in Rust for Linux and macOS: command blocks, sessions that survive the window, drop-down quick terminal, Ghostty shaders, themes from kitty/Alacritty/iTerm, Wayland and niri native",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Pisosenie/vif",
+   "id": 1442652300,
+   "language": "Rust",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-09T11:14:19Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "alacritty",
+    "archlinux",
+    "ghostty",
+    "gpu",
+    "hyprland",
+    "kitty",
+    "macos",
+    "niri",
+    "pywal",
+    "ricing",
+    "ricing-linux",
+    "rust"
+   ],
+   "url": "https://github.com/Pisosenie/vif"
+  },
   "PotatoRecomp/B2HWii-Android": {
    "archived": false,
    "classification": {
@@ -1338,8 +1982,9 @@
    "fork": false,
    "forks": 3,
    "full_name": "PotatoRecomp/B2HWii-Android",
+   "id": 1439483791,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T14:44:51Z",
    "star_history": [
@@ -1359,17 +2004,62 @@
    ],
    "url": "https://github.com/PotatoRecomp/B2HWii-Android"
   },
+  "Press5elect/OGBox": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets PS5 only with PS5-specific sandbox, Vulkan/RADV and x86 compatibility-mode code, not PortMaster's ARM handheld Linux targets; it also needs original Xbox game dumps.",
+    "relevant": false,
+    "summary": "OGBox is an Original Xbox emulator port (based on hakuX) packaged as a homebrew title for jailbroken PlayStation 5 consoles.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:41Z",
+   "created_at": "2026-11-01T07:43:06Z",
+   "description": "XBOX emulator for PS5",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Press5elect/OGBox",
+   "id": 1441593753,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T10:34:34Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     12
+    ]
+   ],
+   "stars": 12,
+   "topics": [],
+   "url": "https://github.com/Press5elect/OGBox"
+  },
   "Protryon/empire_earth": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Windows-only DirectX 7/8 and MSVC 6 builds with a Windows-only game executable; no portable ARM path and it needs the original commercial data files.",
+    "relevant": false,
+    "summary": "A matching decompilation of Empire Earth: The Art of Conquest, a 2002 Windows RTS, targeting the original MSVC 6 toolchain.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:58Z",
    "created_at": "2026-11-04T14:43:32Z",
    "description": "Matching decompilation of Empire Earth: The Art of Conquest, buildable from source",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 1,
    "full_name": "Protryon/empire_earth",
+   "id": 1445788007,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-08T07:35:45Z",
    "star_history": [
@@ -1400,8 +2090,9 @@
    "fork": false,
    "forks": 5,
    "full_name": "Pyrodrifter/PyroCade",
+   "id": 1446426109,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T02:00:03Z",
    "star_history": [
@@ -1430,19 +2121,24 @@
    "description": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, touch controls and in-app game file download.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 16,
+   "forks": 18,
    "full_name": "Rayan-XOO/horizon",
+   "id": 1436483507,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-08T07:54:55Z",
    "star_history": [
     [
      "2026-11-10",
      53
+    ],
+    [
+     "2026-11-10",
+     58
     ]
    ],
-   "stars": 53,
+   "stars": 58,
    "topics": [
     "android",
     "android-game",
@@ -1477,8 +2173,9 @@
    "fork": false,
    "forks": 3,
    "full_name": "Schroederr/nx-fork-manager",
+   "id": 1447700138,
    "language": "PowerShell",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T15:09:17Z",
    "star_history": [
@@ -1498,6 +2195,40 @@
    ],
    "url": "https://github.com/Schroederr/nx-fork-manager"
   },
+  "SildurFX/LSE-Emu": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a compatibility library for running ARM64 programs, not a playable game, emulator, or game port, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A preloadable shared library that emulates ARMv8.1 LSE atomic instructions on ARMv8.0 CPUs.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:07Z",
+   "created_at": "2026-11-01T17:55:50Z",
+   "description": "Emulates the ARMv8.1 LSE atomic instructions on ARMv8.0 CPUs.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "SildurFX/LSE-Emu",
+   "id": 1442087906,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-01T17:58:16Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     8
+    ]
+   ],
+   "stars": 8,
+   "topics": [],
+   "url": "https://github.com/SildurFX/LSE-Emu"
+  },
   "Squirbie/handheld-link-cores": {
    "archived": false,
    "classification": {
@@ -1516,8 +2247,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "Squirbie/handheld-link-cores",
+   "id": 1437984991,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-29T10:01:11Z",
    "star_history": [
@@ -1561,17 +2293,22 @@
    "fork": false,
    "forks": 0,
    "full_name": "Syyrhc/Lichii-Ally",
+   "id": 1449757956,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T02:38:27Z",
+   "pushed_at": "2026-11-10T14:56:58Z",
    "star_history": [
     [
      "2026-11-10",
      18
+    ],
+    [
+     "2026-11-10",
+     19
     ]
    ],
-   "stars": 18,
+   "stars": 19,
    "topics": [],
    "url": "https://github.com/Syyrhc/Lichii-Ally"
   },
@@ -1593,31 +2330,47 @@
    "fork": false,
    "forks": 2,
    "full_name": "TheSneakyBadger/FEFW-Stable-with-60-FPS-Patch",
+   "id": 1447523321,
    "language": "PowerShell",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T01:32:33Z",
+   "pushed_at": "2026-11-10T16:33:23Z",
    "star_history": [
     [
      "2026-11-10",
      122
+    ],
+    [
+     "2026-11-10",
+     129
     ]
    ],
-   "stars": 122,
+   "stars": 129,
    "topics": [],
    "url": "https://github.com/TheSneakyBadger/FEFW-Stable-with-60-FPS-Patch"
   },
   "TianyuEric/GalCraft": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a general authoring tool (editor and publisher), not a playable game, source port, or engine reimplementation, and it targets Windows/web via Electron.",
+    "relevant": false,
+    "summary": "GalCraft is an Electron-based visual novel authoring studio for creating galgame projects.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:59Z",
    "created_at": "2026-11-01T04:01:57Z",
    "description": "\u5f00\u6e90\u89c6\u89c9\u5c0f\u8bf4\u4e0e Galgame \u521b\u4f5c\u5de5\u5177\uff1a\u53ef\u89c6\u5316\u7f16\u8f91\u3001AI \u534f\u4f5c\u3001\u63d2\u4ef6\u6269\u5c55\u548c Web/Windows \u72ec\u7acb\u53d1\u884c\u3002Open-source visual novel editor and authoring tool with visual editing, optional AI collaboration, plugins, and standalone publishing.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "TianyuEric/GalCraft",
+   "id": 1441468984,
    "language": "TypeScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MPL-2.0",
    "pushed_at": "2026-11-03T12:13:37Z",
    "star_history": [
@@ -1641,6 +2394,40 @@
    ],
    "url": "https://github.com/TianyuEric/GalCraft"
   },
+  "VendavalSC/Vendichii": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a Windows-only, Vulkan 1.3 desktop emulator fork for Switch hardware, which is far too heavy for handheld ARM Linux and is not a standalone game.",
+    "relevant": false,
+    "summary": "Vendichii is a personal fork of the Lichii Nintendo Switch emulator, tuned for Zelda Ocarina of Time on Windows.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:05Z",
+   "created_at": "2026-11-06T22:28:36Z",
+   "description": "Vendichii is a Lichii fork (Experimental Nintendo Switch 2 Emulator) with major fixes for Zelda Ocarina of Time Remake",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "VendavalSC/Vendichii",
+   "id": 1448810502,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T12:58:07Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     8
+    ]
+   ],
+   "stars": 8,
+   "topics": [],
+   "url": "https://github.com/VendavalSC/Vendichii"
+  },
   "ViaBecrest/Eden-Switch-Emulator-resp": {
    "archived": false,
    "classification": {
@@ -1659,8 +2446,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "ViaBecrest/Eden-Switch-Emulator-resp",
+   "id": 1446938815,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T11:55:30Z",
    "star_history": [
@@ -1704,10 +2492,11 @@
    "fork": false,
    "forks": 5,
    "full_name": "Virtastic/d2-web",
+   "id": 1439074858,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "AGPL-3.0",
-   "pushed_at": "2026-11-10T06:45:13Z",
+   "pushed_at": "2026-11-10T14:37:06Z",
    "star_history": [
     [
      "2026-11-10",
@@ -1729,6 +2518,184 @@
    ],
    "url": "https://github.com/Virtastic/d2-web"
   },
+  "XEmaz/NFC-Checker": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a Flipper Zero NFC utility, not a playable game, emulator, or engine, so it has no relevance to handheld game porting.",
+    "relevant": false,
+    "summary": "A Flipper Zero external app that compares a real NFC tag with an emulated copy to score how well the copy would pass a reader.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:49Z",
+   "created_at": "2026-11-07T22:28:03Z",
+   "description": "A Flipper Zero app to compare real NFC tags with emulated copy of themselves like a real-world NFC reader would",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "XEmaz/NFC-Checker",
+   "id": 1449787464,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-08T20:11:14Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/XEmaz/NFC-Checker"
+  },
+  "ZendNevs/DynamicFPS.-DonkeyKong-Bananza-": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It appears to be a patch or tweak for an emulator rather than a playable game, engine, or port, and the README gives no substance to evaluate.",
+    "relevant": false,
+    "summary": "A small project claiming to fix slow motion in an emulator running Donkey Kong Bananza below 60 fps.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:16Z",
+   "created_at": "2026-10-31T18:50:26Z",
+   "description": "No more slow motion when your emulator runs under 60 fps",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "ZendNevs/DynamicFPS.-DonkeyKong-Bananza-",
+   "id": 1441161211,
+   "language": null,
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-10-31T18:53:34Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [],
+   "url": "https://github.com/ZendNevs/DynamicFPS.-DonkeyKong-Bananza-"
+  },
+  "ZiZc3/PlayShell": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets the PS5 console's payload environment only, not a handheld ARM Linux device, and is a wrapper around existing emulators rather than a standalone portable game or emulator.",
+    "relevant": false,
+    "summary": "A PS5 jailbreak payload that bundles several retro emulators into the PS5 home screen overlay.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:19Z",
+   "created_at": "2026-10-30T19:00:10Z",
+   "description": "Retro Emulators inside the PS5 home screen.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "ZiZc3/PlayShell",
+   "id": 1440124497,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-31T20:51:31Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/ZiZc3/PlayShell"
+  },
+  "adombs/Divine-Pulse": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a Windows-only fan tool and companion utility, not a playable game, engine, or emulator that PortMaster could package for handhelds.",
+    "relevant": false,
+    "summary": "A Windows companion app that reads Fire Emblem: Three Houses memory from the Eden emulator to track units and battles.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:47Z",
+   "created_at": "2026-10-31T18:49:11Z",
+   "description": "Tracks Fire Emblem: Three Houses units and battles by reading the Eden emulator's memory.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "adombs/Divine-Pulse",
+   "id": 1441160262,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T05:54:20Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "eden-emulator",
+    "fire-emblem",
+    "fire-emblem-three-houses",
+    "game-tracker",
+    "python",
+    "react",
+    "windows"
+   ],
+   "url": "https://github.com/adombs/Divine-Pulse"
+  },
+  "agent00jackson/bimmulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets a car head-unit ECU via a patched QEMU with a host ANGLE bridge, macOS/Nix-only, requires user-supplied BMW firmware, and is not a playable game or handheld-portable project.",
+    "relevant": false,
+    "summary": "A patched-QEMU launcher that boots BMW iDrive 6 car infotainment firmware on Apple silicon macOS using Nix.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:43Z",
+   "created_at": "2026-11-06T04:23:28Z",
+   "description": "BMW NBT EVO iDrive6 QEMU Emulator",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "agent00jackson/bimmulator",
+   "id": 1447824197,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-07T02:56:21Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     12
+    ]
+   ],
+   "stars": 12,
+   "topics": [],
+   "url": "https://github.com/agent00jackson/bimmulator"
+  },
   "aidrum/bookworm-enhanced": {
    "archived": false,
    "classification": {
@@ -1747,17 +2714,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "aidrum/bookworm-enhanced",
+   "id": 1449326130,
    "language": "C#",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T13:19:00Z",
    "star_history": [
     [
      "2026-11-10",
      7
+    ],
+    [
+     "2026-11-10",
+     8
     ]
    ],
-   "stars": 7,
+   "stars": 8,
    "topics": [],
    "url": "https://github.com/aidrum/bookworm-enhanced"
   },
@@ -1779,10 +2751,13 @@
    "fork": false,
    "forks": 2,
    "full_name": "aidrum/peggle-enhanced",
+   "id": 1441345460,
    "language": "C#",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-10T01:19:44Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 22,
    "star_history": [
     [
      "2026-11-10",
@@ -1811,17 +2786,22 @@
    "fork": false,
    "forks": 2,
    "full_name": "akitaonrails/FrankMDFast",
+   "id": 1446298660,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-10T01:11:46Z",
    "star_history": [
     [
      "2026-11-10",
      9
+    ],
+    [
+     "2026-11-10",
+     10
     ]
    ],
-   "stars": 9,
+   "stars": 10,
    "topics": [],
    "url": "https://github.com/akitaonrails/FrankMDFast"
   },
@@ -1843,8 +2823,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "akitaonrails/instagram-analysis",
+   "id": 1446574455,
    "language": "Java",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-05T05:38:38Z",
    "star_history": [
@@ -1856,6 +2837,74 @@
    "stars": 10,
    "topics": [],
    "url": "https://github.com/akitaonrails/instagram-analysis"
+  },
+  "alamshafil/metaspero": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets iOS/macOS ARM64 only with heavy JIT and memory requirements (12-16 GB RAM), far beyond handheld capability, and is an early-stage PS5 emulator.",
+    "relevant": false,
+    "summary": "Experimental PlayStation 5 emulator fork of KytyPS5 targeting Apple Silicon iOS and macOS with an FEXCore x86_64 translation layer.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:54Z",
+   "created_at": "2026-11-03T06:16:18Z",
+   "description": "Experimental PlayStation 5 emulator for iOS and macOS",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "alamshafil/metaspero",
+   "id": 1443889443,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-05T01:01:33Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     10
+    ]
+   ],
+   "stars": 10,
+   "topics": [],
+   "url": "https://github.com/alamshafil/metaspero"
+  },
+  "aledsrocha/PS1-EMULATOR-FOR-DSI": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets the DSi via devkitARM/libnds, a different platform from PortMaster handhelds; it is experimental, runs at about 6% speed, and cannot yet play games.",
+    "relevant": false,
+    "summary": "Experimental PlayStation 1 emulator that runs natively on the Nintendo DSi (ARM9) using libnds.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:17Z",
+   "created_at": "2026-10-28T21:46:50Z",
+   "description": "PS1 EMULATOR EXPERIMENTAL FOR DSI.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "aledsrocha/PS1-EMULATOR-FOR-DSI",
+   "id": 1437664827,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-28T21:55:57Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/aledsrocha/PS1-EMULATOR-FOR-DSI"
   },
   "alessioscand/neo-pi": {
    "archived": false,
@@ -1875,10 +2924,13 @@
    "fork": false,
    "forks": 1,
    "full_name": "alessioscand/neo-pi",
+   "id": 1438120954,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T07:44:10Z",
+   "pushed_at": "2026-11-10T10:27:59Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 22,
    "star_history": [
     [
      "2026-11-10",
@@ -1920,33 +2972,51 @@
    "fork": false,
    "forks": 0,
    "full_name": "alox-dev/redbound",
+   "id": 1442262084,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-09T03:30:06Z",
    "star_history": [
     [
      "2026-11-10",
      7
+    ],
+    [
+     "2026-11-10",
+     8
     ]
    ],
-   "stars": 7,
+   "stars": 8,
    "topics": [],
    "url": "https://github.com/alox-dev/redbound"
   },
   "andrewnakas/thug-decomp": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a PS2 decompilation, not a native PC/handheld build, and the PS2 target means the output is not directly portable to ARM handhelds; it needs the user's own disc.",
+    "relevant": true,
+    "summary": "A matching decompilation project of Tony Hawk's Underground for PS2, rebuilding the original ELF from C++ and assembly.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:01Z",
    "created_at": "2026-11-03T17:24:49Z",
    "description": "Matching decompilation of Tony Hawk's Underground (PS2, SLUS-20731). Bring your own disc.",
    "first_seen": "2026-11-10T07:46:19Z",
    "fork": false,
    "forks": 0,
    "full_name": "andrewnakas/thug-decomp",
+   "id": 1444612941,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-07T04:09:30Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 5,
    "star_history": [
     [
      "2026-11-10",
@@ -1961,6 +3031,40 @@
     "tony-hawk"
    ],
    "url": "https://github.com/andrewnakas/thug-decomp"
+  },
+  "angellfear/alice-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a network/traffic research and cloud-proxy tool for smart speakers, not a game, emulator, or engine, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A Python research tool that sits between Yandex smart speakers (Alice) and the cloud to inspect and emulate their traffic.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:30Z",
+   "created_at": "2026-10-31T13:08:24Z",
+   "description": "",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "angellfear/alice-emulator",
+   "id": 1440867657,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-05T17:59:33Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/angellfear/alice-emulator"
   },
   "antonydanby/DaisyUI": {
    "archived": false,
@@ -1980,19 +3084,73 @@
    "fork": false,
    "forks": 4,
    "full_name": "antonydanby/DaisyUI",
+   "id": 1448635386,
    "language": "Pascal",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T09:35:32Z",
    "star_history": [
     [
      "2026-11-10",
      19
+    ],
+    [
+     "2026-11-10",
+     23
     ]
    ],
-   "stars": 19,
+   "stars": 23,
    "topics": [],
    "url": "https://github.com/antonydanby/DaisyUI"
+  },
+  "aoxzh/bayo3-recomp": {
+   "archived": false,
+   "classification": {
+    "category": "engine reimplementation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "Native recompilation of a commercial game with Linux x86-64 and ARM64 Android support, so it is a plausible candidate for a handheld ARM Linux port, but it needs Vulkan 1.3 and a large amount of RAM and GPU power, and it requires the user's own game files.",
+    "relevant": true,
+    "summary": "A static ARM-to-C++ recompiler and native runtime for Bayonetta 3 (Switch 1.2.0) that targets Windows, Linux/Steam Deck, and Android with a Vulkan backend.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:39Z",
+   "created_at": "2026-11-07T16:46:49Z",
+   "description": "Bayonetta 3 PC, Steam Deck and Android native port: static ARM-to-C++ recompiler, Horizon/NVN runtime and Vulkan backend. No emulator; bring your own 1.2.0 game files.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "aoxzh/bayo3-recomp",
+   "id": 1449549319,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T15:18:17Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 13,
+   "star_history": [
+    [
+     "2026-11-10",
+     13
+    ]
+   ],
+   "stars": 13,
+   "topics": [
+    "android",
+    "arm64",
+    "bayo3",
+    "bayonetta-3",
+    "bayonetta3",
+    "game-recompilation",
+    "homebrew",
+    "linux",
+    "native-port",
+    "nintendo-switch",
+    "nvn",
+    "pc-port"
+   ],
+   "url": "https://github.com/aoxzh/bayo3-recomp"
   },
   "azmasm/switch2mac": {
    "archived": false,
@@ -2012,17 +3170,22 @@
    "fork": false,
    "forks": 21,
    "full_name": "azmasm/switch2mac",
+   "id": 1443815481,
    "language": "Swift",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-10T07:02:28Z",
+   "pushed_at": "2026-11-10T16:29:11Z",
    "star_history": [
     [
      "2026-11-10",
      153
+    ],
+    [
+     "2026-11-10",
+     155
     ]
    ],
-   "stars": 153,
+   "stars": 155,
    "topics": [
     "apple-silicon",
     "game-launcher",
@@ -2057,8 +3220,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "bipinkrish/sf2recomp",
+   "id": 1439945018,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-05T04:36:08Z",
    "star_history": [
@@ -2094,10 +3258,11 @@
    "description": "A PS5 emulator for the PS4. Runs on a jailbroken PS4 with Linux, installed through PS4 Multiboot.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 1,
+   "forks": 2,
    "full_name": "blue0x1/EmuFive",
+   "id": 1451157498,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-10T00:05:53Z",
    "star_history": [
@@ -2108,9 +3273,13 @@
     [
      "2026-11-10",
      31
+    ],
+    [
+     "2026-11-10",
+     81
     ]
    ],
-   "stars": 31,
+   "stars": 81,
    "topics": [
     "emulator",
     "goldhen",
@@ -2142,8 +3311,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "briksquared/fm1-emulator",
+   "id": 1441210080,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-10T00:35:15Z",
    "star_history": [
@@ -2161,6 +3331,40 @@
     "wasm"
    ],
    "url": "https://github.com/briksquared/fm1-emulator"
+  },
+  "byizmysh/IZPSX-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Switch 2 hardware through a closed-ecosystem launcher requiring console filesystem access, not a standalone handheld-ARM Linux port candidate.",
+    "relevant": false,
+    "summary": "A PlayStation emulator targeting the Nintendo Switch 2 via a proprietary IZ2S Platform connection layer.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:08Z",
+   "created_at": "2026-11-10T02:31:18Z",
+   "description": "PlayStation emulator for Switch 2. Requires IZ2S Platform and filesystem access.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "byizmysh/IZPSX-emulator",
+   "id": 1452118801,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-10T04:01:37Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [],
+   "url": "https://github.com/byizmysh/IZPSX-emulator"
   },
   "c3505310-bot/py-kms": {
    "archived": false,
@@ -2180,10 +3384,11 @@
    "fork": false,
    "forks": 0,
    "full_name": "c3505310-bot/py-kms",
+   "id": 1448363452,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-10T03:20:16Z",
+   "pushed_at": "2026-11-10T12:22:39Z",
    "star_history": [
     [
      "2026-11-10",
@@ -2224,10 +3429,13 @@
    "fork": false,
    "forks": 1,
    "full_name": "cacuracaptors/oot-miyoomini",
+   "id": 1446300269,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T11:43:15Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 8,
    "star_history": [
     [
      "2026-11-10",
@@ -2256,17 +3464,22 @@
    "fork": false,
    "forks": 5,
    "full_name": "callme-sy/Lichii-Superbuild",
+   "id": 1448460300,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T01:44:12Z",
+   "pushed_at": "2026-11-10T16:12:22Z",
    "star_history": [
     [
      "2026-11-10",
      69
+    ],
+    [
+     "2026-11-10",
+     72
     ]
    ],
-   "stars": 69,
+   "stars": 72,
    "topics": [
     "eden",
     "eglantine",
@@ -2295,8 +3508,9 @@
    "fork": false,
    "forks": 4,
    "full_name": "cavaleiro-ai/android-optimizer",
+   "id": 1441423805,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-04T15:07:39Z",
    "star_history": [
@@ -2338,19 +3552,26 @@
    "description": "Native port of OutRunners (Sega arcade, 1992) for PC and consoles, built on the verified C decompilation cheviman/outrunners-decomp. Bring your own ROM.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 8,
+   "forks": 9,
    "full_name": "cheviman/outrunners-port",
+   "id": 1438726841,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-09T17:09:36Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 93,
    "star_history": [
     [
      "2026-11-10",
      83
+    ],
+    [
+     "2026-11-10",
+     93
     ]
    ],
-   "stars": 83,
+   "stars": 93,
    "topics": [],
    "url": "https://github.com/cheviman/outrunners-port"
   },
@@ -2372,10 +3593,13 @@
    "fork": false,
    "forks": 2,
    "full_name": "cheviman/tmnt-port",
+   "id": 1446147388,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-09T22:18:52Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 52,
    "star_history": [
     [
      "2026-11-10",
@@ -2404,17 +3628,22 @@
    "fork": false,
    "forks": 14,
    "full_name": "chiikabu/lunar-for-roblox-decompiled",
+   "id": 1450890411,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T09:28:37Z",
    "star_history": [
     [
      "2026-11-10",
      121
+    ],
+    [
+     "2026-11-10",
+     124
     ]
    ],
-   "stars": 121,
+   "stars": 124,
    "topics": [
     "decompilation",
     "electron",
@@ -2430,6 +3659,80 @@
     "robloxclient"
    ],
    "url": "https://github.com/chiikabu/lunar-for-roblox-decompiled"
+  },
+  "christopherowen/dgx-spark-firmware-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It is a firmware emulation/boot test project, not a playable game, and it requires vendor firmware downloads, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A QEMU-based harness that boots NVIDIA DGX Spark UEFI and Standalone MM firmware with synthetic platform models.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:12Z",
+   "created_at": "2026-10-28T14:18:53Z",
+   "description": "Boot real DGX Spark UEFI and Standalone MM in QEMU with an original lab monitor; vendor firmware stays local.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "christopherowen/dgx-spark-firmware-emulator",
+   "id": 1437186153,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-08T11:30:46Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [],
+   "url": "https://github.com/christopherowen/dgx-spark-firmware-emulator"
+  },
+  "complex-ping/digitone-2-modding-skill": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It is a modding/developer toolkit for hardware firmware, not a playable game, engine, or emulator packageable for handhelds, and it requires the user's own Elektron firmware.",
+    "relevant": false,
+    "summary": "An agent skill and toolset for writing custom firmware mods for the Elektron Digitone II synthesizer, with ColdFire and SHARC tooling.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:51Z",
+   "created_at": "2026-10-28T13:33:00Z",
+   "description": "Agent skill for developing your own Elektron Digitone II firmware mods: ColdFire C hooks, SHARC DSP code, two emulators, flashing",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "complex-ping/digitone-2-modding-skill",
+   "id": 1437129929,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-05T17:45:33Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     11
+    ]
+   ],
+   "stars": 11,
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "digitone",
+    "elektron",
+    "firmware"
+   ],
+   "url": "https://github.com/complex-ping/digitone-2-modding-skill"
   },
   "conao3/rust-awscli": {
    "archived": false,
@@ -2449,8 +3752,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "conao3/rust-awscli",
+   "id": 1446143854,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-10T00:45:02Z",
    "star_history": [
@@ -2481,31 +3785,47 @@
    "fork": false,
    "forks": 13,
    "full_name": "crazyriddler/xbased",
+   "id": 1443666436,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-09T20:52:14Z",
+   "pushed_at": "2026-11-10T16:21:38Z",
    "star_history": [
     [
      "2026-11-10",
      197
+    ],
+    [
+     "2026-11-10",
+     207
     ]
    ],
-   "stars": 197,
+   "stars": 207,
    "topics": [],
    "url": "https://github.com/crazyriddler/xbased"
   },
   "cupsocino/shaiya-client-decomp": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Windows only with Direct3D 11 rendering and requires original commercial game data files, so it is not a practical handheld port candidate.",
+    "relevant": false,
+    "summary": "An AI-assisted reverse-engineered C++ client for Shaiya Episode 5.4, built with Zig into a 32-bit Windows executable.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:03Z",
    "created_at": "2026-11-02T14:48:40Z",
    "description": "A decompilation of the Ep5.4 Shaiya game client",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 10,
    "full_name": "cupsocino/shaiya-client-decomp",
+   "id": 1443092282,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-08T17:44:29Z",
    "star_history": [
@@ -2536,10 +3856,13 @@
    "fork": false,
    "forks": 0,
    "full_name": "danglingptr0x0/crosstalk",
+   "id": 1437527805,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "AGPL-3.0",
-   "pushed_at": "2026-11-09T19:42:40Z",
+   "pushed_at": "2026-11-10T15:52:48Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 23,
    "star_history": [
     [
      "2026-11-10",
@@ -2579,21 +3902,209 @@
    "description": "Unofficial native PC port of God of War (2005, PS2) for Windows, with experimental Linux support. Statically recompiled to C++, not an emulator. OpenGL renderer, launcher, cheat menu, widescreen, 60 FPS. Bring your own game dump: no game files included.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 4,
+   "forks": 5,
    "full_name": "danielalves96/gow-pc-port",
+   "id": 1440184002,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T19:53:26Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 188,
    "star_history": [
     [
      "2026-11-10",
      185
+    ],
+    [
+     "2026-11-10",
+     188
     ]
    ],
-   "stars": 185,
+   "stars": 188,
    "topics": [],
    "url": "https://github.com/danielalves96/gow-pc-port"
+  },
+  "darkxex/SwanStationUWP": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Xbox UWP with Direct3D 11 and a Windows app shell, so there is no practical handheld ARM Linux path; the underlying core is already packaged elsewhere.",
+    "relevant": false,
+    "summary": "A UWP app wrapping the SwanStation PlayStation 1 libretro core for Xbox Series X|S developer mode.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:37Z",
+   "created_at": "2026-10-29T01:46:45Z",
+   "description": "SwanStation (PlayStation 1 emulator) port to UWP for Xbox Series X|S in developer mode. Based on SwanStationPS5.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "darkxex/SwanStationUWP",
+   "id": 1437828998,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-29T14:42:51Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/darkxex/SwanStationUWP"
+  },
+  "daurosk/oot-remake-multiplayer": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a multiplayer patch layer for an emulator that requires the user's own game dump and keys, with no standalone portable game to package, so it is not a clear PortMaster candidate.",
+    "relevant": false,
+    "summary": "A multiplayer co-op mod for the Ocarina of Time remake, built as patches for the Lichii emulator and a server, with a native recomp planned later.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:22Z",
+   "created_at": "2026-11-08T20:32:27Z",
+   "description": "Working multiplayer for the Ocarina of Time remake: first on an emulator, then in a native recomp.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "daurosk/oot-remake-multiplayer",
+   "id": 1450639908,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-10T10:22:08Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     29
+    ]
+   ],
+   "stars": 29,
+   "topics": [],
+   "url": "https://github.com/daurosk/oot-remake-multiplayer"
+  },
+  "davidamunga/saw": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a developer tool for mobile app debugging, not a game, emulator, engine, or port candidate.",
+    "relevant": false,
+    "summary": "saw is a Go command-line tool that streams a mobile app's logs and network requests from Android and iOS devices.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:49Z",
+   "created_at": "2026-11-09T10:35:47Z",
+   "description": "Stream a mobile app's logs from any Android or iOS device, emulator or simulator.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "davidamunga/saw",
+   "id": 1451231371,
+   "language": "Go",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-10T14:12:53Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     11
+    ]
+   ],
+   "stars": 11,
+   "topics": [
+    "adb",
+    "android",
+    "cli",
+    "developer-tools",
+    "golang",
+    "ios",
+    "logcat",
+    "logging",
+    "mobile",
+    "xcode"
+   ],
+   "url": "https://github.com/davidamunga/saw"
+  },
+  "doffu0000/qyomega-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It emulates a music hardware sequencer rather than a game console, its UI is a web page with a Go server, and it has no playable games to package for handhelds.",
+    "relevant": false,
+    "summary": "An emulator of a Yamaha QY-series hardware sequencer (firmware 1.37) written in Go, run in a browser, which requires the user to supply Yamaha's firmware.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:53Z",
+   "created_at": "2026-10-30T19:06:55Z",
+   "description": "QY\u03a9 Emulator: a Yamaha hardware sequencer emulator in Go and the browser. Bring your own firmware.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "doffu0000/qyomega-emulator",
+   "id": 1440130575,
+   "language": "Go",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-31T02:40:37Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     10
+    ]
+   ],
+   "stars": 10,
+   "topics": [],
+   "url": "https://github.com/doffu0000/qyomega-emulator"
+  },
+  "dougg3/turtles-in-time-snes-4-players": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a ROM patch requiring a custom fork of Mesen with extra SNES hardware features, so it is not a native port candidate for handhelds and needs original commercial data.",
+    "relevant": false,
+    "summary": "A 4-player ROM hack for SNES Turtles in Time that patches the original game ROM.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:21Z",
+   "created_at": "2026-11-01T23:17:49Z",
+   "description": "ROM hack for TMNT IV: Turtles in Time adding 4-player support. Requires a special emulator with SNES sprite limit extensions.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "dougg3/turtles-in-time-snes-4-players",
+   "id": 1442311902,
+   "language": "Assembly",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-08T19:38:52Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/dougg3/turtles-in-time-snes-4-players"
   },
   "dudumil/Ensoniq-ASR-10-Emulator": {
    "archived": false,
@@ -2613,8 +4124,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "dudumil/Ensoniq-ASR-10-Emulator",
+   "id": 1449606901,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-08T21:06:23Z",
    "star_history": [
@@ -2626,6 +4138,96 @@
    "stars": 18,
    "topics": [],
    "url": "https://github.com/dudumil/Ensoniq-ASR-10-Emulator"
+  },
+  "edward1987/opendgus": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is an embedded HMI authoring tool, not a playable game, engine, or emulator suited to handheld porting.",
+    "relevant": false,
+    "summary": "OpenDGUS is a desktop Electron/Python designer app for DWIN T5L (DGUS II) smart displays used to build embedded HMI screens.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:43Z",
+   "created_at": "2026-10-28T15:41:09Z",
+   "description": "Open-source designer for DWIN T5L (DGUS II) smart displays: visual editor, 47 DGUS controls, 20 templates, emulator, UART upload, and an AI designer (MCP server + in-app chat).",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "edward1987/opendgus",
+   "id": 1437288599,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-01T14:14:52Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "ai",
+    "dgus",
+    "dwin",
+    "electron",
+    "embedded",
+    "gui-designer",
+    "hmi",
+    "lcd",
+    "mcp",
+    "t5l"
+   ],
+   "url": "https://github.com/edward1987/opendgus"
+  },
+  "engiadina/enet-bridge": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "Smart-home hardware integration, not a playable game, emulator, engine, or port, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A Home Assistant integration with an ESP32 + CC1101 radio bridge for Gira/Jung eNet smart-home devices.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:25Z",
+   "created_at": "2026-11-07T20:11:15Z",
+   "description": "Gira/Jung eNet radio devices in Home Assistant without the eNet Server \u2013 ESP32 + CC1101 USB bridge that emulates the server, imports your existing installation (.iex) and keeps all devices paired.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "engiadina/enet-bridge",
+   "id": 1449703616,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-10T15:29:31Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "cc1101",
+    "enet",
+    "esp32",
+    "gira",
+    "hacs",
+    "hacs-integration",
+    "home-assistant",
+    "home-automation",
+    "jung",
+    "knx-rf"
+   ],
+   "url": "https://github.com/engiadina/enet-bridge"
   },
   "ernestjsf/herdr-devices": {
    "archived": false,
@@ -2645,8 +4247,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "ernestjsf/herdr-devices",
+   "id": 1440373041,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T01:10:51Z",
    "star_history": [
@@ -2685,17 +4288,24 @@
    "fork": false,
    "forks": 6,
    "full_name": "gminustwo/msr2ds",
+   "id": 1439059189,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-10T02:34:51Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 245,
    "star_history": [
     [
      "2026-11-10",
      246
+    ],
+    [
+     "2026-11-10",
+     245
     ]
    ],
-   "stars": 246,
+   "stars": 245,
    "topics": [],
    "url": "https://github.com/gminustwo/msr2ds"
   },
@@ -2717,8 +4327,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "grnnk/CK3-DNA-Manager-Qt",
+   "id": 1441250034,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "ISC",
    "pushed_at": "2026-11-09T14:07:20Z",
    "star_history": [
@@ -2730,6 +4341,48 @@
    "stars": 7,
    "topics": [],
    "url": "https://github.com/grnnk/CK3-DNA-Manager-Qt"
+  },
+  "haveniiii/PES6ANDROIDPORT": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "Native recompiled port of a commercial PSP game that needs the user's own ISO; ARM64 native build is promising for handhelds, though the Android-focused touch UI and 64-bit requirement may limit fit for low-end devices.",
+    "relevant": true,
+    "summary": "Static recompilation of Pro Evolution Soccer 6 (PSP) to native ARM64 that runs on Android using the user's own ISO.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:18Z",
+   "created_at": "2026-10-30T16:14:50Z",
+   "description": "PES6 (PSP) running natively on Android and desktop \u2014 no emulator. Chilean league 2026 built in.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "haveniiii/PES6ANDROIDPORT",
+   "id": 1439955096,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-09T18:20:02Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 7,
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [
+    "android",
+    "chile",
+    "pes6",
+    "psp",
+    "static-recompilation"
+   ],
+   "url": "https://github.com/haveniiii/PES6ANDROIDPORT"
   },
   "herrbimmer/IDEmu": {
    "archived": false,
@@ -2747,19 +4400,24 @@
    "description": "BMW iDrive 4/5/6/7/8 head-unit emulator for macOS (QEMU, web UI, CAN/GPS, coding editor). PolyForm Noncommercial 1.0.0",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 7,
+   "forks": 8,
    "full_name": "herrbimmer/IDEmu",
+   "id": 1451370228,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-09T22:29:28Z",
+   "pushed_at": "2026-11-10T15:20:14Z",
    "star_history": [
     [
      "2026-11-10",
      72
+    ],
+    [
+     "2026-11-10",
+     79
     ]
    ],
-   "stars": 72,
+   "stars": 79,
    "topics": [],
    "url": "https://github.com/herrbimmer/IDEmu"
   },
@@ -2779,33 +4437,49 @@
    "description": "VERY experimental Nintendo Switch 2 emulator port for PS5",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 136,
+   "forks": 138,
    "full_name": "heydemoura/EglantinePS5",
+   "id": 1440235022,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T00:16:03Z",
+   "pushed_at": "2026-11-10T15:21:40Z",
    "star_history": [
     [
      "2026-11-10",
      313
+    ],
+    [
+     "2026-11-10",
+     316
     ]
    ],
-   "stars": 313,
+   "stars": 316,
    "topics": [],
    "url": "https://github.com/heydemoura/EglantinePS5"
   },
   "hmascs/hackios-android": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a QEMU-based launcher for an Apple OS emulation rather than a playable game, and the emulated system is not included; it does not fit the PortMaster game/emulator porting targets.",
+    "relevant": false,
+    "summary": "An Android front-end app (Jetpack Compose) that launches QEMU to run an iOS-style desktop environment, with the guest firmware and kernel supplied by the user.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:20Z",
    "created_at": "2026-11-05T19:08:21Z",
    "description": "HackiOS \u2014 \u5728 Android \u624b\u673a\u4e0a\u8fd0\u884c iOS \u98ce\u683c\u7cfb\u7edf\u7684\u6a21\u62df\u5668\u524d\u7aef\uff08Jetpack Compose + QEMU\uff09\u3002\u542b\u5b8c\u6574\u6e90\u7801\u4e0e\u6784\u5efa\u4ea7\u7269\u3002\u672c\u9879\u76ee\u4e0d\u9644\u5e26\u4efb\u4f55 Apple \u56fa\u4ef6\uff0c\u4ec5\u4f9b\u5b66\u4e60\u4e0e\u7814\u7a76\u3002",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "hmascs/hackios-android",
+   "id": 1447406602,
    "language": "Kotlin",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-06T04:09:23Z",
    "star_history": [
@@ -2845,17 +4519,22 @@
    "fork": false,
    "forks": 3,
    "full_name": "igawa6/Raitchi",
+   "id": 1436612464,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-10-29T02:20:04Z",
    "star_history": [
     [
      "2026-11-10",
      54
+    ],
+    [
+     "2026-11-10",
+     55
     ]
    ],
-   "stars": 54,
+   "stars": 55,
    "topics": [],
    "url": "https://github.com/igawa6/Raitchi"
   },
@@ -2875,10 +4554,11 @@
    "description": "Run real Linux kernel natively on iOS",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 16,
+   "forks": 26,
    "full_name": "imxieyi/Kernarium",
+   "id": 1449421218,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-09T10:34:58Z",
    "star_history": [
@@ -2889,9 +4569,13 @@
     [
      "2026-11-10",
      124
+    ],
+    [
+     "2026-11-10",
+     218
     ]
    ],
-   "stars": 124,
+   "stars": 218,
    "topics": [
     "android",
     "emulator",
@@ -2921,8 +4605,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "jhonnaker1/bmamiga",
+   "id": 1438922847,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-07T20:46:30Z",
    "star_history": [
@@ -2966,8 +4651,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "joebritt/webtv-bridge",
+   "id": 1442336492,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-02T00:11:07Z",
    "star_history": [
@@ -3005,8 +4691,9 @@
    "fork": false,
    "forks": 4,
    "full_name": "joppe2001/bf-private-server",
+   "id": 1437226155,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-04T09:18:25Z",
    "star_history": [
@@ -3030,6 +4717,40 @@
    ],
    "url": "https://github.com/joppe2001/bf-private-server"
   },
+  "jsarriaa/GBADN": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It is a novelty encoding/packaging tool that needs original commercial ROMs and is not a playable game, emulator, or port candidate.",
+    "relevant": false,
+    "summary": "A joke project that wraps GBA ROMs as FASTA genomic files, with a companion tool that converts ROMs into them.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:03Z",
+   "created_at": "2026-10-31T13:40:00Z",
+   "description": "A Game Boy Advance emulator that only reads FASTA genomic files",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "jsarriaa/GBADN",
+   "id": 1440894639,
+   "language": "Rust",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-01T10:06:43Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     8
+    ]
+   ],
+   "stars": 8,
+   "topics": [],
+   "url": "https://github.com/jsarriaa/GBADN"
+  },
   "justr4mzi/hortensia": {
    "archived": false,
    "classification": {
@@ -3048,10 +4769,11 @@
    "fork": false,
    "forks": 0,
    "full_name": "justr4mzi/hortensia",
+   "id": 1448244112,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T07:39:01Z",
+   "pushed_at": "2026-11-10T08:17:33Z",
    "star_history": [
     [
      "2026-11-10",
@@ -3064,15 +4786,26 @@
   },
   "kazar-root/LunaNX": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a cloud-gaming streaming client for a proprietary service, not a playable open-source game, emulator, or port of a game that PortMaster would package.",
+    "relevant": false,
+    "summary": "LunaNX is a Nintendo Switch homebrew client for streaming Amazon Luna cloud games.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:05Z",
    "created_at": "2026-10-30T14:25:44Z",
    "description": "LunaNX \u2013 Native Amazon Luna cloud gaming client for Nintendo Switch (Homebrew .nro). Play cloud games directly on your Switch, without a PC or Moonlight.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 1,
    "full_name": "kazar-root/LunaNX",
+   "id": 1439830964,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-08T18:15:20Z",
    "star_history": [
@@ -3096,17 +4829,30 @@
   },
   "khasinski/parasite-eve-ii-pc": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "Decompilation-based native port of a commercial PS1 game with SDL-based runtime and Linux ARM64 builds already working, so it is a candidate, though it is pre-alpha and requires the user's own disc images.",
+    "relevant": true,
+    "summary": "Native C PC port of Parasite Eve II (PlayStation) built from a matching decompilation and a Psy-Q replacement layer on SDL3.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:07Z",
    "created_at": "2026-11-01T19:01:28Z",
    "description": "Native PC port of Parasite Eve II (PlayStation), built on the matching decompilation and PsyZ",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 1,
    "full_name": "khasinski/parasite-eve-ii-pc",
+   "id": 1442141747,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "CC0-1.0",
-   "pushed_at": "2026-11-09T22:14:49Z",
+   "pushed_at": "2026-11-10T16:08:03Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 5,
    "star_history": [
     [
      "2026-11-10",
@@ -3133,23 +4879,76 @@
    "description": "Crazy Arcade Server Emulator",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 9,
+   "forks": 11,
    "full_name": "krrr/BnbEmu",
+   "id": 1443172888,
    "language": "Kotlin",
-   "last_checked": "2026-11-10T07:46:19Z",
-   "license": null,
-   "pushed_at": "2026-11-10T07:33:21Z",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-10T14:56:46Z",
    "star_history": [
     [
      "2026-11-10",
      16
+    ],
+    [
+     "2026-11-10",
+     19
     ]
    ],
-   "stars": 16,
+   "stars": 19,
    "topics": [
-    "crazyarcade"
+    "crazyarcade",
+    "game-server"
    ],
    "url": "https://github.com/krrr/BnbEmu"
+  },
+  "kue-m/mockingboard-pico": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is firmware for a custom Apple II peripheral card, not a playable game, emulator, or port target for handheld ARM devices.",
+    "relevant": false,
+    "summary": "Hardware sound card for the Apple II that emulates Mockingboard AY-3-8910 and SSI-263 chips on a Raspberry Pi Pico 2.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:59Z",
+   "created_at": "2026-10-29T19:15:01Z",
+   "description": "A Mockingboard C-compatible Apple II sound card built on a Raspberry Pi Pico 2 (RP2350), supporting music and speech by emulating two AY-3-8910 chips and an SSI-263 synthesizer",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "kue-m/mockingboard-pico",
+   "id": 1438855679,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-04T22:47:33Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     10
+    ]
+   ],
+   "stars": 10,
+   "topics": [
+    "6502",
+    "6522",
+    "apple-ii",
+    "apple-iie",
+    "ay-3-8910",
+    "emulation",
+    "mockingboard",
+    "pcb",
+    "raspberry-pi-pico",
+    "retrocomputing",
+    "rp2350",
+    "sound-card"
+   ],
+   "url": "https://github.com/kue-m/mockingboard-pico"
   },
   "leafall903/ORPHEUS": {
    "archived": false,
@@ -3167,19 +4966,26 @@
    "description": "Open-source Overwatch 1.74 server reimplementation for research and game preservation. Experimental Practice Range support.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 12,
+   "forks": 13,
    "full_name": "leafall903/ORPHEUS",
+   "id": 1446582096,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T05:08:45Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 90,
    "star_history": [
     [
      "2026-11-10",
      87
+    ],
+    [
+     "2026-11-10",
+     90
     ]
    ],
-   "stars": 87,
+   "stars": 90,
    "topics": [
     "game-preservation",
     "network-protocol",
@@ -3210,10 +5016,11 @@
    "fork": false,
    "forks": 1,
    "full_name": "leizhiyuan/rexpocket",
+   "id": 1437984614,
    "language": "Kotlin",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-09T07:17:08Z",
+   "pushed_at": "2026-11-10T12:29:48Z",
    "star_history": [
     [
      "2026-11-10",
@@ -3255,8 +5062,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "lorenzz20105-del/droideum-termux",
+   "id": 1437910000,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-01T13:56:39Z",
    "star_history": [
@@ -3298,17 +5106,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "mada-02/iOS-Emulator",
+   "id": 1440394994,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-09T20:29:46Z",
    "star_history": [
     [
      "2026-11-10",
      37
+    ],
+    [
+     "2026-11-10",
+     38
     ]
    ],
-   "stars": 37,
+   "stars": 38,
    "topics": [],
    "url": "https://github.com/mada-02/iOS-Emulator"
   },
@@ -3330,17 +5143,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "makkaX2/DroneFlames-PC-Port",
+   "id": 1441623504,
    "language": "GDScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
-   "pushed_at": "2026-11-09T20:25:20Z",
+   "pushed_at": "2026-11-10T16:01:00Z",
    "star_history": [
     [
      "2026-11-10",
      21
+    ],
+    [
+     "2026-11-10",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [
     "decompilation",
     "droneflames",
@@ -3373,19 +5191,24 @@
    "description": "Trending open projects that reverse engineered apps, games, consoles, protocols and devices, plus the tools they used. Star trends refreshed daily.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 16,
+   "forks": 19,
    "full_name": "maluramichael/awesome-reverse-engineer-anything",
+   "id": 1442833956,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "CC-BY-4.0",
-   "pushed_at": "2026-11-09T20:08:03Z",
+   "pushed_at": "2026-11-10T12:50:39Z",
    "star_history": [
     [
      "2026-11-10",
      336
+    ],
+    [
+     "2026-11-10",
+     338
     ]
    ],
-   "stars": 336,
+   "stars": 338,
    "topics": [
     "awesome",
     "awesome-list",
@@ -3396,6 +5219,74 @@
     "static-recompilation"
    ],
    "url": "https://github.com/maluramichael/awesome-reverse-engineer-anything"
+  },
+  "marc-gronenberg/Marcs-Film-Emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is an image-editing filter for photos, not a game, emulator, or game engine, so it is not relevant to PortMaster.",
+    "relevant": false,
+    "summary": "A PhotoCraft WebAssembly filter plug-in that simulates 20 film stocks as image looks.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:47Z",
+   "created_at": "2026-11-04T11:13:11Z",
+   "description": "Film looks for PhotoCraft: 20 films simulated from manufacturer datasheets, with push/pull, halation and grain (WebAssembly plug-ins)",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "marc-gronenberg/Marcs-Film-Emulator",
+   "id": 1445549906,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-04T11:39:38Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     11
+    ]
+   ],
+   "stars": 11,
+   "topics": [],
+   "url": "https://github.com/marc-gronenberg/Marcs-Film-Emulator"
+  },
+  "marc-gronenberg/marcs-digicam-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a photo-editing filter plug-in, not a game, emulator, or engine, so it has no relevance to PortMaster porting.",
+    "relevant": false,
+    "summary": "A WebAssembly image filter plug-in that simulates the look of 2000s CCD compact cameras for the PhotoCraft photo editor.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:10Z",
+   "created_at": "2026-11-04T12:02:19Z",
+   "description": "The look of 2000s CCD compact cameras for PhotoCraft: modelled CCD sensors, hard highlights, ISO noise, oversharpening, blooming, purple fringing (WebAssembly plug-in)",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "marc-gronenberg/marcs-digicam-emulator",
+   "id": 1445602120,
+   "language": "Rust",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-04T14:19:21Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [],
+   "url": "https://github.com/marc-gronenberg/marcs-digicam-emulator"
   },
   "marcm0de/FivePocket": {
    "archived": false,
@@ -3413,19 +5304,24 @@
    "description": "Play the 2013 open-world classic natively on Android, AYN Thor, iPad and iPhone, built from your own Xbox 360 discs. Not an emulator.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 2,
+   "forks": 3,
    "full_name": "marcm0de/FivePocket",
+   "id": 1448374903,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-06T15:11:10Z",
    "star_history": [
     [
      "2026-11-10",
      26
+    ],
+    [
+     "2026-11-10",
+     27
     ]
    ],
-   "stars": 26,
+   "stars": 27,
    "topics": [],
    "url": "https://github.com/marcm0de/FivePocket"
   },
@@ -3447,8 +5343,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "meister973/CellJoker",
+   "id": 1441991730,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-05T09:26:18Z",
    "star_history": [
@@ -3485,19 +5382,24 @@
    "description": "Your favorite C++ game engine~",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 1,
+   "forks": 2,
    "full_name": "mewiof/Shalltear",
+   "id": 1440271142,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
-   "pushed_at": "2026-11-10T02:28:08Z",
+   "pushed_at": "2026-11-10T14:05:59Z",
    "star_history": [
     [
      "2026-11-10",
      18
+    ],
+    [
+     "2026-11-10",
+     20
     ]
    ],
-   "stars": 18,
+   "stars": 20,
    "topics": [
     "cpp",
     "game-engine",
@@ -3521,12 +5423,13 @@
    "description": "Experimental NS2 Emulator for the PS5",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 1,
+   "forks": 3,
    "full_name": "mihawk-99/PS5_Lichii",
+   "id": 1450775898,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-09T20:16:00Z",
+   "pushed_at": "2026-11-10T16:20:54Z",
    "star_history": [
     [
      "2026-11-10",
@@ -3535,9 +5438,13 @@
     [
      "2026-11-10",
      65
+    ],
+    [
+     "2026-11-10",
+     78
     ]
    ],
-   "stars": 65,
+   "stars": 78,
    "topics": [],
    "url": "https://github.com/mihawk-99/PS5_Lichii"
   },
@@ -3559,8 +5466,9 @@
    "fork": false,
    "forks": 4,
    "full_name": "mikkovihonen/vibefreak",
+   "id": 1440149687,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-30T20:33:30Z",
    "star_history": [
@@ -3591,8 +5499,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "moistman42069/RatchetAndClank-Quest-VR",
+   "id": 1440067865,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-07T16:24:30Z",
    "star_history": [
@@ -3636,31 +5545,83 @@
    "fork": false,
    "forks": 0,
    "full_name": "n0madic/KopruluSector",
+   "id": 1450491115,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T19:33:06Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 19,
    "star_history": [
     [
      "2026-11-10",
      17
+    ],
+    [
+     "2026-11-10",
+     19
     ]
    ],
-   "stars": 17,
+   "stars": 19,
    "topics": [],
    "url": "https://github.com/n0madic/KopruluSector"
   },
+  "naevui/k-three": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "Original architecture/toolchain project with no commercial game to port or playable game, so not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "An experimental balanced-ternary processor architecture, VM, toolchain and small OS.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:35Z",
+   "created_at": "2026-10-29T13:26:12Z",
+   "description": "An experimental ternary computing architecture, emulator, and operating system built from the ground up.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "naevui/k-three",
+   "id": 1438456256,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-07T14:53:28Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/naevui/k-three"
+  },
   "nantianz/OpenMeteor": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "engine reimplementation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Engine reimplementation that needs original game data, and it is early-stage with incomplete gameplay; Bevy desktop/WebRTC stack is heavy for handheld ARM and no portable SDL/GLES path is evident.",
+    "relevant": false,
+    "summary": "OpenMeteor is an in-progress Rust/Bevy open-source reimplementation of the commercial game Meteor Butterfly Sword, with a desktop client and multiplayer server.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:23Z",
    "created_at": "2026-10-29T02:48:32Z",
    "description": "Open-source Meteor Butterfly Sword Engine",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 6,
    "full_name": "nantianz/OpenMeteor",
+   "id": 1437873580,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-29T03:33:54Z",
    "star_history": [
@@ -3698,8 +5659,9 @@
    "fork": false,
    "forks": 1,
    "full_name": "nathawatc/howdy-next",
+   "id": 1440388951,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T14:41:15Z",
    "star_history": [
@@ -3740,10 +5702,13 @@
    "fork": false,
    "forks": 0,
    "full_name": "nayo186/AloneInTheDarkClassicReborn",
+   "id": 1436759286,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-10T06:00:13Z",
+   "pushed_at": "2026-11-10T14:19:04Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 16,
    "star_history": [
     [
      "2026-11-10",
@@ -3780,17 +5745,24 @@
    "fork": false,
    "forks": 2,
    "full_name": "nekomancer01/DarkSoulsPS2",
+   "id": 1441366661,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T07:39:39Z",
+   "pushed_at": "2026-11-10T14:16:32Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 92,
    "star_history": [
     [
      "2026-11-10",
      89
+    ],
+    [
+     "2026-11-10",
+     92
     ]
    ],
-   "stars": 89,
+   "stars": 92,
    "topics": [
     "decompilation",
     "game",
@@ -3818,10 +5790,11 @@
    "fork": false,
    "forks": 8,
    "full_name": "niakw/ProsperoEden-Encore",
+   "id": 1439227108,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T04:49:59Z",
+   "pushed_at": "2026-11-10T16:38:34Z",
    "star_history": [
     [
      "2026-11-10",
@@ -3863,8 +5836,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "nirally/Vitox",
+   "id": 1446829900,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-08T17:10:27Z",
    "star_history": [
@@ -3908,8 +5882,9 @@
    "fork": false,
    "forks": 4,
    "full_name": "notsapinho/Eglantine",
+   "id": 1441888769,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-07T10:48:14Z",
    "star_history": [
@@ -3929,19 +5904,66 @@
    ],
    "url": "https://github.com/notsapinho/Eglantine"
   },
+  "oledz-i/Vita3KiOS": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It targets iOS only with JIT setup via StikDebug and Vulkan through MoltenVK, not handheld ARM Linux; the upstream Vita3K project is the better porting candidate and is heavy for handheld RAM.",
+    "relevant": false,
+    "summary": "An iOS/iPadOS port of the Vita3K PlayStation Vita emulator, packaged as a native iPhone and iPad app.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:41:37Z",
+   "created_at": "2026-11-01T18:13:49Z",
+   "description": "An experimental PlayStationVita Emulator for iOS/iPadOS devices.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "oledz-i/Vita3KiOS",
+   "id": 1442102879,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-10T12:54:21Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     13
+    ]
+   ],
+   "stars": 13,
+   "topics": [],
+   "url": "https://github.com/oledz-i/Vita3KiOS"
+  },
   "openorion2/openorion2": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "engine reimplementation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Engine reimplementation of a commercial game that could be packaged, but it is Go with embedded SDL3 and targets desktop platforms, and it needs the user's own copy of the game data.",
+    "relevant": true,
+    "summary": "OpenOrion2 is a Go reimplementation of Master of Orion II: Battle at Antares that runs natively with SDL3 and adds TCP network play and an online lobby.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:25Z",
    "created_at": "2026-10-30T14:59:33Z",
    "description": "Open-source reimplementation of Master of Orion II: Battle at Antares (1996): plays like the original, with network play and an online lobby. Needs your own copy of the game.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "openorion2/openorion2",
+   "id": 1439870972,
    "language": "Go",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-05T17:18:47Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 6,
    "star_history": [
     [
      "2026-11-10",
@@ -3968,19 +5990,24 @@
    "description": "A 3D game engine for the web, built on three.js and made to be used by AI coding agents.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "penstic123-code/Threedog.js-Game-Engine",
+   "id": 1440644940,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
-   "pushed_at": "2026-11-10T06:53:06Z",
+   "pushed_at": "2026-11-10T10:42:19Z",
    "star_history": [
     [
      "2026-11-10",
      10
+    ],
+    [
+     "2026-11-10",
+     11
     ]
    ],
-   "stars": 10,
+   "stars": 11,
    "topics": [
     "ai-agents",
     "ai-assisted-development",
@@ -3997,15 +6024,26 @@
   },
   "photocraft-desktop-app/photocraft": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a general-purpose image editing application, not a game, emulator, or game engine, so it has no relevance to retro handheld game porting.",
+    "relevant": false,
+    "summary": "PhotoCraft is an early-alpha, clean-room Rust image editor that imitates Adobe Photoshop.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:09Z",
    "created_at": "2026-11-07T18:14:36Z",
    "description": "Download photocraft - an open-source, clean-room reimplementation of Adobe Photoshop in pure Rust.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "photocraft-desktop-app/photocraft",
+   "id": 1449619903,
    "language": "Rust",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-07T18:23:25Z",
    "star_history": [
@@ -4029,6 +6067,51 @@
    ],
    "url": "https://github.com/photocraft-desktop-app/photocraft"
   },
+  "plisskien/VMProtect-3.x-Emulator-Memory-Dumper": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It is a malware/protector-analysis tool for Windows binaries, not a playable game, emulator, or portable source port, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A Qiling/Unicorn-based emulator and memory dumper for unpacking VMProtect 3.x protected Windows x86_64 PE binaries.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:28Z",
+   "created_at": "2026-11-07T17:45:58Z",
+   "description": "Sandboxed Qiling/Unicorn emulator & memory dumper for VMProtect 3.x (tested on v3.10.4). Defeats anti-debugging, anti-VM, and KnownDlls integrity scans to unpack fully protected x86_64 PE binaries.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 3,
+   "full_name": "plisskien/VMProtect-3.x-Emulator-Memory-Dumper",
+   "id": 1449597033,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": null,
+   "pushed_at": "2026-11-07T17:55:06Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "malware-analysis",
+    "memory-dumper",
+    "pe-dumper",
+    "qiling-framework",
+    "reverse-engineering-tool",
+    "unicorn-engine",
+    "unpacker",
+    "vmprotect",
+    "vmprotect-dumper",
+    "vmprotect-unpacker"
+   ],
+   "url": "https://github.com/plisskien/VMProtect-3.x-Emulator-Memory-Dumper"
+  },
   "projectedan/TigerWoods2004-XBE-Recomp": {
    "archived": false,
    "classification": {
@@ -4047,8 +6130,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "projectedan/TigerWoods2004-XBE-Recomp",
+   "id": 1442369185,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-05T00:17:18Z",
    "star_history": [
@@ -4083,8 +6167,9 @@
    "fork": false,
    "forks": 6,
    "full_name": "ravensclawx/SwitchView",
+   "id": 1439253356,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-10-30T05:28:16Z",
    "star_history": [
@@ -4106,15 +6191,26 @@
   },
   "rirko/better-woslicer": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a general offline audio editing utility for making BMS charts, not a playable game or emulator, and it targets Electron/browser rather than handheld-friendly SDL/GLES.",
+    "relevant": false,
+    "summary": "An Electron + TypeScript desktop/web audio slicer tool for BMS music authoring, not a game.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:11Z",
    "created_at": "2026-10-30T04:56:43Z",
    "description": "Electron + TypeScript reimplementation of woslicerIII (BMS wav slicer) - byte-compatible .wos format and slice DSP, DAW-style UI",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 0,
    "full_name": "rirko/better-woslicer",
+   "id": 1439292388,
    "language": "TypeScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T19:16:44Z",
    "star_history": [
@@ -4145,8 +6241,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "rishik250809/bmw-idrive8.5-emulator",
+   "id": 1447354309,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T22:13:19Z",
    "star_history": [
@@ -4175,19 +6272,24 @@
    "description": "Use-case guide to Nintendo Switch 2 emulator forks: builds, games, GPUs, Android, and community reports.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 6,
+   "forks": 7,
    "full_name": "riyadhHDA/wichforks",
+   "id": 1447125601,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T18:00:59Z",
    "star_history": [
     [
      "2026-11-10",
      546
+    ],
+    [
+     "2026-11-10",
+     552
     ]
    ],
-   "stars": 546,
+   "stars": 552,
    "topics": [
     "compatibility",
     "eglantine",
@@ -4199,15 +6301,26 @@
   },
   "sSamuraiDragonfly/Dying-Light-The-Beast": {
    "archived": false,
-   "classification": null,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "Cheats/trainers for commercial games are explicitly excluded, and it is a Windows-only memory-hacking tool with no portable open-source game or engine.",
+    "relevant": false,
+    "summary": "A Windows trainer/cheat tool advertised for Dying Light: The Beast with god mode, infinite ammo and similar features.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:27Z",
    "created_at": "2026-10-29T08:20:39Z",
    "description": "\ud83c\udfaf Dying Light The Beast Hack 2026 - undetected cheat for Windows 10/11. God Mode, Infinite Health, Stamina, UV Flashlight, Infinite Ammo, No Reload, One Hit Kill, Super Accuracy, Instant Beast Mode, Infinite Beast Duration, Infinite XP, Edit Money, Free Crafting, Teleport, Freeze Daytime, Config Sys",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
    "forks": 4,
    "full_name": "sSamuraiDragonfly/Dying-Light-The-Beast",
+   "id": 1438135678,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-10-29T08:21:05Z",
    "star_history": [
@@ -4248,10 +6361,11 @@
    "description": "Boxshelf public beta for Windows, Android (AYN Thor) and Linux / Steam Deck: a TV-style 3D box-art shelf for your emulators, Steam games and media apps.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 20,
+   "forks": 21,
    "full_name": "sassiestrhihno/boxshelf-beta",
+   "id": 1446546399,
    "language": null,
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T16:13:28Z",
    "star_history": [
@@ -4262,9 +6376,13 @@
     [
      "2026-11-10",
      751
+    ],
+    [
+     "2026-11-10",
+     803
     ]
    ],
-   "stars": 751,
+   "stars": 803,
    "topics": [
     "android-handheld",
     "ayn-thor",
@@ -4294,19 +6412,24 @@
    "description": "Boxshelf source code (GPL-3.0): a TV-style 3D box-art shelf for emulators, Steam, Epic and PC ports, on Windows, Android and Linux. Downloads are on boxshelf-beta.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 10,
+   "forks": 11,
    "full_name": "sassiestrhihno/boxshelf-source",
+   "id": 1447385846,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T02:18:34Z",
    "star_history": [
     [
      "2026-11-10",
      46
+    ],
+    [
+     "2026-11-10",
+     47
     ]
    ],
-   "stars": 46,
+   "stars": 47,
    "topics": [],
    "url": "https://github.com/sassiestrhihno/boxshelf-source"
   },
@@ -4328,17 +6451,24 @@
    "fork": false,
    "forks": 1,
    "full_name": "saulob/el-chavo-kart-recompiled",
+   "id": 1441997668,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-08T05:40:16Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 36,
    "star_history": [
     [
      "2026-11-10",
      35
+    ],
+    [
+     "2026-11-10",
+     36
     ]
    ],
-   "stars": 35,
+   "stars": 36,
    "topics": [
     "chaves",
     "chavo",
@@ -4370,10 +6500,13 @@
    "fork": false,
    "forks": 1,
    "full_name": "sebaz07/crashwoc-vita",
+   "id": 1447089092,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-06T11:42:12Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 12,
    "star_history": [
     [
      "2026-11-10",
@@ -4402,17 +6535,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "shibesan-dev/Pocket_DoJa",
+   "id": 1436917115,
    "language": "Java",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-08T18:27:39Z",
    "star_history": [
     [
      "2026-11-10",
      8
+    ],
+    [
+     "2026-11-10",
+     9
     ]
    ],
-   "stars": 8,
+   "stars": 9,
    "topics": [
     "android",
     "android-app",
@@ -4441,19 +6579,24 @@
    "description": "Play The Duskbloods Network Test on Eglantine/Lichii: a launcher with local loopback-only servers for the online checks.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 5,
+   "forks": 6,
    "full_name": "sikoGD/playDB-CNT",
+   "id": 1447133213,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-07T02:23:58Z",
    "star_history": [
     [
      "2026-11-10",
      109
+    ],
+    [
+     "2026-11-10",
+     112
     ]
    ],
-   "stars": 109,
+   "stars": 112,
    "topics": [
     "eglantine",
     "eglantine-emulator",
@@ -4482,10 +6625,11 @@
    "description": "NSP Box: A Switch 2 Game Packager. Experimental Windows tool for lawfully obtained game snapshots and extracted DLC, with reversible emulator patching.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 37,
+   "forks": 38,
    "full_name": "smarkyie/NSP-Box",
+   "id": 1440965926,
    "language": "Python",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-03T18:34:28Z",
    "star_history": [
@@ -4496,9 +6640,13 @@
     [
      "2026-11-10",
      563
+    ],
+    [
+     "2026-11-10",
+     565
     ]
    ],
-   "stars": 563,
+   "stars": 565,
    "topics": [],
    "url": "https://github.com/smarkyie/NSP-Box"
   },
@@ -4520,8 +6668,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "smidley/atv-recomp",
+   "id": 1437297103,
    "language": "Swift",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-06T00:40:03Z",
    "star_history": [
@@ -4563,8 +6712,9 @@
    "fork": false,
    "forks": 72,
    "full_name": "sostenesfreitas/ocarina-recomp",
+   "id": 1448807268,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T22:22:27Z",
    "star_history": [
@@ -4575,9 +6725,13 @@
     [
      "2026-11-10",
      1071
+    ],
+    [
+     "2026-11-10",
+     1076
     ]
    ],
-   "stars": 1071,
+   "stars": 1076,
    "topics": [],
    "url": "https://github.com/sostenesfreitas/ocarina-recomp"
   },
@@ -4599,17 +6753,24 @@
    "fork": false,
    "forks": 0,
    "full_name": "speedydevil007/road-sdl2-rash",
+   "id": 1436793260,
    "language": "HTML",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T10:57:00Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 22,
    "star_history": [
     [
      "2026-11-10",
      21
+    ],
+    [
+     "2026-11-10",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [],
    "url": "https://github.com/speedydevil007/road-sdl2-rash"
   },
@@ -4631,17 +6792,22 @@
    "fork": false,
    "forks": 4,
    "full_name": "spiritkiller/The-Legend-of-Zelda-Ocarina-of-Time-Remake-AllinOne-",
+   "id": 1449395708,
    "language": "Batchfile",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T18:44:48Z",
    "star_history": [
     [
      "2026-11-10",
      26
+    ],
+    [
+     "2026-11-10",
+     27
     ]
    ],
-   "stars": 26,
+   "stars": 27,
    "topics": [],
    "url": "https://github.com/spiritkiller/The-Legend-of-Zelda-Ocarina-of-Time-Remake-AllinOne-"
   },
@@ -4661,19 +6827,24 @@
    "description": "Native app for Stremio addons on LG webOS TVs. Unofficial.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 16,
+   "forks": 17,
    "full_name": "stremio-origin/webos",
+   "id": 1440799556,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-31T12:58:33Z",
    "star_history": [
     [
      "2026-11-10",
      138
+    ],
+    [
+     "2026-11-10",
+     140
     ]
    ],
-   "stars": 138,
+   "stars": 140,
    "topics": [
     "addons",
     "c",
@@ -4704,17 +6875,22 @@
    "fork": false,
    "forks": 26,
    "full_name": "sylvieistaken/selevet-eglantine",
+   "id": 1442030355,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-06T21:43:30Z",
    "star_history": [
     [
      "2026-11-10",
      257
+    ],
+    [
+     "2026-11-10",
+     259
     ]
    ],
-   "stars": 257,
+   "stars": 259,
    "topics": [],
    "url": "https://github.com/sylvieistaken/selevet-eglantine"
   },
@@ -4736,17 +6912,22 @@
    "fork": false,
    "forks": 1,
    "full_name": "tarikbc/ZyperOS",
+   "id": 1449628373,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-10T05:24:02Z",
+   "pushed_at": "2026-11-10T15:20:11Z",
    "star_history": [
     [
      "2026-11-10",
      7
+    ],
+    [
+     "2026-11-10",
+     9
     ]
    ],
-   "stars": 7,
+   "stars": 9,
    "topics": [
     "custom-firmware",
     "emulation",
@@ -4778,8 +6959,9 @@
    "fork": false,
    "forks": 0,
    "full_name": "thefixinhixon/woohoo-flight-school",
+   "id": 1442390491,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-10T05:12:59Z",
    "star_history": [
@@ -4819,12 +7001,13 @@
    "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 525,
+   "forks": 528,
    "full_name": "valentderah/totk-pc-recomp",
+   "id": 1438394948,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
-   "pushed_at": "2026-11-10T06:14:23Z",
+   "pushed_at": "2026-11-10T16:35:34Z",
    "star_history": [
     [
      "2026-11-10",
@@ -4833,9 +7016,13 @@
     [
      "2026-11-10",
      6263
+    ],
+    [
+     "2026-11-10",
+     6356
     ]
    ],
-   "stars": 6263,
+   "stars": 6356,
    "topics": [
     "game",
     "linux",
@@ -4861,10 +7048,11 @@
    "description": "A live iOS simulator and Android emulator panel for Herdr",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "wobsoriano/herdr-sim",
+   "id": 1447426102,
    "language": "JavaScript",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "MIT",
    "pushed_at": "2026-11-05T23:26:07Z",
    "star_history": [
@@ -4898,17 +7086,22 @@
    "fork": false,
    "forks": 0,
    "full_name": "xPXavierx/bleach-soul-resurreccion-recomp",
+   "id": 1449832222,
    "language": "C",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": null,
    "pushed_at": "2026-11-09T01:35:24Z",
    "star_history": [
     [
      "2026-11-10",
      21
+    ],
+    [
+     "2026-11-10",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [
     "dx12",
     "game",
@@ -4921,6 +7114,130 @@
     "x86-64"
    ],
    "url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp"
+  },
+  "xsaja/street-nx": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "Native recompiled game targeting the Switch (ARM64) with SDL-free deko3d; it is a Switch-specific port rather than an ARM handheld target, but the recompilation approach is a real candidate and it needs the user's own game files.",
+    "relevant": true,
+    "summary": "A static recompilation of the Xbox FIFA Street executable into a native Nintendo Switch program, built on the mvp-nx project and using deko3d or Vulkan for graphics.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:42:39Z",
+   "created_at": "2026-10-29T01:06:46Z",
+   "description": "FIFA Street (Xbox, 2005) on the Nintendo Switch: statically recompiled from the original Xbox executable, no emulator. Bring your own copy of the game.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "xsaja/street-nx",
+   "id": 1437801938,
+   "language": "C++",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-10-29T01:24:38Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 6,
+   "star_history": [
+    [
+     "2026-11-10",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/xsaja/street-nx"
+  },
+  "xynnpg/GT6PP": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Windows-only D3D12 target with no playable state yet (boots to a black frame), and it requires the user's own GT6 game data; not a candidate for handheld porting at this stage.",
+    "relevant": false,
+    "summary": "Early-stage static recompilation of Gran Turismo 6 (PS3) targeting native Windows x64 with D3D12, built on ps3recomp.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:23Z",
+   "created_at": "2026-10-31T14:31:03Z",
+   "description": "Gran Turismo 6 statically recompiled for native Windows. No emulator \u2014 pure x86-64. Early bring-up: boots, loads UI scripts, D3D12 present path working. Built with ps3recomp.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "xynnpg/GT6PP",
+   "id": 1440939210,
+   "language": "Python",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-01T13:35:15Z",
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "d3d12",
+    "game-preservation",
+    "gran-turismo",
+    "gt6",
+    "native-port",
+    "ps3",
+    "ps3-recompilation",
+    "racing",
+    "recomp",
+    "static-recompilation"
+   ],
+   "url": "https://github.com/xynnpg/GT6PP"
+  },
+  "yelnady/hercules-native": {
+   "archived": false,
+   "classification": {
+    "category": "engine reimplementation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "medium",
+    "reason": "An SDL2/C engine reimplementation of a commercial game that could be packaged for handhelds, though it needs original data files and is macOS-focused, so porting would need checking.",
+    "relevant": true,
+    "summary": "Native macOS (Apple Silicon) C11/SDL2 re-implementation of the engine for Disney's Hercules Action Game (1997 PC), built by reverse-engineering the original, requiring the user's own game files.",
+    "version": 1
+   },
+   "classified_at": "2026-11-10T16:43:13Z",
+   "created_at": "2026-11-04T01:46:31Z",
+   "description": "Native Apple-Silicon port of Disney's Hercules Action Game (1997), rebuilt by reverse-engineering the PC engine. Bring your own game files.",
+   "first_seen": "2026-11-10T16:40:23Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "yelnady/hercules-native",
+   "id": 1445037931,
+   "language": "C",
+   "last_checked": "2026-11-10T16:40:23Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-04T12:45:55Z",
+   "shown_at": "2026-11-10T16:40:23Z",
+   "shown_stars": 5,
+   "star_history": [
+    [
+     "2026-11-10",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "apple-silicon",
+    "game-preservation",
+    "ghidra",
+    "psx",
+    "reverse-engineering",
+    "sdl2"
+   ],
+   "url": "https://github.com/yelnady/hercules-native"
   },
   "zlinoliver/Holofold": {
    "archived": false,
@@ -4940,8 +7257,9 @@
    "fork": false,
    "forks": 2,
    "full_name": "zlinoliver/Holofold",
+   "id": 1436647779,
    "language": "Swift",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-10-29T00:53:38Z",
    "star_history": [
@@ -4980,10 +7298,11 @@
    "fork": false,
    "forks": 9,
    "full_name": "zombu4/121GW-Open-Firmware",
+   "id": 1442075281,
    "language": "Assembly",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-10T02:39:28Z",
+   "pushed_at": "2026-11-10T14:13:20Z",
    "star_history": [
     [
      "2026-11-10",
@@ -5010,12 +7329,13 @@
    "description": "VERY experimental Nintendo Switch 2 emulator",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 1252,
+   "forks": 1285,
    "full_name": "zortos293/Lichii",
+   "id": 1440927503,
    "language": "C++",
-   "last_checked": "2026-11-10T07:46:19Z",
+   "last_checked": "2026-11-10T16:40:23Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-09T22:52:45Z",
+   "pushed_at": "2026-11-10T15:51:57Z",
    "star_history": [
     [
      "2026-11-10",
@@ -5024,9 +7344,13 @@
     [
      "2026-11-10",
      7805
+    ],
+    [
+     "2026-11-10",
+     8016
     ]
    ],
-   "stars": 7805,
+   "stars": 8016,
    "topics": [],
    "url": "https://github.com/zortos293/Lichii"
   }
@@ -5045,6 +7369,14 @@
    "new": 0,
    "rising": 0,
    "scanned": 136
+  },
+  {
+   "at": "2026-11-10T16:40:23Z",
+   "classified": 63,
+   "excluded": 53,
+   "new": 30,
+   "rising": 0,
+   "scanned": 182
   }
  ]
 }
