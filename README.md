@@ -6,6 +6,12 @@ Weekly crawler that scouts GitHub for new [PortMaster](https://portmaster.games)
 
 A Claude-based take on [Cebion/gh_trending_reports](https://github.com/Cebion/gh_trending_reports), which uses Gemini.
 
+## Hand-picked candidates
+
+Alongside the weekly crawl, [`data/curated.json`](data/curated.json) holds a hand-checked list of open-source ports and remakes, scored for ArkOS/dArkOS, muOS/Knulli and AmberELEC/JELOS/uOS against PortMaster's limits (GLES only, OpenGL 2.1 via gl4es, no Vulkan, often 1 GB RAM), plus notes on Westonpack and gl4es and a list of projects already on PortMaster. It is rendered to `build/curated.html` on every run and published at https://monkeyx-net.github.io/portmaster-trending/curated.html.
+
+Edit the JSON to update it; preview with `python -m crawler.curated`.
+
 ## How it works
 
 `run.py` runs these steps in order:

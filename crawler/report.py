@@ -134,7 +134,7 @@ details[open] summary h2::before {{ content:"▾ "; }}
 <body>
 <div class="wrap">
   <h1>PortMaster <span>Trending</span></h1>
-  <p class="meta">New GitHub projects that could be ported to retro handhelds, sorted by Claude. Updated {now}.</p>
+  <p class="meta">New GitHub projects that could be ported to retro handhelds, sorted by Claude. Updated {now}. See also the <a href="curated.html" style="color:var(--acc)">hand-picked candidates</a> checked against firmware limits.</p>
   <div class="stats">
     <div class="stat"><b>{stats['scanned']}</b><span>repos scanned</span></div>
     <div class="stat"><b>{stats['classified']}</b><span>classified this run</span></div>

@@ -19,6 +19,7 @@ from crawler import config
 from crawler.classify import AuthError, classify
 from crawler.github import GitHub, slim
 from crawler.report import render
+from crawler.curated import render_curated
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(ROOT, "data", "watchlist.json")
@@ -219,6 +220,7 @@ def main():
     tracked = [e for e in wl["repos"].values() if is_candidate(e)]
     stats = {"scanned": len(found), "classified": len(classified)}
     render(new, rising, tracked, excluded, stats, os.path.join(BUILD, "index.html"))
+    render_curated(path=os.path.join(BUILD, "curated.html"))
     # Remember what each candidate looked like when shown, for next week's Rising.
     for e in new + rising:
         e["shown_stars"] = e["stars"]
@@ -228,7 +230,7 @@ def main():
     wl["runs"].append({"at": ts, "scanned": len(found), "new": len(new), "rising": len(rising), "classified": len(classified), "excluded": len(excluded)})
     del wl["runs"][:-52]
     save_watchlist(wl)
-    print("Done: build/index.html")
+    print("Done: build/index.html, build/curated.html")
 
 
 if __name__ == "__main__":
