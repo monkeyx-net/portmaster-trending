@@ -6,11 +6,52 @@ Run on its own with:  python -m crawler.curated
 
 import json
 import os
+from datetime import datetime, timezone
 
 from .report import esc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "data", "curated.json")
+
+def refresh(gh, src=SRC):
+    """Update stars and last default-branch commit date for each candidate
+    that has a `github` repo, and save them back to the JSON. Lookups that
+    fail keep the previous values."""
+    with open(src, encoding="utf-8") as f:
+        d = json.load(f)
+    ok = 0
+    for c in d["candidates"]:
+        name = c.get("github")
+        if not name:
+            continue
+        try:
+            r = gh.repo(name)
+            if not r:
+                print(f"  ! {name}: not found")
+                continue
+            c["stars"] = r.get("stargazers_count")
+            commits = gh._get(f"/repos/{r['full_name']}/commits", {"sha": r["default_branch"], "per_page": 1})
+            if commits:
+                c["last_commit"] = commits[0]["commit"]["committer"]["date"][:10]
+            ok += 1
+        except Exception as e:  # keep the old values
+            print(f"  ! {name}: {e}")
+    if ok:
+        d["repo_stats_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    with open(src, "w", encoding="utf-8") as f:
+        json.dump(d, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    print(f"  {ok} curated repos refreshed")
+    return ok
+
+
+def commit_age(date):
+    """CSS class for how stale a last-commit date is."""
+    if not date:
+        return ""
+    days = (datetime.now(timezone.utc).date() - datetime.strptime(date, "%Y-%m-%d").date()).days
+    return "fresh" if days <= 90 else "stale" if days <= 365 else "old"
+
 
 FIT_CLASS = {"Good": "ok", "Possible": "pos", "Check glibc": "mid", "Hard": "warn", "No": "bad"}
 
@@ -29,13 +70,15 @@ def candidate_row(c, targets):
     text = " ".join(str(v) for v in c.values()).lower()
     return f"""<tr class="row" data-text="{esc(text)}" data-fit="{c['fit']}">
   <td><b>{esc(c['project'])}</b><div class="dim">{esc(c['game'])}</div></td>
+  <td>{link(c['repo'], c.get('github') or c['repo'].split("://", 1)[-1].rstrip("/") if c['repo'] else None)}</td>
+  <td class="num stars" data-v="{c.get('stars') or -1}">{'★ ' + format(c['stars'], ',') if c.get('stars') is not None else '<span class="dim">–</span>'}</td>
+  <td class="num {commit_age(c.get('last_commit'))}" data-v="{esc(c.get('last_commit') or '')}">{esc(c.get('last_commit') or '–')}</td>
   <td class="num"><span class="fit f{c['fit']}">{c['fit']}</span></td>
   <td>{esc(c['status'])}</td>
   {cfw}
   <td>{esc(c['render'])}<div class="dim">{esc(c['runtime'])}</div></td>
   <td>{esc(c['blockers'])}</td>
   <td>{esc(c['data'])}</td>
-  <td>{link(c['repo'], c['repo'].split("://", 1)[-1].replace("github.com/", "").rstrip("/") if c['repo'] else None)}</td>
   <td class="dim">{esc(c['notes'])}<div>Suggestion: {esc(c['suggestion'])}</div></td>
 </tr>"""
 
@@ -92,8 +135,12 @@ th, td {{ text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1
 th {{ color:var(--dim); font-weight:600; white-space:nowrap; }}
 tr:last-child td {{ border-bottom:0; }}
 td.num {{ text-align:center; }}
-.cand td:nth-child(7) {{ min-width:180px; }} .cand td:nth-child(1) {{ min-width:150px; }}
-.cand {{ min-width:1700px; }} .cand td:nth-child(10) {{ min-width:320px; }}
+.cand td:nth-child(10) {{ min-width:180px; }} .cand td:nth-child(1) {{ min-width:150px; }}
+.cand {{ min-width:2050px; }} .cand td:nth-child(12) {{ min-width:320px; }}
+.cand td:nth-child(2) {{ min-width:210px; }} .cand td:nth-child(2) a {{ overflow-wrap:anywhere; }}
+.stars {{ color:var(--mid); white-space:nowrap; }}
+td.fresh {{ color:var(--ok); white-space:nowrap; }} td.stale {{ color:var(--mid); white-space:nowrap; }} td.old {{ color:var(--bad); white-space:nowrap; }}
+th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"; color:var(--line); }}
 .fit {{ display:inline-block; min-width:26px; border-radius:6px; padding:1px 7px; font-weight:700; }}
 .f5 {{ background:#24452f; color:var(--ok); }} .f4 {{ background:#22394f; color:var(--pos); }}
 .f3 {{ background:#4a3f1f; color:var(--mid); }} .f2 {{ background:#4a2f22; color:var(--acc); }} .f1 {{ background:#4a2525; color:var(--bad); }}
@@ -111,6 +158,7 @@ td.num {{ text-align:center; }}
   <h1>PortMaster <span>candidates</span></h1>
   <p class="meta">{esc(d['title'])} · checked {esc(d['as_of'])} · targets: {esc(', '.join(targets))}</p>
   <p class="intro">{esc(d['intro'])}</p>
+  <p class="dim">Stars and last commit (default branch) {('refreshed ' + esc(d['repo_stats_checked'])) if d.get('repo_stats_checked') else 'not yet refreshed'}. Last commit: <span style="color:var(--ok)">≤ 90 days</span>, <span style="color:var(--mid)">≤ 1 year</span>, <span style="color:var(--bad)">older</span>. Click Stars, Last commit or Fit to sort.</p>
 
   <h2>Candidates <small>{len(cands)}</small></h2>
   <div class="tools">
@@ -118,7 +166,7 @@ td.num {{ text-align:center; }}
     <button data-f="" class="on">all</button>{fits}
   </div>
   <div class="xwrap"><table class="cand">
-    <thead><tr><th>Project</th><th>Fit</th><th>PortMaster</th>{heads}<th>Renderer / runtime</th><th>Blockers</th><th>Data</th><th>Source</th><th>Notes</th></tr></thead>
+    <thead><tr><th>Project</th><th>Repo</th><th class="sort" data-k="stars">Stars</th><th class="sort" data-k="commit">Last commit</th><th class="sort" data-k="fit">Fit</th><th>PortMaster</th>{heads}<th>Renderer / runtime</th><th>Blockers</th><th>Data</th><th>Notes</th></tr></thead>
     <tbody>{rows}</tbody>
   </table></div>
 
@@ -147,6 +195,16 @@ function apply() {{
   }});
 }}
 q.addEventListener('input', apply);
+const body = document.querySelector('table.cand tbody');
+const col = {{stars: 2, commit: 3, fit: 4}};
+let last = '';
+document.querySelectorAll('th.sort').forEach(th => th.addEventListener('click', () => {{
+  const k = th.dataset.k, i = col[k];
+  const dir = last === k ? 1 : -1;  // first click: highest / newest first
+  last = last === k ? '' : k;
+  const val = r => {{ const c = r.children[i]; return k === 'fit' ? +c.textContent : k === 'stars' ? +c.dataset.v : c.dataset.v; }};
+  [...body.rows].sort((a, b) => (val(a) > val(b) ? 1 : val(a) < val(b) ? -1 : 0) * dir).forEach(r => body.appendChild(r));
+}}));
 document.querySelectorAll('.tools button').forEach(b => b.addEventListener('click', () => {{
   document.querySelectorAll('.tools button').forEach(x => x.classList.remove('on'));
   b.classList.add('on'); min = +(b.dataset.f || 0); apply();

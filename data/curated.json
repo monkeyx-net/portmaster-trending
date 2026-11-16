@@ -1,67 +1,596 @@
 {
  "title": "Hand-picked port candidates",
  "as_of": "2026-11-16",
- "targets": ["ArkOS / dArkOS", "muOS / Knulli", "AmberELEC / JELOS / uOS"],
+ "targets": [
+  "ArkOS / dArkOS",
+  "muOS / Knulli",
+  "AmberELEC / JELOS / uOS"
+ ],
  "intro": "Open-source ports and remakes on GitHub (and a few elsewhere) checked against PortMaster's catalogue and the limits of Mali-blob firmwares: GLES only, OpenGL 2.1 at most through gl4es, no Vulkan, often 1 GB RAM and 640x480. Fit is 1 (out of reach) to 5 (straightforward). 'Not found' means searches of portmaster.games and its suggestions site found nothing; it is not proof the game is missing.",
  "candidates": [
-  {"project": "Fachoda-Complex", "game": "(free flight combat game)", "fit": 5, "status": "Open suggestion", "cfw": ["Good", "Good", "Good"], "render": "SDL 1.2, software", "runtime": "Native via sdl12-compat", "blockers": "Needs a good controller keymap (gptokeyb)", "data": "None (free)", "suggestion": "Open, feasibility High", "repo": "", "notes": "The PortMaster suggestion says it already compiles fine with sdl1.2-compat. Lowest-effort item here."},
-  {"project": "JA2 Stracciatella", "game": "Jagged Alliance 2", "fit": 5, "status": "Open suggestion", "cfw": ["Good", "Good", "Good"], "render": "SDL2, 2D software", "runtime": "Native SDL2", "blockers": "Mouse-heavy UI needs gptokeyb mouse mapping; Rust toolchain in the build", "data": "JA2 retail data", "suggestion": "Open, Medium, 24 votes", "repo": "https://github.com/ja2-stracciatella/ja2-stracciatella", "notes": "Pure SDL2 with ARM32/ARM64 builds noted on the suggestion. Runs at 640x480, matching most target screens."},
-  {"project": "Dune Legacy", "game": "Dune II", "fit": 4, "status": "Not found", "cfw": ["Good", "Good", "Good"], "render": "SDL2, 2D", "runtime": "Native SDL2", "blockers": "RTS box-select and scrolling on a d-pad or stick", "data": "Dune II PAK files", "suggestion": "None found", "repo": "https://dunelegacy.sourceforge.net/", "notes": "Hosted on SourceForge, not GitHub. Already packaged for aarch64 on OpenBSD, so ARM64 builds are known to work."},
-  {"project": "Vanilla Conquer: Tiberian Dawn", "game": "Command & Conquer", "fit": 4, "status": "Check first", "cfw": ["Good", "Good", "Good"], "render": "SDL2", "runtime": "Native SDL2", "blockers": "Confirm VanillaTD isn't already listed (VanillaRA is)", "data": "C&C (Tiberian Dawn) data", "suggestion": "None found", "repo": "https://github.com/TheAssemblyArmada/Vanilla-Conquer", "notes": "Same codebase as the VanillaRA port already on PortMaster, so likely a quick sibling port."},
-  {"project": "OpenLoco", "game": "Chris Sawyer's Locomotion", "fit": 4, "status": "Not found", "cfw": ["Possible", "Possible", "Possible"], "render": "SDL3, software renderer", "runtime": "Native; bundle SDL3", "blockers": "64-bit only since v25.12 (Dec 2025); no Linux release builds; dense mouse UI at 640x480; big maps on an RK3326 CPU", "data": "Locomotion retail data", "suggestion": "None found", "repo": "https://github.com/OpenLoco/OpenLoco", "notes": "Was 32-bit x86 only until v25.12, which is why it couldn't be ported before. Moved to SDL3 in v26.03."},
-  {"project": "LEGO Island (isle-portable)", "game": "LEGO Island 1.1 (EN)", "fit": 4, "status": "Open suggestion", "cfw": ["Possible", "Possible", "Possible"], "render": "SDL3; OpenGL ES 2.0, ES 3.0 or software renderer", "runtime": "Native GLES2, no gl4es needed", "blockers": "Bundle SDL3; 3D speed on Mali-G31 untested", "data": "LEGO Island 1.1 data", "suggestion": "Open, Low (2024, outdated)", "repo": "https://git.mattkc.com/isledecomp/isle-portable", "notes": "The suggestion says there's no Linux target; that is no longer true. Worth updating the suggestion."},
-  {"project": "Akhenaten", "game": "Pharaoh + Cleopatra", "fit": 4, "status": "Not found", "cfw": ["Possible", "Possible", "Possible"], "render": "SDL2, 2D", "runtime": "Native SDL2", "blockers": "Needs the base game and Cleopatra; city-builder UI at 640x480", "data": "Pharaoh + Cleopatra data", "suggestion": "None found", "repo": "https://github.com/dalerank/Akhenaten", "notes": "Fork of the Julius/Augustus (Caesar III) lineage."},
-  {"project": "Return to the Roots (s25client)", "game": "The Settlers II Gold", "fit": 3, "status": "Not found", "cfw": ["Possible", "Possible", "Possible"], "render": "SDL2 + desktop OpenGL", "runtime": "gl4es (GL 2.1)", "blockers": "Boost and miniupnpc dependencies; renderer untested on gl4es", "data": "Settlers II Gold data", "suggestion": "None found", "repo": "https://github.com/Return-To-The-Roots/s25client", "notes": "SDL2 window, so plain gl4es should do; Westonpack not needed."},
-  {"project": "OpenJK", "game": "Jedi Academy / Jedi Outcast", "fit": 3, "status": "Not found", "cfw": ["Possible", "Possible", "Possible"], "render": "id Tech 3, OpenGL 1.x", "runtime": "gl4es", "blockers": "RAM on 1 GB devices; Jedi Outcast single player is rough upstream", "data": "JA / JO data", "suggestion": "None found", "repo": "https://github.com/JACoders/OpenJK", "notes": "iortcw (same engine family with gl4es) is already on PortMaster, so the path is proven. Search coverage was thin; double-check it isn't listed."},
-  {"project": "SR (Static Recompiler)", "game": "Albion, Warcraft and other 90s DOS/Windows games", "fit": 3, "status": "Open suggestion", "cfw": ["Possible", "Possible", "Possible"], "render": "Per-game SDL binaries", "runtime": "Native ARM", "blockers": "One binary per supported game; mouse-driven UIs", "data": "Each original game", "suggestion": "Open", "repo": "", "notes": "Ran on the GP2X Wiz historically, so CPU needs are low."},
-  {"project": "Super Smash Bros. Melee (native)", "game": "Melee (US 1.02)", "fit": 3, "status": "Out-of-catalogue build", "cfw": ["Possible", "Possible", "Possible"], "render": "Native aarch64 build", "runtime": "Native", "blockers": "Needs your own GALE01 disc dump; AI-assisted port, so quality and legal need review before submission", "data": "Disc dump", "suggestion": "None found", "repo": "https://github.com/zalo/melee", "notes": "Already packaged for PortMaster firmwares (release of 2026-10-03), with a fix for AmberELEC's older PortMaster. Candidate for a catalogue submission."},
-  {"project": "ReNFS5", "game": "Need for Speed: Porsche Unleashed", "fit": 3, "status": "Out-of-catalogue build", "cfw": ["Check glibc", "Possible", "Check glibc"], "render": "OpenGL ES 3.x via SDL2", "runtime": "Native", "blockers": "Needs glibc 2.36+, SDL2_ttf and a GLES3 driver", "data": "NFS5 data", "suggestion": "None found", "repo": "https://github.com/rzrbld/ReNFS5", "notes": "Only tested on H700 / Mali-G31. Older firmware bases may fail the glibc requirement."},
-  {"project": "KeeperFX", "game": "Dungeon Keeper", "fit": 2, "status": "Not found", "cfw": ["Hard", "Hard", "Hard"], "render": "SDL2", "runtime": "Native, once the Linux build matures", "blockers": "Linux build is a community alpha (x86_64 AppImage); ARM untested", "data": "Dungeon Keeper data", "suggestion": "None found", "repo": "https://github.com/dkfans/keeperfx", "notes": "Watch: the native Linux build only appeared in 2026."},
-  {"project": "OpenRA", "game": "C&C, Red Alert, Dune 2000", "fit": 2, "status": "Open suggestion", "cfw": ["Hard", "Hard", "Hard"], "render": "C#/.NET + desktop OpenGL", "runtime": "gl4es or Westonpack, plus a .NET runtime", "blockers": ".NET memory use on 1 GB; GL path", "data": "Free mods; original data for some", "suggestion": "Open, Medium", "repo": "https://github.com/OpenRA/OpenRA", "notes": "Vanilla Conquer is the lighter route to C&C and Red Alert on these devices."},
-  {"project": "Metroid Prime Hunters Recomp", "game": "Metroid Prime Hunters (DS)", "fit": 2, "status": "Not found", "cfw": ["Hard", "Hard", "Hard"], "render": "GLES 3.2 compute (Android branch)", "runtime": "Native", "blockers": "Compute shaders on Mali-G31; dual-screen layout", "data": "ROM", "suggestion": "None found", "repo": "https://github.com/mstan/MetroidPrimeHuntersRecomp", "notes": "The GLES backend was built for Android (AYN Thor)."},
-  {"project": "Mario Strikers Charged", "game": "Mario Strikers Charged", "fit": 2, "status": "WIP", "cfw": ["Hard", "Hard", "Hard"], "render": "GLES3 (Aurora backend)", "runtime": "Native", "blockers": "Not playable yet", "data": "Disc dump", "suggestion": "None found", "repo": "https://github.com/crxssrazr93/mscharged-portmaster", "notes": "Watch."},
-  {"project": "TRX", "game": "Tomb Raider I-III", "fit": 1, "status": "Not found", "cfw": ["No", "No", "No"], "render": "OpenGL 3.3", "runtime": "Mesapack llvmpipe only (too slow)", "blockers": "Needs desktop GL 3.3", "data": "Tomb Raider data", "suggestion": "None found", "repo": "https://github.com/LostArtefacts/TRX", "notes": "TR1 is already covered by OpenLara. Revisit if Westonpack gets OpenGL 3."},
-  {"project": "The Force Engine", "game": "Dark Forces", "fit": 1, "status": "Not found", "cfw": ["No", "No", "No"], "render": "OpenGL 3.3", "runtime": "Mesapack llvmpipe only (too slow)", "blockers": "Needs desktop GL 3.3", "data": "Dark Forces data", "suggestion": "None found", "repo": "https://github.com/luciusDXL/TheForceEngine", "notes": "Revisit if Westonpack gets OpenGL 3."},
-  {"project": "OpenTESArena", "game": "The Elder Scrolls: Arena", "fit": 1, "status": "Open suggestion", "cfw": ["No", "No", "No"], "render": "Vulkan 1.3", "runtime": "Lavapipe (Mesapack) only", "blockers": "Needs Vulkan, which these devices don't have", "data": "Arena data (free)", "suggestion": "Open, Low, 28 votes", "repo": "https://github.com/afritz1/OpenTESArena", "notes": "Now Vulkan-only, so out of reach."}
+  {
+   "project": "Fachoda-Complex",
+   "game": "(free flight combat game)",
+   "github": "rixed/fachoda-complex",
+   "stars": null,
+   "last_commit": "2012-09-03",
+   "fit": 5,
+   "status": "Open suggestion",
+   "cfw": [
+    "Good",
+    "Good",
+    "Good"
+   ],
+   "render": "SDL 1.2, software",
+   "runtime": "Native via sdl12-compat",
+   "blockers": "Needs a good controller keymap (gptokeyb)",
+   "data": "None (free)",
+   "suggestion": "Open, feasibility High",
+   "repo": "https://github.com/rixed/fachoda-complex",
+   "notes": "The PortMaster suggestion says it already compiles fine with sdl1.2-compat. Lowest-effort item here. Upstream has had no commits since 2012, so expect to carry fixes yourself."
+  },
+  {
+   "project": "JA2 Stracciatella",
+   "game": "Jagged Alliance 2",
+   "github": "ja2-stracciatella/ja2-stracciatella",
+   "stars": null,
+   "last_commit": "2026-11-08",
+   "fit": 5,
+   "status": "Open suggestion",
+   "cfw": [
+    "Good",
+    "Good",
+    "Good"
+   ],
+   "render": "SDL2, 2D software",
+   "runtime": "Native SDL2",
+   "blockers": "Mouse-heavy UI needs gptokeyb mouse mapping; Rust toolchain in the build",
+   "data": "JA2 retail data",
+   "suggestion": "Open, Medium, 24 votes",
+   "repo": "https://github.com/ja2-stracciatella/ja2-stracciatella",
+   "notes": "Pure SDL2 with ARM32/ARM64 builds noted on the suggestion. Runs at 640x480, matching most target screens."
+  },
+  {
+   "project": "Dune Legacy",
+   "game": "Dune II",
+   "github": null,
+   "stars": null,
+   "last_commit": null,
+   "fit": 4,
+   "status": "Not found",
+   "cfw": [
+    "Good",
+    "Good",
+    "Good"
+   ],
+   "render": "SDL2, 2D",
+   "runtime": "Native SDL2",
+   "blockers": "RTS box-select and scrolling on a d-pad or stick",
+   "data": "Dune II PAK files",
+   "suggestion": "None found",
+   "repo": "https://dunelegacy.sourceforge.net/",
+   "notes": "Hosted on SourceForge, not GitHub. Already packaged for aarch64 on OpenBSD, so ARM64 builds are known to work."
+  },
+  {
+   "project": "Vanilla Conquer: Tiberian Dawn",
+   "game": "Command & Conquer",
+   "github": "TheAssemblyArmada/Vanilla-Conquer",
+   "stars": null,
+   "last_commit": "2026-11-13",
+   "fit": 4,
+   "status": "Check first",
+   "cfw": [
+    "Good",
+    "Good",
+    "Good"
+   ],
+   "render": "SDL2",
+   "runtime": "Native SDL2",
+   "blockers": "Confirm VanillaTD isn't already listed (VanillaRA is)",
+   "data": "C&C (Tiberian Dawn) data",
+   "suggestion": "None found",
+   "repo": "https://github.com/TheAssemblyArmada/Vanilla-Conquer",
+   "notes": "Same codebase as the VanillaRA port already on PortMaster, so likely a quick sibling port."
+  },
+  {
+   "project": "OpenLoco",
+   "game": "Chris Sawyer's Locomotion",
+   "github": "OpenLoco/OpenLoco",
+   "stars": null,
+   "last_commit": "2026-11-14",
+   "fit": 4,
+   "status": "Not found",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "SDL3, software renderer",
+   "runtime": "Native; bundle SDL3",
+   "blockers": "64-bit only since v25.12 (Dec 2025); no Linux release builds; dense mouse UI at 640x480; big maps on an RK3326 CPU",
+   "data": "Locomotion retail data",
+   "suggestion": "None found",
+   "repo": "https://github.com/OpenLoco/OpenLoco",
+   "notes": "Was 32-bit x86 only until v25.12, which is why it couldn't be ported before. Moved to SDL3 in v26.03."
+  },
+  {
+   "project": "LEGO Island (isle-portable)",
+   "game": "LEGO Island 1.1 (EN)",
+   "github": "isledecomp/isle-portable",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 4,
+   "status": "Open suggestion",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "SDL3; OpenGL ES 2.0, ES 3.0 or software renderer",
+   "runtime": "Native GLES2, no gl4es needed",
+   "blockers": "Bundle SDL3; 3D speed on Mali-G31 untested",
+   "data": "LEGO Island 1.1 data",
+   "suggestion": "Open, Low (2024, outdated)",
+   "repo": "https://github.com/isledecomp/isle-portable",
+   "notes": "The suggestion says there's no Linux target; that is no longer true. Worth updating the suggestion."
+  },
+  {
+   "project": "Akhenaten",
+   "game": "Pharaoh + Cleopatra",
+   "github": "dalerank/Akhenaten",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 4,
+   "status": "Not found",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "SDL2, 2D",
+   "runtime": "Native SDL2",
+   "blockers": "Needs the base game and Cleopatra; city-builder UI at 640x480",
+   "data": "Pharaoh + Cleopatra data",
+   "suggestion": "None found",
+   "repo": "https://github.com/dalerank/Akhenaten",
+   "notes": "Fork of the Julius/Augustus (Caesar III) lineage."
+  },
+  {
+   "project": "Return to the Roots (s25client)",
+   "game": "The Settlers II Gold",
+   "github": "Return-To-The-Roots/s25client",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 3,
+   "status": "Not found",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "SDL2 + desktop OpenGL",
+   "runtime": "gl4es (GL 2.1)",
+   "blockers": "Boost and miniupnpc dependencies; renderer untested on gl4es",
+   "data": "Settlers II Gold data",
+   "suggestion": "None found",
+   "repo": "https://github.com/Return-To-The-Roots/s25client",
+   "notes": "SDL2 window, so plain gl4es should do; Westonpack not needed."
+  },
+  {
+   "project": "OpenJK",
+   "game": "Jedi Academy / Jedi Outcast",
+   "github": "JACoders/OpenJK",
+   "stars": null,
+   "last_commit": "2026-09-29",
+   "fit": 3,
+   "status": "Not found",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "id Tech 3, OpenGL 1.x",
+   "runtime": "gl4es",
+   "blockers": "RAM on 1 GB devices; Jedi Outcast single player is rough upstream",
+   "data": "JA / JO data",
+   "suggestion": "None found",
+   "repo": "https://github.com/JACoders/OpenJK",
+   "notes": "iortcw (same engine family with gl4es) is already on PortMaster, so the path is proven. Search coverage was thin; double-check it isn't listed."
+  },
+  {
+   "project": "SR (Static Recompiler)",
+   "game": "Albion, Warcraft and other 90s DOS/Windows games",
+   "github": "M-HT/SR",
+   "stars": null,
+   "last_commit": "2026-08-27",
+   "fit": 3,
+   "status": "Open suggestion",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "Per-game SDL binaries",
+   "runtime": "Native ARM",
+   "blockers": "One binary per supported game; mouse-driven UIs",
+   "data": "Each original game",
+   "suggestion": "Open",
+   "repo": "https://github.com/M-HT/SR",
+   "notes": "Static recompiler by M-HT; ran on the GP2X Wiz historically, so CPU needs are low."
+  },
+  {
+   "project": "Super Smash Bros. Melee (native)",
+   "game": "Melee (US 1.02)",
+   "github": "zalo/melee",
+   "stars": null,
+   "last_commit": "2026-10-21",
+   "fit": 3,
+   "status": "Out-of-catalogue build",
+   "cfw": [
+    "Possible",
+    "Possible",
+    "Possible"
+   ],
+   "render": "Native aarch64 build",
+   "runtime": "Native",
+   "blockers": "Needs your own GALE01 disc dump; AI-assisted port, so quality and legal need review before submission",
+   "data": "Disc dump",
+   "suggestion": "None found",
+   "repo": "https://github.com/zalo/melee",
+   "notes": "Already packaged for PortMaster firmwares (release of 2026-10-03), with a fix for AmberELEC's older PortMaster. Candidate for a catalogue submission."
+  },
+  {
+   "project": "ReNFS5",
+   "game": "Need for Speed: Porsche Unleashed",
+   "github": "rzrbld/ReNFS5",
+   "stars": null,
+   "last_commit": "2026-11-13",
+   "fit": 3,
+   "status": "Out-of-catalogue build",
+   "cfw": [
+    "Check glibc",
+    "Possible",
+    "Check glibc"
+   ],
+   "render": "OpenGL ES 3.x via SDL2",
+   "runtime": "Native",
+   "blockers": "Needs glibc 2.36+, SDL2_ttf and a GLES3 driver",
+   "data": "NFS5 data",
+   "suggestion": "None found",
+   "repo": "https://github.com/rzrbld/ReNFS5",
+   "notes": "Only tested on H700 / Mali-G31. Older firmware bases may fail the glibc requirement."
+  },
+  {
+   "project": "KeeperFX",
+   "game": "Dungeon Keeper",
+   "github": "dkfans/keeperfx",
+   "stars": null,
+   "last_commit": "2026-11-14",
+   "fit": 2,
+   "status": "Not found",
+   "cfw": [
+    "Hard",
+    "Hard",
+    "Hard"
+   ],
+   "render": "SDL2",
+   "runtime": "Native, once the Linux build matures",
+   "blockers": "Linux build is a community alpha (x86_64 AppImage); ARM untested",
+   "data": "Dungeon Keeper data",
+   "suggestion": "None found",
+   "repo": "https://github.com/dkfans/keeperfx",
+   "notes": "Watch: the native Linux build only appeared in 2026."
+  },
+  {
+   "project": "OpenRA",
+   "game": "C&C, Red Alert, Dune 2000",
+   "github": "OpenRA/OpenRA",
+   "stars": null,
+   "last_commit": "2026-11-08",
+   "fit": 2,
+   "status": "Open suggestion",
+   "cfw": [
+    "Hard",
+    "Hard",
+    "Hard"
+   ],
+   "render": "C#/.NET + desktop OpenGL",
+   "runtime": "gl4es or Westonpack, plus a .NET runtime",
+   "blockers": ".NET memory use on 1 GB; GL path",
+   "data": "Free mods; original data for some",
+   "suggestion": "Open, Medium",
+   "repo": "https://github.com/OpenRA/OpenRA",
+   "notes": "Vanilla Conquer is the lighter route to C&C and Red Alert on these devices."
+  },
+  {
+   "project": "Metroid Prime Hunters Recomp",
+   "game": "Metroid Prime Hunters (DS)",
+   "github": "mstan/MetroidPrimeHuntersRecomp",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 2,
+   "status": "Not found",
+   "cfw": [
+    "Hard",
+    "Hard",
+    "Hard"
+   ],
+   "render": "GLES 3.2 compute (Android branch)",
+   "runtime": "Native",
+   "blockers": "Compute shaders on Mali-G31; dual-screen layout",
+   "data": "ROM",
+   "suggestion": "None found",
+   "repo": "https://github.com/mstan/MetroidPrimeHuntersRecomp",
+   "notes": "The GLES backend was built for Android (AYN Thor)."
+  },
+  {
+   "project": "Mario Strikers Charged",
+   "game": "Mario Strikers Charged",
+   "github": "crxssrazr93/mscharged-portmaster",
+   "stars": null,
+   "last_commit": "2026-10-13",
+   "fit": 2,
+   "status": "WIP",
+   "cfw": [
+    "Hard",
+    "Hard",
+    "Hard"
+   ],
+   "render": "GLES3 (Aurora backend)",
+   "runtime": "Native",
+   "blockers": "Not playable yet",
+   "data": "Disc dump",
+   "suggestion": "None found",
+   "repo": "https://github.com/crxssrazr93/mscharged-portmaster",
+   "notes": "Watch."
+  },
+  {
+   "project": "TRX",
+   "game": "Tomb Raider I-III",
+   "github": "LostArtefacts/TRX",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 1,
+   "status": "Not found",
+   "cfw": [
+    "No",
+    "No",
+    "No"
+   ],
+   "render": "OpenGL 3.3",
+   "runtime": "Mesapack llvmpipe only (too slow)",
+   "blockers": "Needs desktop GL 3.3",
+   "data": "Tomb Raider data",
+   "suggestion": "None found",
+   "repo": "https://github.com/LostArtefacts/TRX",
+   "notes": "TR1 is already covered by OpenLara. Revisit if Westonpack gets OpenGL 3."
+  },
+  {
+   "project": "The Force Engine",
+   "game": "Dark Forces",
+   "github": "luciusDXL/TheForceEngine",
+   "stars": null,
+   "last_commit": "2026-11-15",
+   "fit": 1,
+   "status": "Not found",
+   "cfw": [
+    "No",
+    "No",
+    "No"
+   ],
+   "render": "OpenGL 3.3",
+   "runtime": "Mesapack llvmpipe only (too slow)",
+   "blockers": "Needs desktop GL 3.3",
+   "data": "Dark Forces data",
+   "suggestion": "None found",
+   "repo": "https://github.com/luciusDXL/TheForceEngine",
+   "notes": "Revisit if Westonpack gets OpenGL 3."
+  },
+  {
+   "project": "OpenTESArena",
+   "game": "The Elder Scrolls: Arena",
+   "github": "afritz1/OpenTESArena",
+   "stars": null,
+   "last_commit": "2026-11-14",
+   "fit": 1,
+   "status": "Open suggestion",
+   "cfw": [
+    "No",
+    "No",
+    "No"
+   ],
+   "render": "Vulkan 1.3",
+   "runtime": "Lavapipe (Mesapack) only",
+   "blockers": "Needs Vulkan, which these devices don't have",
+   "data": "Arena data (free)",
+   "suggestion": "Open, Low, 28 votes",
+   "repo": "https://github.com/afritz1/OpenTESArena",
+   "notes": "Now Vulkan-only, so out of reach."
+  }
  ],
  "already_on_portmaster": [
-  {"project": "Return to Castle Wolfenstein", "engine": "iortcw", "evidence": "portmaster.games detail page"},
-  {"project": "Arcanum", "engine": "Arcanum Community Edition", "evidence": "portmaster.games detail page, updated 2026-08-25"},
-  {"project": "Heroes of Might and Magic III", "engine": "VCMI", "evidence": "vcmi.eu download page lists PortMaster"},
-  {"project": "Red Alert", "engine": "VanillaRA (Vanilla Conquer)", "evidence": "PortMaster games list, Ready to Run"},
-  {"project": "Morrowind", "engine": "OpenMW", "evidence": "Suggestion marked Complete; maintainers note performance is unplayable on current devices"},
-  {"project": "Blood", "engine": "Blood source port", "evidence": "PortMaster games list, Premium"},
-  {"project": "X-COM / TFTD", "engine": "OpenXcom Extended", "evidence": "portmaster.games detail page"},
-  {"project": "Tomb Raider I", "engine": "OpenLara", "evidence": "portmaster.games detail page"},
-  {"project": "Quake II remaster data", "engine": "Q2Pro", "evidence": "Suggestion marked Complete"},
-  {"project": "Medal of Honor: Allied Assault", "engine": "OpenMoHAA", "evidence": "Suggestion marked Complete"},
-  {"project": "Ion Fury", "engine": "EDuke32", "evidence": "Suggestion marked Complete"},
-  {"project": "Tyrian 2000", "engine": "OpenTyrian2000", "evidence": "Suggestion marked Complete"},
-  {"project": "Zelda: Twilight Princess", "engine": "Dusklight", "evidence": "PortMaster roundup, July 2026"},
-  {"project": "Remnants of Naezith", "engine": "box64 + Westonpack + gl4es", "evidence": "PortMaster-New PR #2751 (Oct 2026)"},
-  {"project": "Ittle Dew", "engine": "box64 + patched gl4es, no Westonpack", "evidence": "PortMaster-New PR #2747"}
+  {
+   "project": "Return to Castle Wolfenstein",
+   "engine": "iortcw",
+   "evidence": "portmaster.games detail page"
+  },
+  {
+   "project": "Arcanum",
+   "engine": "Arcanum Community Edition",
+   "evidence": "portmaster.games detail page, updated 2026-08-25"
+  },
+  {
+   "project": "Heroes of Might and Magic III",
+   "engine": "VCMI",
+   "evidence": "vcmi.eu download page lists PortMaster"
+  },
+  {
+   "project": "Red Alert",
+   "engine": "VanillaRA (Vanilla Conquer)",
+   "evidence": "PortMaster games list, Ready to Run"
+  },
+  {
+   "project": "Morrowind",
+   "engine": "OpenMW",
+   "evidence": "Suggestion marked Complete; maintainers note performance is unplayable on current devices"
+  },
+  {
+   "project": "Blood",
+   "engine": "Blood source port",
+   "evidence": "PortMaster games list, Premium"
+  },
+  {
+   "project": "X-COM / TFTD",
+   "engine": "OpenXcom Extended",
+   "evidence": "portmaster.games detail page"
+  },
+  {
+   "project": "Tomb Raider I",
+   "engine": "OpenLara",
+   "evidence": "portmaster.games detail page"
+  },
+  {
+   "project": "Quake II remaster data",
+   "engine": "Q2Pro",
+   "evidence": "Suggestion marked Complete"
+  },
+  {
+   "project": "Medal of Honor: Allied Assault",
+   "engine": "OpenMoHAA",
+   "evidence": "Suggestion marked Complete"
+  },
+  {
+   "project": "Ion Fury",
+   "engine": "EDuke32",
+   "evidence": "Suggestion marked Complete"
+  },
+  {
+   "project": "Tyrian 2000",
+   "engine": "OpenTyrian2000",
+   "evidence": "Suggestion marked Complete"
+  },
+  {
+   "project": "Zelda: Twilight Princess",
+   "engine": "Dusklight",
+   "evidence": "PortMaster roundup, July 2026"
+  },
+  {
+   "project": "Remnants of Naezith",
+   "engine": "box64 + Westonpack + gl4es",
+   "evidence": "PortMaster-New PR #2751 (Oct 2026)"
+  },
+  {
+   "project": "Ittle Dew",
+   "engine": "box64 + patched gl4es, no Westonpack",
+   "evidence": "PortMaster-New PR #2747"
+  }
  ],
  "runtimes": [
-  {"name": "Westonpack (base)", "state": "v0.2.6.1; ports reference it as weston_pkg_0.2", "unlocks": "X11 and Wayland apps; OpenGL 2.1 through gl4es; OpenGL ES 3.2; emulated GLX, EGL and GBM", "limits": "pixman renderer broken; drm backend can't be combined with gl4es; Unity and Wine experimental; OpenGL 3 only listed as possible future work", "cfw": "Broad support on ArkOS, AmberELEC and Knulli. muOS: headless works with LIBGL_FB=1, drm mode has performance issues. Knulli on A133P: VirGL slow."},
-  {"name": "crusty_glx_gl4es", "state": "Most-used mode in recent ports", "unlocks": "GL 2.x desktop games over X11/GLX, such as box64'd Linux builds (Remnants of Naezith about 37 fps on an RG35XX H)", "limits": "Decent speed and compatibility, not native", "cfw": "Works on Mali-blob devices; the safe default"},
-  {"name": "crusty_x11egl", "state": "Experimental", "unlocks": "GLES apps that insist on X11/EGL; Unity Linux players after shader rewrites to GLSL ES 3.00 (Shogun Showdown, 20 Minutes Till Dawn)", "limits": "Needs a GLES3 GPU, often ASTC textures; those Unity ports ran 14 to 30 fps on a 1 GB H700", "cfw": "Panfrost: set CRUSTY_GLES=31"},
-  {"name": "crusty_gbm", "state": "Experimental", "unlocks": "Apps that drive DRM/KMS directly", "limits": "Mediocre compatibility, per its author", "cfw": ""},
-  {"name": "Mesapack (mesa_pkg_0.1)", "state": "Optional add-on", "unlocks": "GL 4.x (llvmpipe), GL 2.1 (VirGL), Vulkan 1.3 (Lavapipe), DirectX 9 (Gallium Nine)", "limits": "LLVMPipe and Lavapipe are very slow; only light 2D GL3 or Vulkan apps are practical", "cfw": "The only route for GL 3.3 or Vulkan candidates (TRX, The Force Engine, OpenTESArena), and too slow for them"},
-  {"name": "gl4es (standard use)", "state": "Upstream ptitSeb/gl4es; PortMaster docs recommend LIBGL_ES=2, LIBGL_GL=21, LIBGL_FB=4", "unlocks": "Desktop GL 1.5 to 2.1 on GLES2 hardware; most id Tech 3 and SDL+GL ports", "limits": "No depth/stencil readback, no GL_FEEDBACK, no accum, NPOT only with GL_CLAMP, no multiple colour attachments", "cfw": "The Mali blob on RK3326, RK3566 and H700 is GLES-only, so this is the main bridge"},
-  {"name": "gl4es rework in recent ports", "state": "No single upstream release found; it's a pattern in 2026 port submissions", "unlocks": "Ports ship their own patched gl4es plus tiny X11/GLX stand-ins drawing through SDL2, skipping Westonpack. Ittle Dew: no 55 MB runtime download, about 600 KB added", "limits": "Fixes live in per-port copies and aren't shared until merged into a runtime", "cfw": "Some launch scripts only enable gl4es when the firmware sets LIBGL_FB or LIBGL_ES and skip it where native GL exists; some force a conservative no-probe profile (LIBGL_NOTEST=1)"},
-  {"name": "PortMaster requirement tags", "state": "Shown in the games list filter", "unlocks": "power = CPU above RK3326; opengl = real desktop GL; 2gb / 4gb = RAM; hires = above 640x480; !lowres = won't run at 480x320", "limits": "", "cfw": "Use these to tag new submissions"},
-  {"name": "Older PortMaster on AmberELEC", "state": "AmberELEC ships PortMaster 2024.12.31", "unlocks": "", "limits": "Lacks newer helper functions such as pm_platform_helper; launch scripts need fallbacks", "cfw": "Test new ports there explicitly"}
+  {
+   "name": "Westonpack (base)",
+   "state": "v0.2.6.1; ports reference it as weston_pkg_0.2",
+   "unlocks": "X11 and Wayland apps; OpenGL 2.1 through gl4es; OpenGL ES 3.2; emulated GLX, EGL and GBM",
+   "limits": "pixman renderer broken; drm backend can't be combined with gl4es; Unity and Wine experimental; OpenGL 3 only listed as possible future work",
+   "cfw": "Broad support on ArkOS, AmberELEC and Knulli. muOS: headless works with LIBGL_FB=1, drm mode has performance issues. Knulli on A133P: VirGL slow."
+  },
+  {
+   "name": "crusty_glx_gl4es",
+   "state": "Most-used mode in recent ports",
+   "unlocks": "GL 2.x desktop games over X11/GLX, such as box64'd Linux builds (Remnants of Naezith about 37 fps on an RG35XX H)",
+   "limits": "Decent speed and compatibility, not native",
+   "cfw": "Works on Mali-blob devices; the safe default"
+  },
+  {
+   "name": "crusty_x11egl",
+   "state": "Experimental",
+   "unlocks": "GLES apps that insist on X11/EGL; Unity Linux players after shader rewrites to GLSL ES 3.00 (Shogun Showdown, 20 Minutes Till Dawn)",
+   "limits": "Needs a GLES3 GPU, often ASTC textures; those Unity ports ran 14 to 30 fps on a 1 GB H700",
+   "cfw": "Panfrost: set CRUSTY_GLES=31"
+  },
+  {
+   "name": "crusty_gbm",
+   "state": "Experimental",
+   "unlocks": "Apps that drive DRM/KMS directly",
+   "limits": "Mediocre compatibility, per its author",
+   "cfw": ""
+  },
+  {
+   "name": "Mesapack (mesa_pkg_0.1)",
+   "state": "Optional add-on",
+   "unlocks": "GL 4.x (llvmpipe), GL 2.1 (VirGL), Vulkan 1.3 (Lavapipe), DirectX 9 (Gallium Nine)",
+   "limits": "LLVMPipe and Lavapipe are very slow; only light 2D GL3 or Vulkan apps are practical",
+   "cfw": "The only route for GL 3.3 or Vulkan candidates (TRX, The Force Engine, OpenTESArena), and too slow for them"
+  },
+  {
+   "name": "gl4es (standard use)",
+   "state": "Upstream ptitSeb/gl4es; PortMaster docs recommend LIBGL_ES=2, LIBGL_GL=21, LIBGL_FB=4",
+   "unlocks": "Desktop GL 1.5 to 2.1 on GLES2 hardware; most id Tech 3 and SDL+GL ports",
+   "limits": "No depth/stencil readback, no GL_FEEDBACK, no accum, NPOT only with GL_CLAMP, no multiple colour attachments",
+   "cfw": "The Mali blob on RK3326, RK3566 and H700 is GLES-only, so this is the main bridge"
+  },
+  {
+   "name": "gl4es rework in recent ports",
+   "state": "No single upstream release found; it's a pattern in 2026 port submissions",
+   "unlocks": "Ports ship their own patched gl4es plus tiny X11/GLX stand-ins drawing through SDL2, skipping Westonpack. Ittle Dew: no 55 MB runtime download, about 600 KB added",
+   "limits": "Fixes live in per-port copies and aren't shared until merged into a runtime",
+   "cfw": "Some launch scripts only enable gl4es when the firmware sets LIBGL_FB or LIBGL_ES and skip it where native GL exists; some force a conservative no-probe profile (LIBGL_NOTEST=1)"
+  },
+  {
+   "name": "PortMaster requirement tags",
+   "state": "Shown in the games list filter",
+   "unlocks": "power = CPU above RK3326; opengl = real desktop GL; 2gb / 4gb = RAM; hires = above 640x480; !lowres = won't run at 480x320",
+   "limits": "",
+   "cfw": "Use these to tag new submissions"
+  },
+  {
+   "name": "Older PortMaster on AmberELEC",
+   "state": "AmberELEC ships PortMaster 2024.12.31",
+   "unlocks": "",
+   "limits": "Lacks newer helper functions such as pm_platform_helper; launch scripts need fallbacks",
+   "cfw": "Test new ports there explicitly"
+  }
  ],
  "sources": [
-  ["Westonpack wiki", "https://github.com/binarycounter/Westonpack/wiki"],
-  ["PortMaster porting guide", "https://portmaster.games/porting.html"],
-  ["PortMaster FAQ", "https://portmaster.games/faq/"],
-  ["Ittle Dew PR #2747", "https://github.com/PortsMaster/PortMaster-New/pull/2747"],
-  ["The Swapper PR #2583", "https://github.com/PortsMaster/PortMaster-New/pull/2583"],
-  ["Remnants of Naezith PR #2751", "https://github.com/PortsMaster/PortMaster-New/pull/2751"],
-  ["JA2 Stracciatella suggestion", "https://suggestions.portmaster.games/suggestion-details?id=6d31179161314053820ab0f9d996df0e"],
-  ["Fachoda-Complex suggestion", "https://suggestions.portmaster.games/suggestion-details?id=9f0cc17a5b614a0780146332bb0f7743"],
-  ["OpenLoco v25.12", "https://openloco.io/news/2025/12/openloco-v25.12.html"],
-  ["zalo/melee releases", "https://github.com/zalo/melee/releases"]
- ]
+  [
+   "Westonpack wiki",
+   "https://github.com/binarycounter/Westonpack/wiki"
+  ],
+  [
+   "PortMaster porting guide",
+   "https://portmaster.games/porting.html"
+  ],
+  [
+   "PortMaster FAQ",
+   "https://portmaster.games/faq/"
+  ],
+  [
+   "Ittle Dew PR #2747",
+   "https://github.com/PortsMaster/PortMaster-New/pull/2747"
+  ],
+  [
+   "The Swapper PR #2583",
+   "https://github.com/PortsMaster/PortMaster-New/pull/2583"
+  ],
+  [
+   "Remnants of Naezith PR #2751",
+   "https://github.com/PortsMaster/PortMaster-New/pull/2751"
+  ],
+  [
+   "JA2 Stracciatella suggestion",
+   "https://suggestions.portmaster.games/suggestion-details?id=6d31179161314053820ab0f9d996df0e"
+  ],
+  [
+   "Fachoda-Complex suggestion",
+   "https://suggestions.portmaster.games/suggestion-details?id=9f0cc17a5b614a0780146332bb0f7743"
+  ],
+  [
+   "OpenLoco v25.12",
+   "https://openloco.io/news/2025/12/openloco-v25.12.html"
+  ],
+  [
+   "zalo/melee releases",
+   "https://github.com/zalo/melee/releases"
+  ]
+ ],
+ "repo_stats_checked": null
 }

@@ -19,7 +19,7 @@ from crawler import config
 from crawler.classify import AuthError, classify
 from crawler.github import GitHub, slim
 from crawler.report import render
-from crawler.curated import render_curated
+from crawler.curated import refresh as refresh_curated, render_curated
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(ROOT, "data", "watchlist.json")
@@ -210,6 +210,9 @@ def main():
         (wl["repos"][n] for n in classified if not wl["repos"][n]["classification"].get("relevant")),
         key=lambda e: -e["stars"],
     )
+
+    print("Curated")
+    refresh_curated(gh)
 
     print("Promote")
     new, rising = promote(wl)
