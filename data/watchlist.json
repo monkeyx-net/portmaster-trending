@@ -66,9 +66,9 @@
    "full_name": "0xrnp/lazymobile",
    "id": 1457462443,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
-   "pushed_at": "2026-11-17T06:48:57Z",
+   "pushed_at": "2026-11-17T08:49:15Z",
    "star_history": [
     [
      "2026-11-16",
@@ -111,7 +111,7 @@
    "full_name": "114514hhha233/shizuku-keypad",
    "id": 1455051881,
    "language": "Kotlin",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T07:50:43Z",
    "star_history": [
@@ -156,7 +156,7 @@
    "full_name": "11NU0/taisei-android",
    "id": 1449351408,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T04:59:20Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -201,7 +201,7 @@
    "full_name": "1234bpv/PS1Emulator",
    "id": 1447636282,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-15T07:19:57Z",
    "star_history": [
@@ -285,7 +285,7 @@
    "full_name": "2whitelol/project-plumb-vr",
    "id": 1451636309,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T15:39:03Z",
    "star_history": [
@@ -329,7 +329,7 @@
    "full_name": "Anime-Vanguards/roblox-engine-emulator",
    "id": 1448629336,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-17T02:44:02Z",
    "star_history": [
@@ -380,7 +380,7 @@
    "full_name": "Ariasmaze29819/pc-rpgmaker3-resp",
    "id": 1446941932,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T11:58:29Z",
    "star_history": [
@@ -414,6 +414,51 @@
    ],
    "url": "https://github.com/Ariasmaze29819/pc-rpgmaker3-resp"
   },
+  "Ay1man2/Wintainium": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a Windows-only PowerShell updater utility, not a game, emulator, or engine that could be packaged for handheld ARM Linux devices.",
+    "relevant": false,
+    "summary": "A PowerShell-based Windows app manager that tracks and updates emulators, PC ports, and tools from their release pages.",
+    "version": 1
+   },
+   "classified_at": "2026-11-17T08:58:02Z",
+   "created_at": "2026-11-15T19:38:22Z",
+   "description": "Obtainium-style app manager for Windows: track, install and update emulators, PC ports, mods and tools straight from their release pages.",
+   "first_seen": "2026-11-17T08:57:02Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Ay1man2/Wintainium",
+   "id": 1459173273,
+   "language": "PowerShell",
+   "last_checked": "2026-11-17T08:57:02Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-16T04:09:46Z",
+   "star_history": [
+    [
+     "2026-11-17",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "emudeck",
+    "emulation",
+    "github-releases",
+    "obtainium",
+    "obtainium-apps",
+    "powershell",
+    "powershell-script",
+    "updater-script",
+    "updater-tool",
+    "windows"
+   ],
+   "url": "https://github.com/Ay1man2/Wintainium"
+  },
   "Berny23/slingshot-animals-recomp": {
    "archived": false,
    "classification": {
@@ -430,11 +475,11 @@
    "description": "Unofficial static recompilation of Rovio's old Android Angry Birds games. Classic, Seasons, Rio, Space, Star Wars, Star Wars 2, Stella.",
    "first_seen": "2026-11-17T06:50:07Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "Berny23/slingshot-animals-recomp",
    "id": 1460793150,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T03:20:32Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -443,9 +488,13 @@
     [
      "2026-11-17",
      7
+    ],
+    [
+     "2026-11-17",
+     14
     ]
    ],
-   "stars": 7,
+   "stars": 14,
    "topics": [
     "android",
     "cpp",
@@ -481,7 +530,7 @@
    "full_name": "BlackLineInteractive/FerrariVirtualRace-MacOS-Port",
    "id": 1454671112,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-12T10:15:41Z",
    "star_history": [
@@ -565,7 +614,7 @@
    "full_name": "CYBERPUNK20/godfather-nx",
    "id": 1443102468,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-13T02:03:27Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -642,7 +691,7 @@
    "full_name": "CheezerWheezer/CheezyEmu",
    "id": 1451212456,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-14T22:04:26Z",
    "star_history": [
@@ -684,7 +733,7 @@
    "full_name": "Ciphay/Vacuumflix",
    "id": 1451833454,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-12T18:22:07Z",
    "star_history": [
@@ -764,7 +813,7 @@
    "full_name": "CoastRedWood/splashdown",
    "id": 1443254334,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-03T00:03:55Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -850,7 +899,7 @@
    "full_name": "Cracko298/NovaLauncher",
    "id": 1445949580,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-07T14:33:37Z",
    "star_history": [
@@ -884,7 +933,7 @@
    "full_name": "CreamySeaman6/Exvius-Revival-Desktop",
    "id": 1454488207,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-12T22:18:32Z",
    "star_history": [
@@ -918,7 +967,7 @@
    "full_name": "D33ptar00p/emulator-ui",
    "id": 1455415563,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-12T22:20:01Z",
    "star_history": [
@@ -1053,7 +1102,7 @@
    "full_name": "DasCondor/kubefactory",
    "id": 1457095783,
    "language": "GDScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-17T02:38:09Z",
    "star_history": [
@@ -1108,7 +1157,7 @@
    "full_name": "DevanshSampat/android-emulator-windows-arm64",
    "id": 1448152399,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T08:37:42Z",
    "star_history": [
@@ -1180,7 +1229,7 @@
    "full_name": "Dgdiniz/retrolab-emulator",
    "id": 1454101443,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T00:22:40Z",
    "star_history": [
@@ -1224,7 +1273,7 @@
    "full_name": "Dima353/heroes_lore_decomp",
    "id": 1449485658,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-13T19:33:19Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -1260,7 +1309,7 @@
    "full_name": "DorianloopTerror59822/rpocket-yuzu-emulator-nintendo-switch-tutorial",
    "id": 1455588854,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-12T16:59:50Z",
    "star_history": [
@@ -1310,7 +1359,7 @@
    "full_name": "EddizEge/Anka",
    "id": 1447556771,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-11T17:14:08Z",
    "star_history": [
@@ -1431,7 +1480,7 @@
    "full_name": "EliasFD3S/openslrr",
    "id": 1444746666,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-17T02:02:04Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -1474,7 +1523,7 @@
    "full_name": "Forcevacavity/ps5-emulator-pc",
    "id": 1449558121,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T17:34:16Z",
    "star_history": [
@@ -1618,7 +1667,7 @@
    "full_name": "GreenKaelup/Respocket-Yuzu-Emulator-Reworked-v2",
    "id": 1446943171,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T11:59:52Z",
    "star_history": [
@@ -1673,7 +1722,7 @@
    "full_name": "Guuzzeji/otogi-xunchain",
    "id": 1449942986,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T20:22:14Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -1738,7 +1787,7 @@
    "full_name": "HeroFromUnicorn67004/PS5X-Next-Generation-PlayStation-Emulation-Platform",
    "id": 1457202252,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-15T11:39:44Z",
    "star_history": [
@@ -1784,7 +1833,7 @@
    "full_name": "HiramRG/Delphis",
    "id": 1446389496,
    "language": "Kotlin",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-17T00:58:41Z",
    "star_history": [
@@ -1825,7 +1874,7 @@
    "full_name": "HyperaebaseAlpha/infamous2-pc-respocket",
    "id": 1451184124,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-09T09:45:54Z",
    "star_history": [
@@ -1914,18 +1963,22 @@
    "full_name": "Jared-woodruff/TA-Reborn",
    "id": 1451110890,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-16T22:30:01Z",
+   "pushed_at": "2026-11-17T08:56:54Z",
    "shown_at": "2026-11-16T09:59:11Z",
    "shown_stars": 21,
    "star_history": [
     [
      "2026-11-16",
      21
+    ],
+    [
+     "2026-11-17",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [
     "cavedog",
     "clean-room",
@@ -1999,7 +2052,7 @@
    "full_name": "JupiterianSoul/Balatro-Overhaul",
    "id": 1450596767,
    "language": "Lua",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T20:47:25Z",
    "star_history": [
@@ -2046,7 +2099,7 @@
    "full_name": "KaitonGxx/NS2-Emulator-Manager",
    "id": 1448943438,
    "language": "C#",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T10:33:55Z",
    "star_history": [
@@ -2080,7 +2133,7 @@
    "full_name": "KaraZajac/FlipperEmu",
    "id": 1449929015,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-16T08:16:02Z",
    "star_history": [
@@ -2156,7 +2209,7 @@
    "full_name": "LakoMoor/portcode",
    "id": 1445008689,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-09T07:38:08Z",
    "star_history": [
@@ -2201,7 +2254,7 @@
    "full_name": "LetsKetchup/flow8-web-remote",
    "id": 1455879366,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T22:04:23Z",
    "star_history": [
@@ -2275,7 +2328,7 @@
    "full_name": "LightCursedorc/cat-rpocket-paw",
    "id": 1446937707,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T11:54:27Z",
    "star_history": [
@@ -2329,7 +2382,7 @@
    "full_name": "LomoXSoft/AfroSamuraiRecomp",
    "id": 1444998332,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T03:17:45Z",
    "star_history": [
@@ -2475,7 +2528,7 @@
    "full_name": "MarketKernel/html-virtual-pc",
    "id": 1458879641,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T19:01:33Z",
    "star_history": [
@@ -2523,7 +2576,7 @@
    "full_name": "MattyKen619/Pikmin-PS3-Port",
    "id": 1442376523,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-02T01:47:13Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -2563,7 +2616,7 @@
    "full_name": "MatyMeatBoy/ShiningSource",
    "id": 1455706823,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T04:57:14Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -2572,9 +2625,13 @@
     [
      "2026-11-17",
      14
+    ],
+    [
+     "2026-11-17",
+     15
     ]
    ],
-   "stars": 14,
+   "stars": 15,
    "topics": [
     "android",
     "decompilation",
@@ -2607,7 +2664,7 @@
    "full_name": "MegaCadeDev/dolphin-nx2",
    "id": 1458269164,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T16:07:18Z",
    "star_history": [
@@ -2649,7 +2706,7 @@
    "full_name": "MenAtCafe/kartography",
    "id": 1448976006,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T17:22:08Z",
    "star_history": [
@@ -2737,7 +2794,7 @@
    "full_name": "MinotaurnardRuby/mod-rpocket-team-personal-loot",
    "id": 1446941388,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T11:57:55Z",
    "star_history": [
@@ -2868,7 +2925,7 @@
    "full_name": "MrKitsune9/Orbis-Kyty",
    "id": 1453296659,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-13T23:04:59Z",
    "star_history": [
@@ -2942,7 +2999,7 @@
    "full_name": "NitrosGits/Lemmings-For-Windows-95",
    "id": 1448950706,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-11T02:58:27Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -2982,7 +3039,7 @@
    "full_name": "OpenRBX-org/RBXDecomp",
    "id": 1457256002,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T13:31:56Z",
    "star_history": [
@@ -3025,7 +3082,7 @@
    "full_name": "OpenThievius/sly1-decomp",
    "id": 1437944368,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-15T00:57:18Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -3073,7 +3130,7 @@
    "full_name": "OpokXeno/xsg-ii-decomp",
    "id": 1447109249,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-16T11:19:39Z",
    "star_history": [
@@ -3114,7 +3171,7 @@
    "full_name": "PeterRichardsonGolf/Halo-CE-Arena-Evolved",
    "id": 1440904719,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-16T22:11:54Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -3201,7 +3258,7 @@
    "full_name": "Philip-Bos/echofield-r36s",
    "id": 1457768095,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-14T14:04:55Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -3365,7 +3422,7 @@
    "full_name": "Producdevity/starlet",
    "id": 1452979038,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T00:47:43Z",
    "star_history": [
@@ -3412,7 +3469,7 @@
    "full_name": "Prokopiy8247/Opus5-5-Atomic-Bombs",
    "id": 1451758319,
    "language": "GDScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T19:42:37Z",
    "star_history": [
@@ -3451,7 +3508,7 @@
    "full_name": "Protryon/empire_earth",
    "id": 1445788007,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-08T07:35:45Z",
    "star_history": [
@@ -3488,7 +3545,7 @@
    "full_name": "Pyrodrifter/PyroCade",
    "id": 1446426109,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T12:23:41Z",
    "star_history": [
@@ -3559,6 +3616,50 @@
    ],
    "url": "https://github.com/Rayan-XOO/horizon"
   },
+  "RdWing/z63patch": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "This is a camera firmware modification tool, not a game, emulator, or game engine, so it has no relevance to handheld game porting.",
+    "relevant": false,
+    "summary": "A Python firmware-patching tool that adds video and photo features to the Nikon Z6III camera's firmware.",
+    "version": 1
+   },
+   "classified_at": "2026-11-17T08:57:59Z",
+   "created_at": "2026-11-11T11:18:18Z",
+   "description": "Pro video and photo features for the Nikon Z6III, in firmware. Emulator-only, DO_NOT_FLASH.",
+   "first_seen": "2026-11-17T08:57:02Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "RdWing/z63patch",
+   "id": 1453881142,
+   "language": "Python",
+   "last_checked": "2026-11-17T08:57:02Z",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-14T19:56:18Z",
+   "star_history": [
+    [
+     "2026-11-17",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "camera",
+    "firmware",
+    "nikon",
+    "nikon-camera",
+    "nikon-cameras",
+    "nikon-z",
+    "open-gate",
+    "opengate",
+    "z6iii"
+   ],
+   "url": "https://github.com/RdWing/z63patch"
+  },
   "Rodpad/SW2NES": {
    "archived": false,
    "classification": {
@@ -3580,7 +3681,7 @@
    "full_name": "Rodpad/SW2NES",
    "id": 1454598530,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T00:06:26Z",
    "star_history": [
@@ -3614,7 +3715,7 @@
    "full_name": "RubyThroughoutphantom/rpocket-team-Message-Receiver",
    "id": 1457689167,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-14T11:35:29Z",
    "star_history": [
@@ -3665,7 +3766,7 @@
    "full_name": "RufflezAU/GreenBoy",
    "id": 1456631467,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T06:26:03Z",
    "star_history": [
@@ -3698,7 +3799,7 @@
    "full_name": "Schroederr/nx-fork-manager",
    "id": 1447700138,
    "language": "PowerShell",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T15:09:17Z",
    "star_history": [
@@ -3818,7 +3919,7 @@
    "full_name": "Syyrhc/Lichii-Ally",
    "id": 1449757956,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-10T14:56:58Z",
    "star_history": [
@@ -3864,7 +3965,7 @@
    "full_name": "Tayglacierweb99938/pc-nintendo-resp-switch-emulator",
    "id": 1455586668,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-12T16:57:47Z",
    "star_history": [
@@ -3915,7 +4016,7 @@
    "full_name": "Tenome/Excitebike--Bun-Bun-Mario-Battle",
    "id": 1453499722,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T06:59:46Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -3955,7 +4056,7 @@
    "full_name": "TheNxtBigThing8/Offline-WAN-Emulator",
    "id": 1456575543,
    "language": "Shell",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T12:52:44Z",
    "star_history": [
@@ -3992,7 +4093,7 @@
    "full_name": "TheSneakyBadger/FEFW-Stable-with-60-FPS-Patch",
    "id": 1447523321,
    "language": "PowerShell",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T23:55:08Z",
    "star_history": [
@@ -4087,7 +4188,7 @@
    "full_name": "Vampinity/GreenHatBoy",
    "id": 1455029392,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T06:11:21Z",
    "star_history": [
@@ -4127,7 +4228,7 @@
    "full_name": "VendavalSC/Vendichii",
    "id": 1448810502,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-11T10:31:38Z",
    "star_history": [
@@ -4164,7 +4265,7 @@
    "full_name": "ViaBecrest/Eden-Switch-Emulator-resp",
    "id": 1446938815,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T11:55:30Z",
    "star_history": [
@@ -4263,7 +4364,7 @@
    "full_name": "XEmaz/NFC-Checker",
    "id": 1449787464,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-08T20:11:14Z",
    "star_history": [
@@ -4301,7 +4402,7 @@
    "full_name": "YashDThapliyal/GameBoyGPT",
    "id": 1451228359,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T10:32:47Z",
    "star_history": [
@@ -4403,7 +4504,7 @@
    "full_name": "abedegno/borland-reborn",
    "id": 1455056972,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T09:16:32Z",
    "star_history": [
@@ -4504,7 +4605,7 @@
    "full_name": "agent00jackson/bimmulator",
    "id": 1447824197,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-07T02:56:21Z",
    "star_history": [
@@ -4515,9 +4616,13 @@
     [
      "2026-11-16",
      26
+    ],
+    [
+     "2026-11-17",
+     27
     ]
    ],
-   "stars": 26,
+   "stars": 27,
    "topics": [],
    "url": "https://github.com/agent00jackson/bimmulator"
   },
@@ -4541,7 +4646,7 @@
    "full_name": "aidrum/bookworm-enhanced",
    "id": 1449326130,
    "language": "C#",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-09T13:19:00Z",
    "star_history": [
@@ -4556,9 +4661,13 @@
     [
      "2026-11-16",
      11
+    ],
+    [
+     "2026-11-17",
+     12
     ]
    ],
-   "stars": 11,
+   "stars": 12,
    "topics": [],
    "url": "https://github.com/aidrum/bookworm-enhanced"
   },
@@ -4582,7 +4691,7 @@
    "full_name": "aidrum/peggle-enhanced",
    "id": 1441345460,
    "language": "C#",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-11T01:29:41Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -4621,7 +4730,7 @@
    "full_name": "akitaonrails/FrankMDFast",
    "id": 1446298660,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-12T22:55:34Z",
    "star_history": [
@@ -4662,7 +4771,7 @@
    "full_name": "akitaonrails/instagram-analysis",
    "id": 1446574455,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-05T05:38:38Z",
    "star_history": [
@@ -4767,9 +4876,9 @@
    "full_name": "alessioscand/neo-pi",
    "id": 1438120954,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-17T00:48:37Z",
+   "pushed_at": "2026-11-17T08:57:30Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 22,
    "star_history": [
@@ -4853,7 +4962,7 @@
    "full_name": "altessproduction/sloop-dub-fm1",
    "id": 1450685479,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T19:14:15Z",
    "star_history": [
@@ -4887,7 +4996,7 @@
    "full_name": "andrewnakas/thug-decomp",
    "id": 1444612941,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-15T00:03:02Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -4965,7 +5074,7 @@
    "full_name": "antonydanby/DaisyUI",
    "id": 1448635386,
    "language": "Pascal",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-12T22:05:50Z",
    "star_history": [
@@ -5015,7 +5124,7 @@
    "full_name": "aoxzh/bayo3-recomp",
    "id": 1449549319,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T06:35:47Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -5076,7 +5185,7 @@
    "full_name": "artemnikonov/hpengine",
    "id": 1454277826,
    "language": "C#",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T13:19:17Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -5176,7 +5285,7 @@
    "full_name": "atzski/ibox",
    "id": 1457715099,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-17T04:15:38Z",
    "star_history": [
@@ -5320,7 +5429,7 @@
    "full_name": "bitbarista/picod64",
    "id": 1450218612,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T00:01:58Z",
    "star_history": [
@@ -5361,7 +5470,7 @@
    "full_name": "blue0x1/EmuFive",
    "id": 1451157498,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-16T15:00:01Z",
    "star_history": [
@@ -5388,9 +5497,13 @@
     [
      "2026-11-17",
      285
+    ],
+    [
+     "2026-11-17",
+     286
     ]
    ],
-   "stars": 285,
+   "stars": 286,
    "topics": [
     "emufive",
     "emulator",
@@ -5426,7 +5539,7 @@
    "full_name": "bourbonicfisky/macXenos",
    "id": 1453477532,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-17T06:11:40Z",
    "star_history": [
@@ -5441,9 +5554,13 @@
     [
      "2026-11-17",
      109
+    ],
+    [
+     "2026-11-17",
+     110
     ]
    ],
-   "stars": 109,
+   "stars": 110,
    "topics": [],
    "url": "https://github.com/bourbonicfisky/macXenos"
   },
@@ -5507,7 +5624,7 @@
    "full_name": "byizmysh/IZPSX-emulator",
    "id": 1452118801,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-10T04:01:37Z",
    "star_history": [
@@ -5544,7 +5661,7 @@
    "full_name": "c3505310-bot/py-kms",
    "id": 1448363452,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-17T03:34:38Z",
    "star_history": [
@@ -5589,7 +5706,7 @@
    "full_name": "cacuracaptors/oot-miyoomini",
    "id": 1446300269,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T14:19:34Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -5761,7 +5878,7 @@
    "full_name": "cheviman/outrunners-port",
    "id": 1438726841,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-16T01:58:27Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -5778,9 +5895,13 @@
     [
      "2026-11-16",
      129
+    ],
+    [
+     "2026-11-17",
+     130
     ]
    ],
-   "stars": 129,
+   "stars": 130,
    "topics": [],
    "url": "https://github.com/cheviman/outrunners-port"
   },
@@ -5805,7 +5926,7 @@
    "full_name": "cheviman/simpsons-decomp",
    "id": 1447601439,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-12T01:16:33Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -5840,7 +5961,7 @@
    "full_name": "cheviman/tmnt-port",
    "id": 1446147388,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-16T00:41:02Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -5883,7 +6004,7 @@
    "full_name": "chiikabu/lunar-for-roblox-decompiled",
    "id": 1450890411,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-09T09:28:37Z",
    "star_history": [
@@ -5972,7 +6093,7 @@
    "full_name": "clearmoon247/Kyujo",
    "id": 1458625432,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T17:13:22Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -6050,7 +6171,7 @@
    "full_name": "conao3/rust-awscli",
    "id": 1446143854,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-17T05:45:55Z",
    "star_history": [
@@ -6162,7 +6283,7 @@
    "full_name": "danglingptr0x0/crosstalk",
    "id": 1437527805,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-15T19:04:39Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -6214,7 +6335,7 @@
    "full_name": "danielalves96/gow-pc-port",
    "id": 1440184002,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-13T02:13:50Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -6300,9 +6421,9 @@
    "full_name": "daurosk/oot-remake-multiplayer",
    "id": 1450639908,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-17T06:48:02Z",
+   "pushed_at": "2026-11-17T08:50:07Z",
    "star_history": [
     [
      "2026-11-10",
@@ -6323,9 +6444,13 @@
     [
      "2026-11-17",
      209
+    ],
+    [
+     "2026-11-17",
+     210
     ]
    ],
-   "stars": 209,
+   "stars": 210,
    "topics": [
     "co-op",
     "coop",
@@ -6361,7 +6486,7 @@
    "full_name": "davidamunga/saw",
    "id": 1451231371,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-10T17:32:04Z",
    "star_history": [
@@ -6410,7 +6535,7 @@
    "full_name": "debugactiveprocess/MaldocTrace",
    "id": 1454115710,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-14T10:35:13Z",
    "star_history": [
@@ -6528,7 +6653,7 @@
    "full_name": "dudumil/Ensoniq-ASR-10-Emulator",
    "id": 1449606901,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-13T19:51:55Z",
    "star_history": [
@@ -6570,7 +6695,7 @@
    "full_name": "dudumil/Ensoniq-EPS-16-Plus-Emulator",
    "id": 1449607519,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-13T19:54:12Z",
    "star_history": [
@@ -6608,7 +6733,7 @@
    "full_name": "edenas/SC64PS3",
    "id": 1451931084,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-09T22:08:13Z",
    "star_history": [
@@ -6696,7 +6821,7 @@
    "full_name": "engiadina/enet-bridge",
    "id": 1449703616,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-16T17:13:38Z",
    "star_history": [
@@ -6790,7 +6915,7 @@
    "full_name": "farfromoffice/margin",
    "id": 1457641114,
    "language": "GDScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T17:24:49Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -6839,7 +6964,7 @@
    "full_name": "finalpantasy/new-poke-snap-switch-recomp",
    "id": 1454602133,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T02:59:25Z",
    "star_history": [
@@ -6894,9 +7019,9 @@
    "full_name": "freegroup/CncCraft",
    "id": 1455680186,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
-   "pushed_at": "2026-11-16T12:54:36Z",
+   "pushed_at": "2026-11-17T07:46:07Z",
    "star_history": [
     [
      "2026-11-17",
@@ -6928,7 +7053,7 @@
    "full_name": "gerisson1996/RESIDENT-CODE-VERONICA-NX-PORT",
    "id": 1456846112,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T15:07:48Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -6978,7 +7103,7 @@
    "full_name": "gibletto/mvc2-naomi-dc",
    "id": 1452554082,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-16T12:41:34Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -7022,7 +7147,7 @@
    "full_name": "gl91306/ctr64",
    "id": 1457535004,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-15T11:51:47Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -7065,7 +7190,7 @@
    "full_name": "gminustwo/msr2ds",
    "id": 1439059189,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-17T04:02:39Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -7113,7 +7238,7 @@
    "full_name": "goodthanksdev/harbour",
    "id": 1458918545,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T06:30:21Z",
    "star_history": [
@@ -7188,7 +7313,7 @@
    "full_name": "haveniiii/PES6ANDROIDPORT",
    "id": 1439955096,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T10:41:22Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -7233,7 +7358,7 @@
    "full_name": "herrbimmer/IDEmu",
    "id": 1451370228,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T00:24:48Z",
    "star_history": [
@@ -7320,7 +7445,7 @@
    "full_name": "hmascs/hackios-android",
    "id": 1447406602,
    "language": "Kotlin",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-06T04:09:23Z",
    "star_history": [
@@ -7367,7 +7492,7 @@
    "full_name": "hunter-zen-RU/Konsole-OS",
    "id": 1455170236,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T12:05:02Z",
    "star_history": [
@@ -7401,7 +7526,7 @@
    "full_name": "huongdino443/J2MEX",
    "id": 1453703033,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T07:01:16Z",
    "star_history": [
@@ -7484,7 +7609,7 @@
    "full_name": "imxieyi/Kernarium",
    "id": 1449421218,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-11T05:17:11Z",
    "star_history": [
@@ -7511,9 +7636,13 @@
     [
      "2026-11-17",
      485
+    ],
+    [
+     "2026-11-17",
+     487
     ]
    ],
-   "stars": 485,
+   "stars": 487,
    "topics": [
     "android",
     "emulator",
@@ -7546,7 +7675,7 @@
    "full_name": "itar3/Fable2RecompMac",
    "id": 1455039278,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T14:05:10Z",
    "star_history": [
@@ -7593,7 +7722,7 @@
    "full_name": "itarqos5/Falcon",
    "id": 1457913399,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-16T19:06:05Z",
    "star_history": [
@@ -7627,7 +7756,7 @@
    "full_name": "j0braun/overbright",
    "id": 1459388032,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T16:35:10Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -7677,7 +7806,7 @@
    "full_name": "j92580498-max/Badanaut",
    "id": 1449584270,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-12T18:17:47Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -7847,7 +7976,7 @@
    "full_name": "jrdntnnr/EpaperSYS7",
    "id": 1454435861,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-11T20:00:35Z",
    "star_history": [
@@ -7914,7 +8043,7 @@
    "full_name": "justr4mzi/hortensia",
    "id": 1448244112,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-10T08:17:33Z",
    "star_history": [
@@ -7991,7 +8120,7 @@
    "full_name": "kernel64/Harissa64-PS4",
    "id": 1450659565,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-12T06:09:38Z",
    "star_history": [
@@ -8025,7 +8154,7 @@
    "full_name": "khasinski/parasite-eve-ii-pc",
    "id": 1442141747,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-15T17:25:31Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -8065,7 +8194,7 @@
    "full_name": "khasinski/ridge-racer-type-4-pc",
    "id": 1453993935,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T20:26:14Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -8101,16 +8230,20 @@
    "full_name": "kodediy/kode-sim",
    "id": 1459807618,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T19:10:26Z",
    "star_history": [
     [
      "2026-11-17",
      12
+    ],
+    [
+     "2026-11-17",
+     13
     ]
    ],
-   "stars": 12,
+   "stars": 13,
    "topics": [
     "emulator",
     "esp-idf",
@@ -8142,7 +8275,7 @@
    "full_name": "kostyk348/rlisp-engine",
    "id": 1451322375,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T17:41:48Z",
    "star_history": [
@@ -8273,7 +8406,7 @@
    "full_name": "leafall903/ORPHEUS",
    "id": 1446582096,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T22:23:49Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -8377,16 +8510,20 @@
    "full_name": "lemiur/shsm-decomp",
    "id": 1460290499,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-16T16:54:59Z",
    "star_history": [
     [
      "2026-11-17",
      6
+    ],
+    [
+     "2026-11-17",
+     7
     ]
    ],
-   "stars": 6,
+   "stars": 7,
    "topics": [],
    "url": "https://github.com/lemiur/shsm-decomp"
   },
@@ -8492,7 +8629,7 @@
    "full_name": "madonchik123/SteamInRust",
    "id": 1449769647,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T01:30:02Z",
    "star_history": [
@@ -8507,9 +8644,13 @@
     [
      "2026-11-17",
      21
+    ],
+    [
+     "2026-11-17",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [
     "depot-downloader",
     "desktop-app",
@@ -8642,7 +8783,7 @@
    "full_name": "marc-gronenberg/Marcs-Film-Emulator",
    "id": 1445549906,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T19:17:48Z",
    "star_history": [
@@ -8680,7 +8821,7 @@
    "full_name": "marc-gronenberg/marcs-digicam-emulator",
    "id": 1445602120,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T18:41:54Z",
    "star_history": [
@@ -8713,7 +8854,7 @@
    "full_name": "marcm0de/FivePocket",
    "id": 1448374903,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T06:31:50Z",
    "star_history": [
@@ -8759,7 +8900,7 @@
    "full_name": "maximbilan/walkman",
    "id": 1453803827,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T17:17:11Z",
    "star_history": [
@@ -8806,7 +8947,7 @@
    "full_name": "meathax/inthehunt",
    "id": 1451888250,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-17T05:33:38Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -8891,13 +9032,13 @@
    "description": "Hardware ray-traced three.js: a real-time path tracer behind a three.js-style API. Rust + wgpu engine, TypeScript scene and gameplay packages.",
    "first_seen": "2026-11-16T09:59:11Z",
    "fork": false,
-   "forks": 38,
+   "forks": 39,
    "full_name": "meshy-dev/ThreeRT",
    "id": 1452566697,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
-   "pushed_at": "2026-11-17T06:36:09Z",
+   "pushed_at": "2026-11-17T08:37:54Z",
    "star_history": [
     [
      "2026-11-16",
@@ -8914,9 +9055,13 @@
     [
      "2026-11-17",
      532
+    ],
+    [
+     "2026-11-17",
+     534
     ]
    ],
-   "stars": 532,
+   "stars": 534,
    "topics": [
     "game-engine",
     "global-illumination",
@@ -8954,7 +9099,7 @@
    "full_name": "meta-pytorch/ptxv",
    "id": 1447456802,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-12T23:08:06Z",
    "star_history": [
@@ -9103,7 +9248,7 @@
    "full_name": "moistman42069/JakAndDaxter-Quest-VR",
    "id": 1457978103,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T05:04:52Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -9197,7 +9342,7 @@
    "full_name": "n0madic/KopruluSector",
    "id": 1450491115,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T20:37:17Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -9358,7 +9503,7 @@
    "full_name": "nayo186/AloneInTheDarkClassicReborn",
    "id": 1436759286,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-13T16:58:01Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -9409,9 +9554,9 @@
    "full_name": "nekomancer01/DarkSoulsPS2",
    "id": 1441366661,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-17T06:48:22Z",
+   "pushed_at": "2026-11-17T08:54:02Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 92,
    "star_history": [
@@ -9426,9 +9571,13 @@
     [
      "2026-11-16",
      100
+    ],
+    [
+     "2026-11-17",
+     101
     ]
    ],
-   "stars": 100,
+   "stars": 101,
    "topics": [
     "decompilation",
     "game",
@@ -9504,7 +9653,7 @@
    "full_name": "nirally/Vitox",
    "id": 1446829900,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-13T18:00:23Z",
    "star_history": [
@@ -9537,6 +9686,40 @@
     "xbox-series-x-games"
    ],
    "url": "https://github.com/nirally/Vitox"
+  },
+  "nkahoang/hidizs-ap30-game-emu": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It targets a specific music player's proprietary firmware image rather than a handheld Linux ARM port, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A firmware modding project that embeds a Game Boy emulator into the Hidizs AP30 music player's firmware.",
+    "version": 1
+   },
+   "classified_at": "2026-11-17T08:58:01Z",
+   "created_at": "2026-11-16T15:54:39Z",
+   "description": "A project to reverse engineer and embed retro game emulator to the Hidizs AP30 Music Boy",
+   "first_seen": "2026-11-17T08:57:02Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "nkahoang/hidizs-ap30-game-emu",
+   "id": 1460233730,
+   "language": "Python",
+   "last_checked": "2026-11-17T08:57:02Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-16T15:54:52Z",
+   "star_history": [
+    [
+     "2026-11-17",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/nkahoang/hidizs-ap30-game-emu"
   },
   "notsapinho/Eglantine": {
    "archived": false,
@@ -9599,7 +9782,7 @@
    "full_name": "octavioCuatrochio/nfsu2-gcpc",
    "id": 1453303820,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-11T00:02:06Z",
    "star_history": [
@@ -9679,7 +9862,7 @@
    "full_name": "openorion2/openorion2",
    "id": 1439870972,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-12T18:04:59Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -9767,7 +9950,7 @@
    "full_name": "photocraft-desktop-app/photocraft",
    "id": 1449619903,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-07T18:23:25Z",
    "star_history": [
@@ -9812,16 +9995,20 @@
    "full_name": "pierridotite/mobile-agent-testers",
    "id": 1460452633,
    "language": "Shell",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-17T01:15:54Z",
    "star_history": [
     [
      "2026-11-17",
      16
+    ],
+    [
+     "2026-11-17",
+     20
     ]
    ],
-   "stars": 16,
+   "stars": 20,
    "topics": [
     "ai-agents",
     "android-emulator",
@@ -9854,7 +10041,7 @@
    "full_name": "piotr-graczyk-dev/agentic-emulator",
    "id": 1447415944,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T00:42:48Z",
    "star_history": [
@@ -9869,9 +10056,13 @@
     [
      "2026-11-17",
      10
+    ],
+    [
+     "2026-11-17",
+     11
     ]
    ],
-   "stars": 10,
+   "stars": 11,
    "topics": [
     "ai-agents",
     "android-emulator",
@@ -9909,7 +10100,7 @@
    "full_name": "plisskien/VMProtect-3.x-Emulator-Memory-Dumper",
    "id": 1449597033,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-07T17:55:06Z",
    "star_history": [
@@ -9958,7 +10149,7 @@
    "full_name": "pllanaio/mgu-browser",
    "id": 1446899904,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-08T17:10:09Z",
    "star_history": [
@@ -9992,7 +10183,7 @@
    "full_name": "projectedan/OutlawGolf2-XBE-Recomp",
    "id": 1450803522,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T01:58:48Z",
    "star_history": [
@@ -10068,7 +10259,7 @@
    "full_name": "pthinc/freegameenginethreejs",
    "id": 1456539886,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-14T21:25:53Z",
    "star_history": [
@@ -10115,7 +10306,7 @@
    "full_name": "qs-1/bredbord",
    "id": 1452045721,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T22:49:17Z",
    "star_history": [
@@ -10199,7 +10390,7 @@
    "full_name": "rgrvmusic/polyend-tracker-device",
    "id": 1446798854,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-09T09:45:57Z",
    "star_history": [
@@ -10233,7 +10424,7 @@
    "full_name": "rh1tech/frank-ecat",
    "id": 1451919537,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T21:54:26Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -10302,7 +10493,7 @@
    "full_name": "rishik250809/bmw-idrive8.5-emulator",
    "id": 1447354309,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-12T15:08:10Z",
    "star_history": [
@@ -10339,7 +10530,7 @@
    "full_name": "riyadhHDA/wichforks",
    "id": 1447125601,
    "language": "Python",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-07T18:00:59Z",
    "star_history": [
@@ -10391,7 +10582,7 @@
    "full_name": "roninbyteobliterate/lichi",
    "id": 1460754475,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-17T01:47:44Z",
    "star_history": [
@@ -10438,7 +10629,7 @@
    "full_name": "royilkom-alt/PS2Apple",
    "id": 1457603560,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T12:15:34Z",
    "star_history": [
@@ -10489,7 +10680,7 @@
    "full_name": "rzrbld/ReNFS5",
    "id": 1447328041,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-13T19:05:51Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -10538,7 +10729,7 @@
    "full_name": "rzrbld/TheFamilia",
    "id": 1450658550,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-11T08:54:10Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -10587,7 +10778,7 @@
    "full_name": "s0liton/RommDeck",
    "id": 1448948048,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T18:50:10Z",
    "star_history": [
@@ -10675,7 +10866,7 @@
    "full_name": "sammwyy/gtasands",
    "id": 1445217332,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-17T06:11:41Z",
    "star_history": [
@@ -10723,7 +10914,7 @@
    "full_name": "sassiestrhihno/boxshelf-beta",
    "id": 1446546399,
    "language": null,
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-14T18:37:21Z",
    "star_history": [
@@ -10750,9 +10941,13 @@
     [
      "2026-11-17",
      949
+    ],
+    [
+     "2026-11-17",
+     950
     ]
    ],
-   "stars": 949,
+   "stars": 950,
    "topics": [
     "android-handheld",
     "ayn-thor",
@@ -10786,7 +10981,7 @@
    "full_name": "sassiestrhihno/boxshelf-source",
    "id": 1447385846,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-14T16:20:49Z",
    "star_history": [
@@ -10831,7 +11026,7 @@
    "full_name": "saulob/el-chavo-kart-recompiled",
    "id": 1441997668,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-08T05:40:16Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -10893,9 +11088,9 @@
    "full_name": "scarface-decomp/scarface_decomp",
    "id": 1450147149,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-17T06:43:00Z",
+   "pushed_at": "2026-11-17T08:52:25Z",
    "star_history": [
     [
      "2026-11-16",
@@ -10932,9 +11127,9 @@
    "full_name": "scarxity/kirby-forgotten-land-recompiled",
    "id": 1456379332,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-16T22:22:28Z",
+   "pushed_at": "2026-11-17T08:22:49Z",
    "shown_at": "2026-11-16T09:59:11Z",
    "shown_stars": 13,
    "star_history": [
@@ -10972,7 +11167,7 @@
    "full_name": "schuler-ph/nsmbw-switch",
    "id": 1455130148,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T18:21:08Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -11024,7 +11219,7 @@
    "full_name": "sebaz07/crashwoc-vita",
    "id": 1447089092,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-06T11:42:12Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -11105,7 +11300,7 @@
    "full_name": "sikoGD/playDB-CNT",
    "id": 1447133213,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-14T23:23:30Z",
    "star_history": [
@@ -11245,7 +11440,7 @@
    "full_name": "sopwier/iosem_android",
    "id": 1449386580,
    "language": "Kotlin",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-07T14:14:36Z",
    "star_history": [
@@ -11278,7 +11473,7 @@
    "full_name": "sostenesfreitas/ocarina-recomp",
    "id": 1448807268,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-11T19:20:58Z",
    "star_history": [
@@ -11332,7 +11527,7 @@
    "full_name": "souldewapp/souldew",
    "id": 1445691160,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T02:54:09Z",
    "star_history": [
@@ -11380,7 +11575,7 @@
    "full_name": "speedydevil007/road-sdl2-rash",
    "id": 1436793260,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-16T15:34:07Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -11423,7 +11618,7 @@
    "full_name": "spiritkiller/The-Legend-of-Zelda-Ocarina-of-Time-Remake-AllinOne-",
    "id": 1449395708,
    "language": "Batchfile",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-14T23:08:52Z",
    "star_history": [
@@ -11469,7 +11664,7 @@
    "full_name": "sreddyiitr/homehub",
    "id": 1454706386,
    "language": "Java",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-12T04:02:38Z",
    "star_history": [
@@ -11503,7 +11698,7 @@
    "full_name": "stingziz0u/mk64-ps3",
    "id": 1452949582,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-16T06:19:56Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -11543,7 +11738,7 @@
    "full_name": "stingziz0u/smashps3",
    "id": 1454249883,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-11T20:42:49Z",
    "star_history": [
@@ -11659,7 +11854,7 @@
    "full_name": "tarikbc/ZyperOS",
    "id": 1449628373,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T06:35:19Z",
    "star_history": [
@@ -11755,7 +11950,7 @@
    "full_name": "tonchovet/REA-Windows-Github",
    "id": 1447137872,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-05T15:01:58Z",
    "star_history": [
@@ -11802,9 +11997,9 @@
    "full_name": "twosugar/droidpier",
    "id": 1455118480,
    "language": "TypeScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
-   "pushed_at": "2026-11-17T06:24:44Z",
+   "pushed_at": "2026-11-17T08:52:33Z",
    "star_history": [
     [
      "2026-11-16",
@@ -11842,7 +12037,7 @@
    "full_name": "username-promised-to-me-3000-years-ago/inFAMOUSreborn-AppleSilicon",
    "id": 1450232545,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-15T14:26:38Z",
    "star_history": [
@@ -11923,7 +12118,7 @@
    "full_name": "victor-akande/weistack",
    "id": 1452603325,
    "language": "Go",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-16T07:27:12Z",
    "star_history": [
@@ -11957,7 +12152,7 @@
    "full_name": "wh1ter0se69/GeneralsVanguard",
    "id": 1451890527,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T23:12:06Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -12005,7 +12200,7 @@
    "full_name": "wobsoriano/herdr-sim",
    "id": 1447426102,
    "language": "JavaScript",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "MIT",
    "pushed_at": "2026-11-05T23:26:07Z",
    "star_history": [
@@ -12045,7 +12240,7 @@
    "full_name": "xPXavierx/bleach-soul-resurreccion-recomp",
    "id": 1449832222,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": null,
    "pushed_at": "2026-11-15T17:33:51Z",
    "star_history": [
@@ -12097,7 +12292,7 @@
    "full_name": "xSAVIKx/aws-emulator-docker",
    "id": 1454486070,
    "language": "HTML",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-17T04:37:08Z",
    "star_history": [
@@ -12144,7 +12339,7 @@
    "full_name": "xsaja/street-nx",
    "id": 1437801938,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-29T01:24:38Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -12229,7 +12424,7 @@
    "full_name": "yelnady/hercules-native",
    "id": 1445037931,
    "language": "C",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-11T15:38:10Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -12272,7 +12467,7 @@
    "full_name": "zesakain/hikari-machine",
    "id": 1448424042,
    "language": "C++",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-17T06:02:07Z",
    "star_history": [
@@ -12429,9 +12624,9 @@
    "full_name": "zortos293/Lichii-rust",
    "id": 1455857580,
    "language": "Rust",
-   "last_checked": "2026-11-17T06:50:07Z",
+   "last_checked": "2026-11-17T08:57:02Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-17T06:03:20Z",
+   "pushed_at": "2026-11-17T08:51:08Z",
    "star_history": [
     [
      "2026-11-16",
@@ -12444,9 +12639,13 @@
     [
      "2026-11-17",
      93
+    ],
+    [
+     "2026-11-17",
+     94
     ]
    ],
-   "stars": 93,
+   "stars": 94,
    "topics": [],
    "url": "https://github.com/zortos293/Lichii-rust"
   }
@@ -12513,6 +12712,14 @@
    "new": 6,
    "rising": 1,
    "scanned": 170
+  },
+  {
+   "at": "2026-11-17T08:57:02Z",
+   "classified": 3,
+   "excluded": 3,
+   "new": 0,
+   "rising": 0,
+   "scanned": 173
   }
  ]
 }
