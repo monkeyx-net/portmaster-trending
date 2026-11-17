@@ -10,7 +10,7 @@ A Claude-based take on [Cebion/gh_trending_reports](https://github.com/Cebion/gh
 
 Alongside the weekly crawl, [`data/curated.json`](data/curated.json) holds a hand-checked list of open-source ports and remakes, scored for ArkOS/dArkOS, muOS/Knulli and AmberELEC/JELOS/uOS against PortMaster's limits (GLES only, OpenGL 2.1 via gl4es, no Vulkan, often 1 GB RAM), plus notes on Westonpack, gl4es and the [SDL3-over-SDL2 shim](https://github.com/bmdhacks/SDL/tree/sdl2-backend) (an *SDL3 shim* column marks the SDL3 projects it can serve on SDL2-only firmwares) and a list of projects already on PortMaster. It is rendered to `build/curated.html` on every run and published at https://monkeyx-net.github.io/portmaster-trending/curated.html.
 
-Each run also refreshes every curated project's star count and last commit date (default branch) from the GitHub API and commits them back to the JSON. Edit the JSON to change the list; preview with `python -m crawler.curated`.
+Each run also refreshes every curated project's star count and last commit date (default branch) from the GitHub API and commits them back to the JSON. Both tables show a screenshot where one is available: a hand-set `screenshot` URL wins; otherwise each run picks `screenshot_auto` from the PortMaster port folder named in `pm_port` (`PortMaster-New/<dir>` or `PortMaster-MV-New/<dir>`), or failing that the first non-badge, non-logo image in the project's README. Images are hotlinked, not stored here. Edit the JSON to change the list; preview with `python -m crawler.curated`.
 
 ## How it works
 

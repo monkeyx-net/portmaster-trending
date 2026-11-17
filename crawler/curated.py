@@ -4,14 +4,92 @@ PortMaster's firmware limits) as build/curated.html.
 Run on its own with:  python -m crawler.curated
 """
 
+import base64
 import json
 import os
+import re
+import urllib.parse
 from datetime import datetime, timezone
 
 from .report import esc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "data", "curated.json")
+
+# Screenshots: a hand-set `screenshot` URL wins; otherwise `screenshot_auto` is
+# filled on refresh from the PortMaster port folder named by `pm_port`
+# ("PortMaster-New/<dir>" or "PortMaster-MV-New/<dir>"), else from the first
+# non-badge image in the project's README. Images are hotlinked.
+PM_REPOS = {"PortMaster-New": "PortsMaster/PortMaster-New", "PortMaster-MV-New": "PortsMaster-MV/PortMaster-MV-New"}
+IMG_RE = re.compile(r'!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]+src=["\']([^"\']+)', re.I)
+NOT_SHOT = re.compile(
+    r"shields\.io|badge|/workflows?/|coverity|codecov|coveralls|travis|appveyor|discord|widget|"
+    r"logo|icon|banner|button|sponsor|donate|ko-?fi|patreon|paypal|liberapay|download|\.svg(\?|$)",
+    re.I,
+)
+
+
+def readme_image(text, raw_base):
+    """First README image that looks like a screenshot, as an absolute URL.
+    `raw_base` is the raw.githubusercontent.com URL of the README's folder."""
+    for m in IMG_RE.finditer(text or ""):
+        src = (m.group(1) or m.group(2)).replace("&amp;", "&")
+        if NOT_SHOT.search(src):
+            continue
+        if src.startswith("//"):
+            src = "https:" + src
+        if not src.startswith(("http://", "https://")):
+            root = "/".join(raw_base.split("/")[:6]) + "/"  # https://raw.../owner/repo/branch/
+            src = urllib.parse.urljoin(root if src.startswith("/") else raw_base, src.lstrip("/") if src.startswith("/") else src)
+        elif "github.com/" in src and "/blob/" in src:
+            src = src.replace("/blob/", "/raw/", 1)
+        return src
+    return None
+
+
+def pm_screenshot_url(pm_port, files):
+    """Raw URL of screenshot.(png|jpg) in a PortMaster port folder, given its file names."""
+    repo, _, port = pm_port.partition("/")
+    for name in files:
+        if re.fullmatch(r"screenshot\.(png|jpe?g|webp)", name, re.I):
+            return f"https://raw.githubusercontent.com/{PM_REPOS[repo]}/main/ports/{port}/{name}"
+    return None
+
+
+def find_screenshot(gh, item):
+    """Look up an automatic screenshot for a curated entry, or None."""
+    if item.get("pm_port"):
+        repo, _, port = item["pm_port"].partition("/")
+        listing = gh._get(f"/repos/{PM_REPOS[repo]}/contents/ports/{port}") or []
+        url = pm_screenshot_url(item["pm_port"], [f["name"] for f in listing if isinstance(f, dict)])
+        if url:
+            return url
+    if item.get("github"):
+        data = gh._get(f"/repos/{item['github']}/readme")
+        if data and data.get("content") and data.get("download_url"):
+            text = base64.b64decode(data["content"]).decode("utf-8", "replace")
+            return readme_image(text, data["download_url"].rsplit("/", 1)[0] + "/")
+    return None
+
+
+def refresh_screenshots(gh, d):
+    """Fill `screenshot_auto` on candidates and already-on-PortMaster entries.
+    Failed lookups keep the previous value."""
+    n = 0
+    for item in d["candidates"] + d["already_on_portmaster"]:
+        if item.get("screenshot"):
+            continue
+        try:
+            url = find_screenshot(gh, item)
+        except Exception as e:
+            print(f"  ! screenshot {item.get('github') or item.get('pm_port')}: {e}")
+            continue
+        if url:
+            item["screenshot_auto"] = url
+            n += 1
+        else:
+            item.pop("screenshot_auto", None)
+    print(f"  {n} curated screenshots found")
 
 def refresh(gh, src=SRC):
     """Update stars and last default-branch commit date for each candidate
@@ -36,6 +114,7 @@ def refresh(gh, src=SRC):
             ok += 1
         except Exception as e:  # keep the old values
             print(f"  ! {name}: {e}")
+    refresh_screenshots(gh, d)
     if ok:
         d["repo_stats_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     with open(src, "w", encoding="utf-8") as f:
@@ -73,14 +152,24 @@ def link(url, text=None):
     return f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(label)}</a>'
 
 
+def shot(item):
+    """Thumbnail linking to the full-size screenshot, or a placeholder."""
+    url = item.get("screenshot") or item.get("screenshot_auto")
+    if not url:
+        return '<span class="noshot dim">no screenshot</span>'
+    return (f'<a class="shot" href="{esc(url)}" target="_blank" rel="noopener">'
+            f'<img src="{esc(url)}" alt="{esc(item["project"])} screenshot" loading="lazy" '
+            f'referrerpolicy="no-referrer" onerror="this.parentNode.classList.add(\'broken\')"></a>')
+
+
 def candidate_row(c, targets):
     cfw = "".join(
         f'<td><span class="pill {FIT_CLASS.get(v, "")}">{esc(v)}</span></td>' for v in c["cfw"]
     )
-    text = " ".join(str(v) for v in c.values()).lower()
+    text = " ".join(str(v) for k, v in c.items() if not k.startswith("screenshot")).lower()
     shim = c.get("sdl3_shim", {}).get("fit", "")
     return f"""<tr class="row" data-text="{esc(text)}" data-fit="{c['fit']}" data-shim="{esc(shim)}">
-  <td><b>{esc(c['project'])}</b><div class="dim">{esc(c['game'])}</div></td>
+  <td><b>{esc(c['project'])}</b><div class="dim">{esc(c['game'])}</div>{shot(c)}</td>
   <td>{link(c['repo'], c.get('github') or c['repo'].split("://", 1)[-1].rstrip("/") if c['repo'] else None)}</td>
   <td class="num stars" data-v="{c.get('stars') or -1}">{'★ ' + format(c['stars'], ',') if c.get('stars') is not None else '<span class="dim">–</span>'}</td>
   <td class="num {commit_age(c.get('last_commit'))}" data-v="{esc(c.get('last_commit') or '')}">{esc(c.get('last_commit') or '–')}</td>
@@ -106,7 +195,7 @@ def render_curated(src=SRC, path=None):
     rows = "".join(candidate_row(c, targets) for c in cands)
     heads = "".join(f"<th>{esc(t)}</th>" for t in targets)
     have = "".join(
-        f"<tr><td>{esc(a['project'])}</td><td>{esc(a['engine'])}</td><td class=\"dim\">{esc(a['evidence'])}</td></tr>"
+        f"<tr><td>{shot(a)}</td><td>{esc(a['project'])}</td><td>{esc(a['engine'])}</td><td class=\"dim\">{esc(a['evidence'])}</td></tr>"
         for a in d["already_on_portmaster"]
     )
     rt = "".join(
@@ -147,7 +236,12 @@ th, td {{ text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1
 th {{ color:var(--dim); font-weight:600; white-space:nowrap; }}
 tr:last-child td {{ border-bottom:0; }}
 td.num {{ text-align:center; }}
-.cand td:nth-child(10) {{ min-width:180px; }} .cand td:nth-child(1) {{ min-width:150px; }}
+.cand td:nth-child(10) {{ min-width:180px; }} .cand td:nth-child(1) {{ min-width:200px; }}
+.shot {{ display:block; margin-top:8px; }}
+.shot img {{ display:block; width:192px; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid var(--line); background:#000; }}
+.shot:hover img {{ border-color:var(--acc); }}
+.noshot {{ display:block; margin-top:8px; font-size:12px; }}
+.shot.broken {{ display:none; }}
 .cand {{ min-width:2450px; }} .cand td.notes {{ min-width:320px; }} .cand td.shim {{ min-width:260px; }} .cand td.blk {{ min-width:220px; }}
 .cand td:nth-child(2) {{ min-width:210px; }} .cand td:nth-child(2) a {{ overflow-wrap:anywhere; }}
 .stars {{ color:var(--mid); white-space:nowrap; }}
@@ -190,7 +284,7 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
 
   <h2>Checked: already on PortMaster <small>{len(d['already_on_portmaster'])}</small></h2>
   <div class="xwrap"><table>
-    <thead><tr><th>Game</th><th>Engine / port</th><th>Evidence</th></tr></thead>
+    <thead><tr><th>Screenshot</th><th>Game</th><th>Engine / port</th><th>Evidence</th></tr></thead>
     <tbody>{have}</tbody>
   </table></div>
 

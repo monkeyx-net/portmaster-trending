@@ -119,7 +119,8 @@
    "sdl3_shim": {
     "fit": "Helps",
     "note": "Removes the 'bundle a full SDL3' problem: the software renderer draws through SDL3's window framebuffer, which the shim forwards to SDL2. Set SDL3SHIM_ENABLE_MOUSE=1 if the game needs a visible cursor (opt-in in the shim)."
-   }
+   },
+   "screenshot_auto": "https://user-images.githubusercontent.com/604665/55420349-1a2aea00-5577-11e9-87da-78fe5cdb09e1.png"
   },
   {
    "project": "LEGO Island (isle-portable)",
@@ -165,7 +166,8 @@
    "data": "Pharaoh + Cleopatra data",
    "suggestion": "None found",
    "repo": "https://github.com/dalerank/Akhenaten",
-   "notes": "Fork of the Julius/Augustus (Caesar III) lineage."
+   "notes": "Fork of the Julius/Augustus (Caesar III) lineage.",
+   "screenshot": "https://raw.githubusercontent.com/dalerank/Akhenaten/master/docs/images/screen01.png"
   },
   {
    "project": "Return to the Roots (s25client)",
@@ -253,7 +255,9 @@
    "sdl3_shim": {
     "fit": "In use",
     "note": "Links libSDL3.so.0 and ships the shim in libs.aarch64; its CI checks that the bundled SDL is the shim. Falls back to SDL3SHIM_SDL2_VIDEODRIVER=kmsdrm if the first launch fails."
-   }
+   },
+   "pm_port": "PortMaster-MV-New/melee",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/melee/screenshot.jpg"
   },
   {
    "project": "ReNFS5",
@@ -274,7 +278,8 @@
    "data": "NFS5 data",
    "suggestion": "None found",
    "repo": "https://github.com/rzrbld/ReNFS5",
-   "notes": "Only tested on H700 / Mali-G31. Older firmware bases may fail the glibc requirement."
+   "notes": "Only tested on H700 / Mali-G31. Older firmware bases may fail the glibc requirement.",
+   "screenshot": "https://raw.githubusercontent.com/rzrbld/ReNFS5/main/packaging/screenshot.png"
   },
   {
    "project": "KeeperFX",
@@ -345,7 +350,8 @@
    "sdl3_shim": {
     "fit": "Not needed",
     "note": "Defaults to SDL3 but keeps an SDL2 build option (NDS_SDL_BACKEND=SDL2), which avoids the shim. Either way the compute-shader renderer is the blocker, and the shim's GPU back end has no compute pipelines."
-   }
+   },
+   "screenshot_auto": "https://raw.githubusercontent.com/mstan/MetroidPrimeHuntersRecomp/main/docs/media/prime-hunters-video-preview.jpg"
   },
   {
    "project": "Mario Strikers Charged",
@@ -370,7 +376,8 @@
    "sdl3_shim": {
     "fit": "In use",
     "note": "Ships the shim from vendor/sdl3-shim. The GLES3 Aurora back end is the bmdhacks one also used by Dusklight and Melee."
-   }
+   },
+   "screenshot": "https://raw.githubusercontent.com/crxssrazr93/mscharged-portmaster/master/port/screenshot.png"
   },
   {
    "project": "TRX",
@@ -391,7 +398,8 @@
    "data": "Tomb Raider data",
    "suggestion": "None found",
    "repo": "https://github.com/LostArtefacts/TRX",
-   "notes": "TR1 is already covered by OpenLara. Revisit if Westonpack gets OpenGL 3."
+   "notes": "TR1 is already covered by OpenLara. Revisit if Westonpack gets OpenGL 3.",
+   "screenshot_auto": "https://raw.githubusercontent.com/LostArtefacts/TRX/develop/docs/showcase/braid.jpg"
   },
   {
    "project": "The Force Engine",
@@ -433,84 +441,115 @@
    "data": "Arena data (free)",
    "suggestion": "Open, Low, 28 votes",
    "repo": "https://github.com/afritz1/OpenTESArena",
-   "notes": "Now Vulkan-only, so out of reach."
+   "notes": "Now Vulkan-only, so out of reach.",
+   "screenshot_auto": "https://raw.githubusercontent.com/afritz1/OpenTESArena/main/Preview.PNG"
   }
  ],
  "already_on_portmaster": [
   {
    "project": "Return to Castle Wolfenstein",
    "engine": "iortcw",
-   "evidence": "portmaster.games detail page"
+   "evidence": "portmaster.games detail page",
+   "pm_port": "PortMaster-New/iortcw",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/iortcw/screenshot.jpg"
   },
   {
    "project": "Arcanum",
    "engine": "Arcanum Community Edition",
-   "evidence": "portmaster.games detail page, updated 2026-08-25"
+   "evidence": "portmaster.games detail page, updated 2026-08-25",
+   "pm_port": "PortMaster-New/arcanumce",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/arcanumce/screenshot.jpg"
   },
   {
    "project": "Heroes of Might and Magic III",
    "engine": "VCMI",
-   "evidence": "vcmi.eu download page lists PortMaster"
+   "evidence": "vcmi.eu download page lists PortMaster",
+   "pm_port": "PortMaster-New/vcmi",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/vcmi/screenshot.jpg"
   },
   {
    "project": "Red Alert",
    "engine": "VanillaRA (Vanilla Conquer)",
-   "evidence": "PortMaster games list, Ready to Run"
+   "evidence": "PortMaster games list, Ready to Run",
+   "pm_port": "PortMaster-New/vanillara",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/vanillara/screenshot.jpg"
   },
   {
    "project": "Morrowind",
    "engine": "OpenMW",
-   "evidence": "Suggestion marked Complete; maintainers note performance is unplayable on current devices"
+   "evidence": "Suggestion marked Complete; maintainers note performance is unplayable on current devices",
+   "pm_port": "PortMaster-New/openmw",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openmw/screenshot.png"
   },
   {
    "project": "Blood",
    "engine": "Blood source port",
-   "evidence": "PortMaster games list, Premium"
+   "evidence": "PortMaster games list, Premium",
+   "pm_port": "PortMaster-New/blood",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/blood/screenshot.jpg"
   },
   {
    "project": "X-COM / TFTD",
    "engine": "OpenXcom Extended",
-   "evidence": "portmaster.games detail page"
+   "evidence": "portmaster.games detail page",
+   "pm_port": "PortMaster-New/openxcom",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openxcom/screenshot.jpg"
   },
   {
    "project": "Tomb Raider I",
    "engine": "OpenLara",
-   "evidence": "portmaster.games detail page"
+   "evidence": "portmaster.games detail page",
+   "pm_port": "PortMaster-New/tomb.raider.1",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/tomb.raider.1/screenshot.jpg"
   },
   {
    "project": "Quake II remaster data",
    "engine": "Q2Pro",
-   "evidence": "Suggestion marked Complete"
+   "evidence": "Suggestion marked Complete",
+   "pm_port": "PortMaster-New/q2pro",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/q2pro/screenshot.png"
   },
   {
    "project": "Medal of Honor: Allied Assault",
    "engine": "OpenMoHAA",
-   "evidence": "Suggestion marked Complete"
+   "evidence": "Suggestion marked Complete",
+   "pm_port": "PortMaster-New/openmohaa",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openmohaa/screenshot.png"
   },
   {
    "project": "Ion Fury",
    "engine": "EDuke32",
-   "evidence": "Suggestion marked Complete"
+   "evidence": "Suggestion marked Complete",
+   "pm_port": "PortMaster-New/ionfury",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/ionfury/screenshot.png"
   },
   {
    "project": "Tyrian 2000",
    "engine": "OpenTyrian2000",
-   "evidence": "Suggestion marked Complete"
+   "evidence": "Suggestion marked Complete",
+   "pm_port": "PortMaster-New/opentyrian2000",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/opentyrian2000/screenshot.png"
   },
   {
    "project": "Zelda: Twilight Princess",
    "engine": "Dusklight",
-   "evidence": "PortMaster roundup, July 2026"
+   "evidence": "PortMaster roundup, July 2026",
+   "pm_port": "PortMaster-MV-New/dusklight",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/dusklight/screenshot.png"
   },
   {
    "project": "Remnants of Naezith",
    "engine": "box64 + Westonpack + gl4es",
-   "evidence": "PortMaster-New PR #2751 (Oct 2026)"
+   "evidence": "PortMaster-New PR #2751 (Oct 2026)",
+   "pm_port": "PortMaster-New/naezith",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/naezith/screenshot.png"
   },
   {
    "project": "Ittle Dew",
    "engine": "box64 + patched gl4es, no Westonpack",
-   "evidence": "PortMaster-New PR #2747"
+   "evidence": "PortMaster-New PR #2747",
+   "pm_port": "PortMaster-New/ittledew",
+   "screenshot_auto": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/ittledew/screenshot.png"
   }
  ],
  "runtimes": [
