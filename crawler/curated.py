@@ -54,6 +54,16 @@ def commit_age(date):
 
 
 FIT_CLASS = {"Good": "ok", "Possible": "pos", "Check glibc": "mid", "Hard": "warn", "No": "bad"}
+SHIM_CLASS = {"Helps": "ok", "In use": "pos", "Partial": "mid", "Not needed": ""}
+
+
+def shim_cell(c):
+    """Whether the SDL3-over-SDL2 shim helps this candidate (SDL3 projects only)."""
+    s = c.get("sdl3_shim")
+    if not s:
+        return '<td class="shim"><span class="dim">– (not SDL3)</span></td>'
+    return (f'<td class="shim"><span class="pill {SHIM_CLASS.get(s["fit"], "")}">{esc(s["fit"])}</span>'
+            f'<div class="dim">{esc(s["note"])}</div></td>')
 
 
 def link(url, text=None):
@@ -68,7 +78,8 @@ def candidate_row(c, targets):
         f'<td><span class="pill {FIT_CLASS.get(v, "")}">{esc(v)}</span></td>' for v in c["cfw"]
     )
     text = " ".join(str(v) for v in c.values()).lower()
-    return f"""<tr class="row" data-text="{esc(text)}" data-fit="{c['fit']}">
+    shim = c.get("sdl3_shim", {}).get("fit", "")
+    return f"""<tr class="row" data-text="{esc(text)}" data-fit="{c['fit']}" data-shim="{esc(shim)}">
   <td><b>{esc(c['project'])}</b><div class="dim">{esc(c['game'])}</div></td>
   <td>{link(c['repo'], c.get('github') or c['repo'].split("://", 1)[-1].rstrip("/") if c['repo'] else None)}</td>
   <td class="num stars" data-v="{c.get('stars') or -1}">{'★ ' + format(c['stars'], ',') if c.get('stars') is not None else '<span class="dim">–</span>'}</td>
@@ -77,9 +88,10 @@ def candidate_row(c, targets):
   <td>{esc(c['status'])}</td>
   {cfw}
   <td>{esc(c['render'])}<div class="dim">{esc(c['runtime'])}</div></td>
-  <td>{esc(c['blockers'])}</td>
+  {shim_cell(c)}
+  <td class="blk">{esc(c['blockers'])}</td>
   <td>{esc(c['data'])}</td>
-  <td class="dim">{esc(c['notes'])}<div>Suggestion: {esc(c['suggestion'])}</div></td>
+  <td class="dim notes">{esc(c['notes'])}<div>Suggestion: {esc(c['suggestion'])}</div></td>
 </tr>"""
 
 
@@ -136,7 +148,7 @@ th {{ color:var(--dim); font-weight:600; white-space:nowrap; }}
 tr:last-child td {{ border-bottom:0; }}
 td.num {{ text-align:center; }}
 .cand td:nth-child(10) {{ min-width:180px; }} .cand td:nth-child(1) {{ min-width:150px; }}
-.cand {{ min-width:2050px; }} .cand td:nth-child(12) {{ min-width:320px; }}
+.cand {{ min-width:2450px; }} .cand td.notes {{ min-width:320px; }} .cand td.shim {{ min-width:260px; }} .cand td.blk {{ min-width:220px; }}
 .cand td:nth-child(2) {{ min-width:210px; }} .cand td:nth-child(2) a {{ overflow-wrap:anywhere; }}
 .stars {{ color:var(--mid); white-space:nowrap; }}
 td.fresh {{ color:var(--ok); white-space:nowrap; }} td.stale {{ color:var(--mid); white-space:nowrap; }} td.old {{ color:var(--bad); white-space:nowrap; }}
@@ -163,14 +175,14 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
   <h2>Candidates <small>{len(cands)}</small></h2>
   <div class="tools">
     <input id="q" type="search" placeholder="Filter by name or text…">
-    <button data-f="" class="on">all</button>{fits}
+    <button data-f="" class="on">all</button>{fits}<button id="shim" title="Only SDL3 projects the SDL3-over-SDL2 shim helps or already uses">SDL3 shim</button>
   </div>
   <div class="xwrap"><table class="cand">
-    <thead><tr><th>Project</th><th>Repo</th><th class="sort" data-k="stars">Stars</th><th class="sort" data-k="commit">Last commit</th><th class="sort" data-k="fit">Fit</th><th>PortMaster</th>{heads}<th>Renderer / runtime</th><th>Blockers</th><th>Data</th><th>Notes</th></tr></thead>
+    <thead><tr><th>Project</th><th>Repo</th><th class="sort" data-k="stars">Stars</th><th class="sort" data-k="commit">Last commit</th><th class="sort" data-k="fit">Fit</th><th>PortMaster</th>{heads}<th>Renderer / runtime</th><th>SDL3 shim</th><th>Blockers</th><th>Data</th><th>Notes</th></tr></thead>
     <tbody>{rows}</tbody>
   </table></div>
 
-  <h2>Westonpack and gl4es <small>{len(d['runtimes'])}</small></h2>
+  <h2>Runtimes: Westonpack, gl4es and the SDL3 shim <small>{len(d['runtimes'])}</small></h2>
   <div class="xwrap"><table>
     <thead><tr><th>Runtime / mode</th><th>What it unlocks</th><th>Limits</th><th>Firmware notes</th></tr></thead>
     <tbody>{rt}</tbody>
@@ -186,11 +198,13 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
 </div>
 <script>
 const q = document.getElementById('q');
-let min = 0;
+let min = 0, shimOnly = false;
+const shimBtn = document.getElementById('shim');
 function apply() {{
   const t = q.value.trim().toLowerCase();
   document.querySelectorAll('tr.row').forEach(r => {{
-    const ok = (+r.dataset.fit >= min) && (!t || r.dataset.text.includes(t));
+    const ok = (+r.dataset.fit >= min) && (!t || r.dataset.text.includes(t))
+      && (!shimOnly || ['Helps', 'Partial', 'In use'].includes(r.dataset.shim));
     r.classList.toggle('hide', !ok);
   }});
 }}
@@ -205,8 +219,11 @@ document.querySelectorAll('th.sort').forEach(th => th.addEventListener('click', 
   const val = r => {{ const c = r.children[i]; return k === 'fit' ? +c.textContent : k === 'stars' ? +c.dataset.v : c.dataset.v; }};
   [...body.rows].sort((a, b) => (val(a) > val(b) ? 1 : val(a) < val(b) ? -1 : 0) * dir).forEach(r => body.appendChild(r));
 }}));
-document.querySelectorAll('.tools button').forEach(b => b.addEventListener('click', () => {{
-  document.querySelectorAll('.tools button').forEach(x => x.classList.remove('on'));
+shimBtn.addEventListener('click', () => {{
+  shimOnly = !shimOnly; shimBtn.classList.toggle('on', shimOnly); apply();
+}});
+document.querySelectorAll('.tools button[data-f]').forEach(b => b.addEventListener('click', () => {{
+  document.querySelectorAll('.tools button[data-f]').forEach(x => x.classList.remove('on'));
   b.classList.add('on'); min = +(b.dataset.f || 0); apply();
 }}));
 </script>

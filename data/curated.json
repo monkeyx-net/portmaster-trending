@@ -6,7 +6,7 @@
   "muOS / Knulli",
   "AmberELEC / JELOS / uOS"
  ],
- "intro": "Open-source ports and remakes on GitHub (and a few elsewhere) checked against PortMaster's catalogue and the limits of Mali-blob firmwares: GLES only, OpenGL 2.1 at most through gl4es, no Vulkan, often 1 GB RAM and 640x480. Fit is 1 (out of reach) to 5 (straightforward). 'Not found' means searches of portmaster.games and its suggestions site found nothing; it is not proof the game is missing.",
+ "intro": "Open-source ports and remakes on GitHub (and a few elsewhere) checked against PortMaster's catalogue and the limits of Mali-blob firmwares: GLES only, OpenGL 2.1 at most through gl4es, no Vulkan, often 1 GB RAM and 640x480. Fit is 1 (out of reach) to 5 (straightforward). 'Not found' means searches of portmaster.games and its suggestions site found nothing; it is not proof the game is missing. The SDL3 shim column marks candidates whose SDL3 dependency the SDL3-over-SDL2 shim can satisfy on firmwares that only ship SDL2.",
  "candidates": [
   {
    "project": "Fachoda-Complex",
@@ -42,13 +42,17 @@
     "Good",
     "Good"
    ],
-   "render": "SDL2, 2D software",
-   "runtime": "Native SDL2",
-   "blockers": "Mouse-heavy UI needs gptokeyb mouse mapping; Rust toolchain in the build",
+   "render": "SDL3, 2D software",
+   "runtime": "SDL3-over-SDL2 shim",
+   "blockers": "Mouse-heavy UI needs gptokeyb mouse mapping; Rust toolchain in the build; upstream now requires SDL3",
    "data": "JA2 retail data",
    "suggestion": "Open, Medium, 24 votes",
    "repo": "https://github.com/ja2-stracciatella/ja2-stracciatella",
-   "notes": "Pure SDL2 with ARM32/ARM64 builds noted on the suggestion. Runs at 640x480, matching most target screens."
+   "notes": "Upstream moved from SDL2 to SDL3 (COMPILATION.md now asks for SDL3 >= 3.0.0), so the 'pure SDL2' note on the suggestion is out of date. ARM32/ARM64 builds noted on the suggestion. Runs at 640x480, matching most target screens.",
+   "sdl3_shim": {
+    "fit": "Helps",
+    "note": "Build against SDL 3.x and ship the shim as libSDL3.so.0, as Arcanum CE and Cortex Command do. 2D software rendering only, so none of the shim's GPU gaps apply."
+   }
   },
   {
    "project": "Dune Legacy",
@@ -106,12 +110,16 @@
     "Possible"
    ],
    "render": "SDL3, software renderer",
-   "runtime": "Native; bundle SDL3",
+   "runtime": "SDL3-over-SDL2 shim (libSDL3.so.0 on the firmware's SDL2)",
    "blockers": "64-bit only since v25.12 (Dec 2025); no Linux release builds; dense mouse UI at 640x480; big maps on an RK3326 CPU",
    "data": "Locomotion retail data",
    "suggestion": "None found",
    "repo": "https://github.com/OpenLoco/OpenLoco",
-   "notes": "Was 32-bit x86 only until v25.12, which is why it couldn't be ported before. Moved to SDL3 in v26.03."
+   "notes": "Was 32-bit x86 only until v25.12, which is why it couldn't be ported before. Moved to SDL3 in v26.03.",
+   "sdl3_shim": {
+    "fit": "Helps",
+    "note": "Removes the 'bundle a full SDL3' problem: the software renderer draws through SDL3's window framebuffer, which the shim forwards to SDL2. Set SDL3SHIM_ENABLE_MOUSE=1 if the game needs a visible cursor (opt-in in the shim)."
+   }
   },
   {
    "project": "LEGO Island (isle-portable)",
@@ -127,12 +135,16 @@
     "Possible"
    ],
    "render": "SDL3; OpenGL ES 2.0, ES 3.0 or software renderer",
-   "runtime": "Native GLES2, no gl4es needed",
-   "blockers": "Bundle SDL3; 3D speed on Mali-G31 untested",
+   "runtime": "Native GLES2 through the SDL3-over-SDL2 shim, no gl4es needed",
+   "blockers": "3D speed on Mali-G31 untested; pick the GLES2 or GLES3 renderer (isle-portable's SDL_GPU path wants Vulkan, Metal or D3D12)",
    "data": "LEGO Island 1.1 data",
    "suggestion": "Open, Low (2024, outdated)",
    "repo": "https://github.com/isledecomp/isle-portable",
-   "notes": "The suggestion says there's no Linux target; that is no longer true. Worth updating the suggestion."
+   "notes": "The suggestion says there's no Linux target; that is no longer true. Worth updating the suggestion.",
+   "sdl3_shim": {
+    "fit": "Helps",
+    "note": "SDL3 is used for window, input, audio and filesystem; the shim proxies the GL context to SDL2's EGL, the same path Taisei (GLES 3.0) uses on PortMaster."
+   }
   },
   {
    "project": "Akhenaten",
@@ -225,7 +237,7 @@
    "stars": 6,
    "last_commit": "2026-10-21",
    "fit": 3,
-   "status": "Out-of-catalogue build",
+   "status": "In PortMaster-MV",
    "cfw": [
     "Possible",
     "Possible",
@@ -237,7 +249,11 @@
    "data": "Disc dump",
    "suggestion": "None found",
    "repo": "https://github.com/zalo/melee",
-   "notes": "Already packaged for PortMaster firmwares (release of 2026-10-03), with a fix for AmberELEC's older PortMaster. Candidate for a catalogue submission."
+   "notes": "Merged into PortMaster-MV-New (ports/melee), with the Mali-G52 driver notes in its README. Was released out-of-catalogue on 2026-10-03, with a fix for AmberELEC's older PortMaster. Not in the main PortMaster-New catalogue.",
+   "sdl3_shim": {
+    "fit": "In use",
+    "note": "Links libSDL3.so.0 and ships the shim in libs.aarch64; its CI checks that the bundled SDL is the shim. Falls back to SDL3SHIM_SDL2_VIDEODRIVER=kmsdrm if the first launch fails."
+   }
   },
   {
    "project": "ReNFS5",
@@ -273,13 +289,17 @@
     "Hard",
     "Hard"
    ],
-   "render": "SDL2",
+   "render": "SDL3 + SDL3_mixer + SDL3_image",
    "runtime": "Native, once the Linux build matures",
    "blockers": "Linux build is a community alpha (x86_64 AppImage); ARM untested",
    "data": "Dungeon Keeper data",
    "suggestion": "None found",
    "repo": "https://github.com/dkfans/keeperfx",
-   "notes": "Watch: the native Linux build only appeared in 2026."
+   "notes": "Watch: the native Linux build only appeared in 2026.",
+   "sdl3_shim": {
+    "fit": "Partial",
+    "note": "Upstream is on SDL3 (3.4.x). The shim covers SDL3 itself; SDL3_mixer and SDL3_image have to be built and bundled (Railroad Rampage ships SDL3_mixer on the shim). The real blocker is still the immature x86_64-only Linux build."
+   }
   },
   {
    "project": "OpenRA",
@@ -321,7 +341,11 @@
    "data": "ROM",
    "suggestion": "None found",
    "repo": "https://github.com/mstan/MetroidPrimeHuntersRecomp",
-   "notes": "The GLES backend was built for Android (AYN Thor)."
+   "notes": "The GLES backend was built for Android (AYN Thor).",
+   "sdl3_shim": {
+    "fit": "Not needed",
+    "note": "Defaults to SDL3 but keeps an SDL2 build option (NDS_SDL_BACKEND=SDL2), which avoids the shim. Either way the compute-shader renderer is the blocker, and the shim's GPU back end has no compute pipelines."
+   }
   },
   {
    "project": "Mario Strikers Charged",
@@ -342,7 +366,11 @@
    "data": "Disc dump",
    "suggestion": "None found",
    "repo": "https://github.com/crxssrazr93/mscharged-portmaster",
-   "notes": "Watch."
+   "notes": "Watch.",
+   "sdl3_shim": {
+    "fit": "In use",
+    "note": "Ships the shim from vendor/sdl3-shim. The GLES3 Aurora back end is the bmdhacks one also used by Dusklight and Melee."
+   }
   },
   {
    "project": "TRX",
@@ -522,6 +550,13 @@
    "cfw": "The only route for GL 3.3 or Vulkan candidates (TRX, The Force Engine, OpenTESArena), and too slow for them"
   },
   {
+   "name": "SDL3-over-SDL2 shim",
+   "state": "bmdhacks/SDL, branch sdl2-backend; ships per port as libs.aarch64/libSDL3.so.0 (Taisei, Arcanum CE, Cortex Command, Open Chaos, Railroad Rampage, Super Off Road; Melee, Dusklight and Sternenfuchs on PortMaster-MV)",
+   "unlocks": "SDL3 games on firmwares that only ship a patched SDL2: video, audio and joystick go to SDL2 via dlopen, and SDL2's controller mappings are passed to SDL3. GL/GLES contexts are proxied. Adds a GLES 3.x back end for the SDL_GPU API (SPIR-V to GLSL ES through SPIRV-Cross). The 2D renderer, filesystem and threads are plain SDL3",
+   "limits": "No SDL_GPU compute pipelines, mipmap generation, blit or some copies; single command buffer, so no multi-threaded rendering; no joystick hot-plug; no Vulkan; mouse cursor is opt-in (SDL3SHIM_ENABLE_MOUSE=1); SDL3_mixer/SDL3_image/SDL3_ttf still have to be bundled",
+   "cfw": "Launch scripts pass the firmware's driver through SDL3SHIM_SDL2_VIDEODRIVER / SDL3SHIM_SDL2_AUDIODRIVER; set SDL3SHIM_SDL2_LIB where sdl2-compat provides libSDL2. Build with -mcpu for the target SoC (cortex-a35 for RK3326)"
+  },
+  {
    "name": "gl4es (standard use)",
    "state": "Upstream ptitSeb/gl4es; PortMaster docs recommend LIBGL_ES=2, LIBGL_GL=21, LIBGL_FB=4",
    "unlocks": "Desktop GL 1.5 to 2.1 on GLES2 hardware; most id Tech 3 and SDL+GL ports",
@@ -590,6 +625,18 @@
   [
    "zalo/melee releases",
    "https://github.com/zalo/melee/releases"
+  ],
+  [
+   "SDL3-over-SDL2 shim (bmdhacks/SDL sdl2-backend)",
+   "https://github.com/bmdhacks/SDL/tree/sdl2-backend"
+  ],
+  [
+   "Taisei port (uses the shim)",
+   "https://github.com/PortsMaster/PortMaster-New/tree/main/ports/taisei"
+  ],
+  [
+   "Melee on PortMaster-MV",
+   "https://github.com/PortsMaster-MV/PortMaster-MV-New/tree/main/ports/melee"
   ]
  ],
  "repo_stats_checked": "2026-11-16"
