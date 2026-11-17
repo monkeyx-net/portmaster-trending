@@ -43,7 +43,7 @@
    "game": "Jagged Alliance 2",
    "github": "ja2-stracciatella/ja2-stracciatella",
    "stars": 550,
-   "last_commit": "2026-11-08",
+   "last_commit": "2026-11-16",
    "fit": 5,
    "status": "Open suggestion",
    "cfw": [
@@ -143,7 +143,7 @@
    "game": "LEGO Island 1.1 (EN)",
    "github": "isledecomp/isle-portable",
    "stars": 1098,
-   "last_commit": "2026-11-15",
+   "last_commit": "2026-11-16",
    "fit": 4,
    "status": "Open suggestion",
    "cfw": [
@@ -178,7 +178,7 @@
    "game": "Pharaoh + Cleopatra",
    "github": "dalerank/Akhenaten",
    "stars": 536,
-   "last_commit": "2026-11-15",
+   "last_commit": "2026-11-16",
    "fit": 4,
    "status": "Not found",
    "cfw": [
@@ -198,7 +198,7 @@
    "project": "Return to the Roots (s25client)",
    "game": "The Settlers II Gold",
    "github": "Return-To-The-Roots/s25client",
-   "stars": 602,
+   "stars": 603,
    "last_commit": "2026-11-15",
    "fit": 3,
    "status": "Not found",
@@ -218,7 +218,7 @@
    "project": "OpenJK",
    "game": "Jedi Academy / Jedi Outcast",
    "github": "JACoders/OpenJK",
-   "stars": 2341,
+   "stars": 2344,
    "last_commit": "2026-09-29",
    "fit": 3,
    "status": "Not found",
@@ -238,7 +238,7 @@
    "project": "SR (Static Recompiler)",
    "game": "Albion, Warcraft and other 90s DOS/Windows games",
    "github": "M-HT/SR",
-   "stars": 439,
+   "stars": 438,
    "last_commit": "2026-08-27",
    "fit": 3,
    "status": "Open suggestion",
@@ -315,7 +315,7 @@
    "project": "KeeperFX",
    "game": "Dungeon Keeper",
    "github": "dkfans/keeperfx",
-   "stars": 1049,
+   "stars": 1051,
    "last_commit": "2026-11-14",
    "fit": 2,
    "status": "Rejected suggestion",
@@ -349,7 +349,7 @@
    "project": "OpenRA",
    "game": "C&C, Red Alert, Dune 2000",
    "github": "OpenRA/OpenRA",
-   "stars": 17794,
+   "stars": 17795,
    "last_commit": "2026-11-08",
    "fit": 2,
    "status": "Open suggestion",
@@ -380,7 +380,7 @@
    "game": "Metroid Prime Hunters (DS)",
    "github": "mstan/MetroidPrimeHuntersRecomp",
    "stars": 288,
-   "last_commit": "2026-11-15",
+   "last_commit": "2026-11-17",
    "fit": 2,
    "status": "Not found",
    "cfw": [
@@ -450,7 +450,7 @@
    "project": "The Force Engine",
    "game": "Dark Forces",
    "github": "luciusDXL/TheForceEngine",
-   "stars": 1188,
+   "stars": 1189,
    "last_commit": "2026-11-14",
    "fit": 1,
    "status": "Rejected suggestion",
@@ -482,7 +482,7 @@
    "game": "The Elder Scrolls: Arena",
    "github": "afritz1/OpenTESArena",
    "stars": 1455,
-   "last_commit": "2026-11-14",
+   "last_commit": "2026-11-16",
    "fit": 1,
    "status": "Open suggestion",
    "cfw": [
@@ -742,6 +742,6 @@
    "https://github.com/PortsMaster-MV/PortMaster-MV-New/tree/main/ports/melee"
   ]
  ],
- "repo_stats_checked": "2026-11-16",
+ "repo_stats_checked": "2026-11-17",
  "suggestions_checked": "2026-11-17"
 }
