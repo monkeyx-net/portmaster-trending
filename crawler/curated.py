@@ -9,6 +9,7 @@ import json
 import os
 import re
 import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 
 from .report import esc
@@ -19,7 +20,15 @@ SRC = os.path.join(ROOT, "data", "curated.json")
 # Screenshots: a hand-set `screenshot` URL wins; otherwise `screenshot_auto` is
 # filled on refresh from the PortMaster port folder named by `pm_port`
 # ("PortMaster-New/<dir>" or "PortMaster-MV-New/<dir>"), else from the first
-# non-badge image in the project's README. Images are hotlinked.
+# non-badge image in the project's README, else the matched PortMaster
+# suggestion's image. Images are hotlinked.
+# PortMaster's suggestion list, refreshed on every run. Candidates are matched
+# by a pinned `suggestion_id`, else by GitHub repo in the suggestion's web URL,
+# else by exact (normalised) title against the project or game name.
+SUGGESTIONS_URL = "https://raw.githubusercontent.com/PortsMaster/PortMaster-Wiki-New/main/docs/assets/json/suggestions_new.json"
+SUGGESTION_PAGE = "https://suggestions.portmaster.games/suggestion-details?id="
+SUGGESTION_RANK = {"Open": 0, "Complete": 1, "Rejected": 2}
+
 PM_REPOS = {"PortMaster-New": "PortsMaster/PortMaster-New", "PortMaster-MV-New": "PortsMaster-MV/PortMaster-MV-New"}
 IMG_RE = re.compile(r'!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]+src=["\']([^"\']+)', re.I)
 NOT_SHOT = re.compile(
@@ -56,6 +65,55 @@ def pm_screenshot_url(pm_port, files):
     return None
 
 
+def fetch_suggestions(url=SUGGESTIONS_URL):
+    req = urllib.request.Request(url, headers={"User-Agent": "portmaster-trending"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _norm(text):
+    return re.sub(r"[^a-z0-9]", "", (text or "").lower())
+
+
+def _gh_name(url):
+    m = re.search(r"github\.com/([^/\s]+/[^/\s#?]+)", url or "", re.I)
+    return m.group(1).lower().removesuffix(".git") if m else None
+
+
+def match_suggestion(c, suggestions):
+    """The PortMaster suggestion for a candidate, or None."""
+    if c.get("suggestion_id"):
+        return next((x for x in suggestions if x.get("id") == c["suggestion_id"]), None)
+    repo = (c.get("github") or "").lower()
+    names = {_norm(c.get("project")), _norm(c.get("game"))} - {""}
+    hits = [
+        x for x in suggestions
+        if (repo and _gh_name(x.get("weburl")) == repo) or _norm(x.get("title")) in names
+    ]
+    # Prefer an open suggestion, then the most votes.
+    hits.sort(key=lambda x: (SUGGESTION_RANK.get(x.get("status"), 3), -(x.get("voteCount") or 0)))
+    return hits[0] if hits else None
+
+
+def refresh_suggestions(d, suggestions):
+    """Store the matched suggestion on each candidate as `pm_suggestion`."""
+    n = 0
+    for c in d["candidates"]:
+        x = match_suggestion(c, suggestions)
+        if x:
+            c["pm_suggestion"] = {
+                "id": x["id"], "title": x.get("title"), "status": x.get("status"),
+                "feasibility": x.get("feasibility"), "votes": x.get("voteCount"),
+                "date": x.get("date"), "image": x.get("imageurl") or None,
+            }
+            n += 1
+        else:
+            c.pop("pm_suggestion", None)
+    d["suggestions_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    print(f"  {n} of {len(d['candidates'])} curated candidates have a PortMaster suggestion")
+    return n
+
+
 def find_screenshot(gh, item):
     """Look up an automatic screenshot for a curated entry, or None."""
     if item.get("pm_port"):
@@ -68,8 +126,10 @@ def find_screenshot(gh, item):
         data = gh._get(f"/repos/{item['github']}/readme")
         if data and data.get("content") and data.get("download_url"):
             text = base64.b64decode(data["content"]).decode("utf-8", "replace")
-            return readme_image(text, data["download_url"].rsplit("/", 1)[0] + "/")
-    return None
+            url = readme_image(text, data["download_url"].rsplit("/", 1)[0] + "/")
+            if url:
+                return url
+    return (item.get("pm_suggestion") or {}).get("image")
 
 
 def refresh_screenshots(gh, d):
@@ -93,10 +153,15 @@ def refresh_screenshots(gh, d):
 
 def refresh(gh, src=SRC):
     """Update stars and last default-branch commit date for each candidate
-    that has a `github` repo, and save them back to the JSON. Lookups that
-    fail keep the previous values."""
+    that has a `github` repo, match each candidate to PortMaster's suggestion
+    list, pick screenshots, and save them back to the JSON. Lookups that fail
+    keep the previous values."""
     with open(src, encoding="utf-8") as f:
         d = json.load(f)
+    try:
+        refresh_suggestions(d, fetch_suggestions())
+    except Exception as e:  # keep the previous matches
+        print(f"  ! suggestions list: {e}")
     ok = 0
     for c in d["candidates"]:
         name = c.get("github")
@@ -162,6 +227,21 @@ def shot(item):
             f'referrerpolicy="no-referrer" onerror="this.parentNode.classList.add(\'broken\')"></a>')
 
 
+SUGG_CLASS = {"Open": "pos", "Complete": "ok", "Rejected": "bad"}
+
+
+def suggestion_cell(c):
+    """Matched PortMaster suggestion: status, feasibility, votes, linked."""
+    x = c.get("pm_suggestion")
+    if not x:
+        return '<div class="sugg dim">No suggestion</div>'
+    votes = x.get("votes") or 0
+    return (f'<div class="sugg"><a href="{esc(SUGGESTION_PAGE + x["id"])}" target="_blank" rel="noopener" '
+            f'title="{esc(x.get("title"))} (suggested {esc(x.get("date"))})">Suggestion</a> '
+            f'<span class="pill {SUGG_CLASS.get(x.get("status"), "")}">{esc(x.get("status"))}</span>'
+            f'<div class="dim">feasibility {esc(x.get("feasibility"))} · {votes} vote{"" if votes == 1 else "s"}</div></div>')
+
+
 def candidate_row(c, targets):
     cfw = "".join(
         f'<td><span class="pill {FIT_CLASS.get(v, "")}">{esc(v)}</span></td>' for v in c["cfw"]
@@ -174,13 +254,13 @@ def candidate_row(c, targets):
   <td class="num stars" data-v="{c.get('stars') or -1}">{'★ ' + format(c['stars'], ',') if c.get('stars') is not None else '<span class="dim">–</span>'}</td>
   <td class="num {commit_age(c.get('last_commit'))}" data-v="{esc(c.get('last_commit') or '')}">{esc(c.get('last_commit') or '–')}</td>
   <td class="num"><span class="fit f{c['fit']}">{c['fit']}</span></td>
-  <td>{esc(c['status'])}</td>
+  <td>{esc(c['status'])}{suggestion_cell(c)}</td>
   {cfw}
   <td>{esc(c['render'])}<div class="dim">{esc(c['runtime'])}</div></td>
   {shim_cell(c)}
   <td class="blk">{esc(c['blockers'])}</td>
   <td>{esc(c['data'])}</td>
-  <td class="dim notes">{esc(c['notes'])}<div>Suggestion: {esc(c['suggestion'])}</div></td>
+  <td class="dim notes">{esc(c['notes'])}</td>
 </tr>"""
 
 
@@ -242,6 +322,8 @@ td.num {{ text-align:center; }}
 .shot:hover img {{ border-color:var(--acc); }}
 .noshot {{ display:block; margin-top:8px; font-size:12px; }}
 .shot.broken {{ display:none; }}
+.sugg {{ margin-top:6px; font-size:12px; white-space:nowrap; }}
+.sugg a {{ color:var(--acc); }}
 .cand {{ min-width:2450px; }} .cand td.notes {{ min-width:320px; }} .cand td.shim {{ min-width:260px; }} .cand td.blk {{ min-width:220px; }}
 .cand td:nth-child(2) {{ min-width:210px; }} .cand td:nth-child(2) a {{ overflow-wrap:anywhere; }}
 .stars {{ color:var(--mid); white-space:nowrap; }}
@@ -264,7 +346,7 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
   <h1>PortMaster <span>candidates</span></h1>
   <p class="meta">{esc(d['title'])} · checked {esc(d['as_of'])} · targets: {esc(', '.join(targets))}</p>
   <p class="intro">{esc(d['intro'])}</p>
-  <p class="dim">Stars and last commit (default branch) {('refreshed ' + esc(d['repo_stats_checked'])) if d.get('repo_stats_checked') else 'not yet refreshed'}. Last commit: <span style="color:var(--ok)">≤ 90 days</span>, <span style="color:var(--mid)">≤ 1 year</span>, <span style="color:var(--bad)">older</span>. Click Stars, Last commit or Fit to sort.</p>
+  <p class="dim">Stars and last commit (default branch) {('refreshed ' + esc(d['repo_stats_checked'])) if d.get('repo_stats_checked') else 'not yet refreshed'}. Last commit: <span style="color:var(--ok)">≤ 90 days</span>, <span style="color:var(--mid)">≤ 1 year</span>, <span style="color:var(--bad)">older</span>. PortMaster suggestions matched against the <a href="https://github.com/PortsMaster/PortMaster-Wiki-New/blob/main/docs/assets/json/suggestions_new.json">suggestions list</a> {('on ' + esc(d['suggestions_checked'])) if d.get('suggestions_checked') else '(not yet checked)'}. Click Stars, Last commit or Fit to sort.</p>
 
   <h2>Candidates <small>{len(cands)}</small></h2>
   <div class="tools">
