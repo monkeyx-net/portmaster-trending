@@ -66,7 +66,7 @@
    "full_name": "0xrnp/lazymobile",
    "id": 1457462443,
    "language": "Go",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-20T06:29:29Z",
    "star_history": [
@@ -117,11 +117,11 @@
    "description": "HJM Keypad\uff1a\u53ef\u81ea\u7531\u6446\u653e\u7684 Android \u865a\u62df\u952e\u9f20\u60ac\u6d6e\u5c42\u3002\u591a\u70b9\u89e6\u63a7\u70ed\u533a\u8ba9\u300c\u6ed1\u89c6\u89d2\u300d\u548c\u300c\u6309\u65b0\u952e\u300d\u540c\u65f6\u8fdb\u884c\uff0c\u901a\u8fc7 Shizuku \u6ce8\u5165\u7cfb\u7edf\u8f93\u5165\uff0c\u514d root\u3002",
    "first_seen": "2026-11-16T09:59:11Z",
    "fork": false,
-   "forks": 1,
+   "forks": 2,
    "full_name": "114514hhha233/shizuku-keypad",
    "id": 1455051881,
    "language": "Kotlin",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T07:50:43Z",
    "star_history": [
@@ -132,9 +132,13 @@
     [
      "2026-11-23",
      6
+    ],
+    [
+     "2026-11-24",
+     7
     ]
    ],
-   "stars": 6,
+   "stars": 7,
    "topics": [
     "android",
     "cloud-gaming",
@@ -170,7 +174,7 @@
    "full_name": "11NU0/taisei-android",
    "id": 1449351408,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-15T04:59:20Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -391,16 +395,20 @@
    "full_name": "Andriy-samp/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569631,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:12Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -489,16 +497,20 @@
    "full_name": "AntikvarX/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569982,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-19T19:24:16Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -590,16 +602,20 @@
    "full_name": "AureoLightz/CitroWaker",
    "id": 1455997011,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T04:28:13Z",
    "star_history": [
     [
      "2026-11-23",
      58
+    ],
+    [
+     "2026-11-24",
+     60
     ]
    ],
-   "stars": 58,
+   "stars": 60,
    "topics": [
     "citro3d",
     "decompilation",
@@ -633,7 +649,7 @@
    "full_name": "AuroraWright/opensoda",
    "id": 1465934185,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MPL-2.0",
    "pushed_at": "2026-11-21T05:22:31Z",
    "star_history": [
@@ -667,7 +683,7 @@
    "full_name": "Ay1man2/Wintainium",
    "id": 1459173273,
    "language": "PowerShell",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T00:28:17Z",
    "star_history": [
@@ -716,7 +732,7 @@
    "full_name": "Ayreth/Kakudai",
    "id": 1464792845,
    "language": "C#",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-21T22:55:16Z",
    "star_history": [
@@ -750,16 +766,20 @@
    "full_name": "BSXbox/BSXbox",
    "id": 1467473906,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T17:57:40Z",
    "star_history": [
     [
      "2026-11-23",
      8
+    ],
+    [
+     "2026-11-24",
+     11
     ]
    ],
-   "stars": 8,
+   "stars": 11,
    "topics": [
     "emulator",
     "research",
@@ -792,7 +812,7 @@
    "full_name": "Balemuni/pulse-of-time",
    "id": 1461907771,
    "language": "C#",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T11:22:55Z",
    "star_history": [
@@ -804,6 +824,53 @@
    "stars": 8,
    "topics": [],
    "url": "https://github.com/Balemuni/pulse-of-time"
+  },
+  "Batushn/KestrelX": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a graphics/shader toolchain for Windows D3D12 rather than a playable game, emulator, or port candidate, and it requires no original game data to be useful for handhelds.",
+    "relevant": false,
+    "summary": "KestrelX is a Windows D3D12 shader recompilation runtime that translates Xbox Series RDNA2 shader microcode into SM 6.6 DXIL.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:09Z",
+   "created_at": "2026-11-23T20:41:28Z",
+   "description": "Clean-room Xbox Series X|S compatibility & dual-wave RDNA2 -> SM 6.6 DXIL shader recompiler (C++23 / D3D12) | v0.9.0: 68/68 Dual-GPU PASS, SVT 64KB, KXVC AES-128-CTR, DXR BVH, PresentX HUD, Shader Census & PE Probe",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Batushn/KestrelX",
+   "id": 1469285935,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-24T02:52:07Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "compatibility-layer",
+    "cpp23",
+    "d3d12",
+    "dxil",
+    "emulator",
+    "hlsl",
+    "rdna2",
+    "shader-recompiler",
+    "windows",
+    "xbox",
+    "xbox-series",
+    "xbox-series-x"
+   ],
+   "url": "https://github.com/Batushn/KestrelX"
   },
   "Berny23/slingshot-animals-recomp": {
    "archived": false,
@@ -821,11 +888,11 @@
    "description": "Unofficial static recompilation of Rovio's old Android Angry Birds games for Linux, Windows, macOS, 64-bit Android and Nintendo Switch (homebrew). Games: Classic, Seasons, Rio, Space, Star Wars, Star Wars 2, Stella.",
    "first_seen": "2026-11-17T06:50:07Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "Berny23/slingshot-animals-recomp",
    "id": 1460793150,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T15:59:06Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -842,9 +909,13 @@
     [
      "2026-11-23",
      55
+    ],
+    [
+     "2026-11-24",
+     56
     ]
    ],
-   "stars": 55,
+   "stars": 56,
    "topics": [
     "android",
     "cpp",
@@ -882,7 +953,7 @@
    "full_name": "BlackLineInteractive/FerrariVirtualRace-MacOS-Port",
    "id": 1454671112,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-12T10:15:41Z",
    "star_history": [
@@ -945,6 +1016,40 @@
    "topics": [],
    "url": "https://github.com/C-GBL/P3FES-Decompilation"
   },
+  "CLAIMA-EU/aimip-claima": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a climate-science research workflow tool requiring NVIDIA CUDA GPUs, not a game, emulator, or engine suitable for handheld porting.",
+    "relevant": false,
+    "summary": "A command-line tool for running AI climate emulator models on GPU clusters or workstations.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:28Z",
+   "created_at": "2026-11-16T00:14:06Z",
+   "description": "Run AI climate emulators (ACE family, SamudrACE, DLESyM, ArchesClimate-SSP) on any GPU cluster with one command",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 3,
+   "full_name": "CLAIMA-EU/aimip-claima",
+   "id": 1459365392,
+   "language": "Python",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-22T14:09:03Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/CLAIMA-EU/aimip-claima"
+  },
   "CYBERPUNK20/godfather-nx": {
    "archived": false,
    "classification": {
@@ -966,7 +1071,7 @@
    "full_name": "CYBERPUNK20/godfather-nx",
    "id": 1443102468,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T02:58:32Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -1089,18 +1194,22 @@
    "full_name": "Chizuui/Carbon-Android",
    "id": 1466403817,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T08:06:23Z",
+   "pushed_at": "2026-11-24T05:16:36Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 11,
    "star_history": [
     [
      "2026-11-23",
      11
+    ],
+    [
+     "2026-11-24",
+     12
     ]
    ],
-   "stars": 11,
+   "stars": 12,
    "topics": [],
    "url": "https://github.com/Chizuui/Carbon-Android"
   },
@@ -1205,7 +1314,7 @@
    "full_name": "CoastRedWood/splashdown",
    "id": 1443254334,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-03T00:03:55Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -1329,7 +1438,7 @@
    "full_name": "CreamySeaman6/Exvius-Revival-Desktop",
    "id": 1454488207,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-21T01:25:55Z",
    "star_history": [
@@ -1345,6 +1454,40 @@
    "stars": 13,
    "topics": [],
    "url": "https://github.com/CreamySeaman6/Exvius-Revival-Desktop"
+  },
+  "Cyphco/harvest-moon-fomt-decomp": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It targets GBA ROM rebuilding rather than a native executable for handhelds, and it needs the commercial baserom.gba, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A byte-matching C decompilation of Harvest Moon: Friends of Mineral Town for the Game Boy Advance, which builds a GBA ROM.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:24Z",
+   "created_at": "2026-11-22T13:59:47Z",
+   "description": "100% matching decompilation of Harvest Moon: Friends of Mineral Town (GBA)",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Cyphco/harvest-moon-fomt-decomp",
+   "id": 1467616256,
+   "language": "C",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-22T14:03:37Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/Cyphco/harvest-moon-fomt-decomp"
   },
   "D33ptar00p/emulator-ui": {
    "archived": false,
@@ -1367,7 +1510,7 @@
    "full_name": "D33ptar00p/emulator-ui",
    "id": 1455415563,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-17T11:44:56Z",
    "star_history": [
@@ -1502,7 +1645,7 @@
    "full_name": "DasCondor/kubefactory",
    "id": 1457095783,
    "language": "GDScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T04:06:01Z",
    "star_history": [
@@ -1561,16 +1704,20 @@
    "full_name": "DeanSheave67/SteamDeckPC-ShaderSaveSync",
    "id": 1468683634,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T11:39:45Z",
    "star_history": [
     [
      "2026-11-23",
      32
+    ],
+    [
+     "2026-11-24",
+     31
     ]
    ],
-   "stars": 32,
+   "stars": 31,
    "topics": [
     "desktop-application",
     "emulation",
@@ -1606,16 +1753,20 @@
    "full_name": "DeliciousMeatPop/Venture-UnknownSourceEdition",
    "id": 1464956709,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T01:12:24Z",
+   "pushed_at": "2026-11-24T06:17:13Z",
    "star_history": [
     [
      "2026-11-23",
      10
+    ],
+    [
+     "2026-11-24",
+     13
     ]
    ],
-   "stars": 10,
+   "stars": 13,
    "topics": [],
    "url": "https://github.com/DeliciousMeatPop/Venture-UnknownSourceEdition"
   },
@@ -1712,7 +1863,7 @@
    "full_name": "Dgdiniz/retrolab-emulator",
    "id": 1454101443,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T17:14:55Z",
    "star_history": [
@@ -1756,7 +1907,7 @@
    "full_name": "Dima353/heroes_lore_decomp",
    "id": 1449485658,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-13T19:33:19Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -1843,16 +1994,20 @@
    "full_name": "EJTH/FM-MATE",
    "id": 1460892796,
    "language": "Vue",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-21T15:19:04Z",
    "star_history": [
     [
      "2026-11-23",
      9
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 9,
+   "stars": 10,
    "topics": [],
    "url": "https://github.com/EJTH/FM-MATE"
   },
@@ -1997,9 +2152,9 @@
    "full_name": "EliasFD3S/openslrr",
    "id": 1444746666,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T17:53:21Z",
+   "pushed_at": "2026-11-24T03:31:26Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 14,
    "star_history": [
@@ -2014,9 +2169,13 @@
     [
      "2026-11-23",
      16
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 16,
+   "stars": 17,
    "topics": [
     "game-engine",
     "racing-game",
@@ -2045,16 +2204,20 @@
    "full_name": "Fisheriks/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570401,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:14Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -2192,7 +2355,7 @@
    "full_name": "Frogacuda/Gridrunner-Enhanced-Edition",
    "id": 1459082039,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-18T04:27:46Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -2201,9 +2364,13 @@
     [
      "2026-11-23",
      6
+    ],
+    [
+     "2026-11-24",
+     7
     ]
    ],
-   "stars": 6,
+   "stars": 7,
    "topics": [],
    "url": "https://github.com/Frogacuda/Gridrunner-Enhanced-Edition"
   },
@@ -2228,7 +2395,7 @@
    "full_name": "Gabriel-Valin/aws-emulator-sqs-llm",
    "id": 1456994027,
    "language": "HTML",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-13T19:07:45Z",
    "star_history": [
@@ -2360,7 +2527,7 @@
    "full_name": "Guuzzeji/otogi-xunchain",
    "id": 1449942986,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T17:43:48Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -2389,9 +2556,13 @@
     [
      "2026-11-23",
      37
+    ],
+    [
+     "2026-11-24",
+     39
     ]
    ],
-   "stars": 37,
+   "stars": 39,
    "topics": [
     "angle",
     "fromsoftware",
@@ -2429,7 +2600,7 @@
    "full_name": "HeroFromUnicorn67004/PS5X-Next-Generation-PlayStation-Emulation-Platform",
    "id": 1457202252,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-18T11:41:39Z",
    "star_history": [
@@ -2521,7 +2692,7 @@
    "full_name": "Holla-Back-Entertainment/virtual-mpc-gen2",
    "id": 1456258816,
    "language": "HTML",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T14:47:19Z",
    "star_history": [
@@ -2616,7 +2787,7 @@
    "full_name": "Index-Software/codefury",
    "id": 1467592950,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T05:07:57Z",
    "star_history": [
@@ -2689,7 +2860,7 @@
    "full_name": "JamesCrumble/modern-combat-5-bridge",
    "id": 1460623571,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T13:51:49Z",
    "star_history": [
@@ -2736,9 +2907,9 @@
    "full_name": "Jared-woodruff/TA-Reborn",
    "id": 1451110890,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-22T23:20:00Z",
+   "pushed_at": "2026-11-24T09:58:13Z",
    "shown_at": "2026-11-16T09:59:11Z",
    "shown_stars": 21,
    "star_history": [
@@ -2808,6 +2979,40 @@
    "stars": 49,
    "topics": [],
    "url": "https://github.com/JaviiDeveloper/eden-nx2-android"
+  },
+  "JihadJackass/Fat-Princess-Recompiled": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It requires original PS3 game data files, the repository is private, and it is a Windows-first Vulkan/clang-cl build, so there is no public, portable source to package for handhelds.",
+    "relevant": false,
+    "summary": "A static recompilation of the PS3 game Fat Princess (with Fat Roles DLC) into native C++ with a Vulkan renderer, targeting Windows and Linux.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:40Z",
+   "created_at": "2026-11-18T05:36:47Z",
+   "description": "Native Windows recompilation of Fat Princess (PS3) with the Fat Roles DLC. The game\u2019s own code is translated to C++ with a Vulkan renderer, a launcher, full key remapping and PC button icons. No emulator.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "JihadJackass/Fat-Princess-Recompiled",
+   "id": 1462364924,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-23T04:58:01Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/JihadJackass/Fat-Princess-Recompiled"
   },
   "JupiterianSoul/Balatro-Overhaul": {
    "archived": false,
@@ -2953,9 +3158,9 @@
    "full_name": "KayJames196/cat-game-engine",
    "id": 1459172965,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T13:48:36Z",
+   "pushed_at": "2026-11-24T01:19:58Z",
    "star_history": [
     [
      "2026-11-23",
@@ -2978,6 +3183,53 @@
     "love2d-framework"
    ],
    "url": "https://github.com/KayJames196/cat-game-engine"
+  },
+  "KeyArgo/hermes-game-center": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a plugin for the Hermes Agent desktop app with Python tooling, not a standalone playable game or engine suited for handheld porting.",
+    "relevant": false,
+    "summary": "A Hermes Agent plugin bundling board and card games (chess, go, checkers, and others) with a referee that validates model-proposed moves.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:07Z",
+   "created_at": "2026-11-11T18:49:58Z",
+   "description": "Real board and card games you can play inside Hermes Agent \u2014 chess, go, checkers and more, each with its own rules engine and a referee.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "KeyArgo/hermes-game-center",
+   "id": 1454370298,
+   "language": "Python",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-24T10:46:44Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "ai-agent",
+    "ai-games",
+    "board-games",
+    "checkers",
+    "chess",
+    "connect-four",
+    "game-engine",
+    "go",
+    "hermes-agent",
+    "hermes-plugin",
+    "llm",
+    "nous-research"
+   ],
+   "url": "https://github.com/KeyArgo/hermes-game-center"
   },
   "Kiasora/menu-bar-emulator": {
    "archived": false,
@@ -3034,9 +3286,9 @@
    "full_name": "LATINALU/ludokit",
    "id": 1466881681,
    "language": "JavaScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-21T19:23:32Z",
+   "pushed_at": "2026-11-24T00:45:13Z",
    "star_history": [
     [
      "2026-11-23",
@@ -3121,16 +3373,20 @@
    "full_name": "Layfate/Retra",
    "id": 1454700962,
    "language": "Kotlin",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MPL-2.0",
-   "pushed_at": "2026-11-23T05:31:16Z",
+   "pushed_at": "2026-11-24T07:54:35Z",
    "star_history": [
     [
      "2026-11-23",
      7
+    ],
+    [
+     "2026-11-24",
+     8
     ]
    ],
-   "stars": 7,
+   "stars": 8,
    "topics": [
     "android",
     "emulation",
@@ -3166,7 +3422,7 @@
    "full_name": "Leizhidong-creator/CreateWorld",
    "id": 1463967045,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-19T10:28:24Z",
    "star_history": [
@@ -3389,20 +3645,24 @@
    "description": "AnyXboxX \u2014 prototype d'\u00e9mulateur Xbox Series X (HLE du GDK sur Unicorn)",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 2,
+   "forks": 13,
    "full_name": "LooperSalty/AnyXboxX",
    "id": 1466028817,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T17:47:28Z",
+   "pushed_at": "2026-11-24T11:25:59Z",
    "star_history": [
     [
      "2026-11-23",
      50
+    ],
+    [
+     "2026-11-24",
+     117
     ]
    ],
-   "stars": 50,
+   "stars": 117,
    "topics": [
     "emulator",
     "gdk",
@@ -3410,12 +3670,46 @@
     "gta-6",
     "gta-vi",
     "gta6",
-    "leonida",
     "unicorn",
+    "victory",
     "xbox",
     "xbox-series-x"
    ],
    "url": "https://github.com/LooperSalty/AnyXboxX"
+  },
+  "LuckyLuckLucky/Fritchii-Intel-Fixes": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "low",
+    "reason": "It is a set of Windows-targeted patches for a Windows GPU driver issue on an emulator, not a playable game or a portable port; the underlying Fritchii project is a Windows-focused emulator, so there is nothing for handheld porters to package.",
+    "relevant": false,
+    "summary": "Unofficial Intel Arc/Xe GPU fix patches and builds for the Fritchii Windows N64 emulator.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:34Z",
+   "created_at": "2026-11-11T22:27:41Z",
+   "description": "Unofficial Intel Arc/Xe fixes for the Fritchii emulator (builds IntelFix3-7, patches for the developer)",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "LuckyLuckLucky/Fritchii-Intel-Fixes",
+   "id": 1454565470,
+   "language": "GLSL",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-23T00:46:22Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/LuckyLuckLucky/Fritchii-Intel-Fixes"
   },
   "Luminger/balatro-switch-rce": {
    "archived": false,
@@ -3581,7 +3875,7 @@
    "full_name": "MarketKernel/html-virtual-pc",
    "id": 1458879641,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T19:01:33Z",
    "star_history": [
@@ -3634,9 +3928,9 @@
    "full_name": "MastaG/bc250-emulators",
    "id": 1453613282,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T15:16:14Z",
+   "pushed_at": "2026-11-23T18:59:54Z",
    "star_history": [
     [
      "2026-11-23",
@@ -3667,7 +3961,7 @@
    "full_name": "MattyKen619/Pikmin-PS3-Port",
    "id": 1442376523,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-02T01:47:13Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -3711,7 +4005,7 @@
    "full_name": "MatyMeatBoy/ShiningSource",
    "id": 1455706823,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-22T01:57:42Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -3742,6 +4036,53 @@
    ],
    "url": "https://github.com/MatyMeatBoy/ShiningSource"
   },
+  "Meetsaini/emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "Misleadingly named; it is a pre-release marketing/system-check tool with no playable game or real emulator, and it is Windows-only and built around a game that isn't out.",
+    "relevant": false,
+    "summary": "A Windows PowerShell-based GTA VI \"PC emulator\" utility that claims to prepare systems for an unreleased game, with no actual emulation.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:35:56Z",
+   "created_at": "2026-11-23T20:30:08Z",
+   "description": "",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Meetsaini/emulator",
+   "id": 1469275607,
+   "language": "HTML",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-24T05:07:01Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     338
+    ]
+   ],
+   "stars": 338,
+   "topics": [
+    "ai",
+    "desktop-app",
+    "emulator",
+    "game-emulator",
+    "generative-ai",
+    "gta",
+    "gta-download",
+    "gta-vi-ps",
+    "gta6-preload",
+    "ps5-emulator",
+    "ps5-ui",
+    "shell"
+   ],
+   "url": "https://github.com/Meetsaini/emulator"
+  },
   "MegaCadeDev/dolphin-nx2": {
    "archived": false,
    "classification": {
@@ -3763,7 +4104,7 @@
    "full_name": "MegaCadeDev/dolphin-nx2",
    "id": 1458269164,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T16:07:18Z",
    "star_history": [
@@ -3994,7 +4335,7 @@
    "full_name": "MisterAlex95/Xrecomp",
    "id": 1457223845,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-22T01:42:57Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -4043,16 +4384,20 @@
    "full_name": "Mizushi148/MizuBox",
    "id": 1467858767,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-22T18:31:35Z",
    "star_history": [
     [
      "2026-11-23",
      7
+    ],
+    [
+     "2026-11-24",
+     8
     ]
    ],
-   "stars": 7,
+   "stars": 8,
    "topics": [
     "compatibility-layer",
     "cpp20",
@@ -4198,7 +4543,7 @@
    "full_name": "NitrosGits/Lemmings-For-Windows-95",
    "id": 1448950706,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-11T02:58:27Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -4221,6 +4566,48 @@
    "topics": [],
    "url": "https://github.com/NitrosGits/Lemmings-For-Windows-95"
   },
+  "Noardewyn/AnomalyStation": {
+   "archived": false,
+   "classification": {
+    "category": "game engine / framework",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Not a portable candidate: it targets Godot 4.7 mono with .NET 10 and needs a 15 GB build with 16 GB RAM, far beyond handheld ARM hardware, and it is pre-alpha with 5 stars.",
+    "relevant": false,
+    "summary": "A pre-alpha 3D Godot/.NET remake of Space Station 13 built on the tgstation codebase, with multiplayer server support.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:22Z",
+   "created_at": "2026-11-22T20:46:01Z",
+   "description": "3D remake of Space Station 13",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Noardewyn/AnomalyStation",
+   "id": 1467973708,
+   "language": "C#",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-23T18:13:50Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "csharp",
+    "dotnet",
+    "game",
+    "godot",
+    "multiplayer",
+    "space-station-13",
+    "ss13"
+   ],
+   "url": "https://github.com/Noardewyn/AnomalyStation"
+  },
   "Olmectron/toronja": {
    "archived": false,
    "classification": {
@@ -4242,7 +4629,7 @@
    "full_name": "Olmectron/toronja",
    "id": 1462253130,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-23T10:58:52Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -4331,7 +4718,7 @@
    "full_name": "OpenRBX-org/RBXDecomp",
    "id": 1457256002,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T13:31:56Z",
    "star_history": [
@@ -4378,7 +4765,7 @@
    "full_name": "OpenThievius/sly1-decomp",
    "id": 1437944368,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-21T22:13:35Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -4451,6 +4838,40 @@
    "topics": [],
    "url": "https://github.com/OpokXeno/xsg-ii-decomp"
   },
+  "Organisation2-0/fake-switch-connection-check": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a network utility for consoles, not a game, emulator, or engine, and the C# version is a Windows-only WPF app.",
+    "relevant": false,
+    "summary": "A local DNS and HTTP server that fakes Nintendo Switch connectivity-check endpoints so the console stays connected to an offline network.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:38Z",
+   "created_at": "2026-11-20T18:56:04Z",
+   "description": "A local DNS server that emulates the Nintendo Switch's internet connection servers.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Organisation2-0/fake-switch-connection-check",
+   "id": 1465794908,
+   "language": "C#",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-21T09:29:35Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/Organisation2-0/fake-switch-connection-check"
+  },
   "PeterRichardsonGolf/Halo-CE-Arena-Evolved": {
    "archived": false,
    "classification": {
@@ -4471,7 +4892,7 @@
    "full_name": "PeterRichardsonGolf/Halo-CE-Arena-Evolved",
    "id": 1440904719,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-23T04:11:12Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -4562,7 +4983,7 @@
    "full_name": "Philip-Bos/echofield-r36s",
    "id": 1457768095,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-14T14:04:55Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -4575,9 +4996,13 @@
     [
      "2026-11-23",
      7
+    ],
+    [
+     "2026-11-24",
+     9
     ]
    ],
-   "stars": 7,
+   "stars": 9,
    "topics": [
     "arkos",
     "granular-synthesis",
@@ -4696,7 +5121,7 @@
    "full_name": "PotatoRecomp/RE4Wii-Android",
    "id": 1457641434,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T15:13:42Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -4705,9 +5130,13 @@
     [
      "2026-11-23",
      60
+    ],
+    [
+     "2026-11-24",
+     62
     ]
    ],
-   "stars": 60,
+   "stars": 62,
    "topics": [
     "android",
     "android-port",
@@ -4992,11 +5421,11 @@
    "description": "Pro video and photo features for the Nikon Z6III, in firmware. Emulator-only, DO_NOT_FLASH.",
    "first_seen": "2026-11-17T08:57:02Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "RdWing/z63patch",
    "id": 1453881142,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-14T19:56:18Z",
    "star_history": [
@@ -5007,9 +5436,13 @@
     [
      "2026-11-23",
      19
+    ],
+    [
+     "2026-11-24",
+     21
     ]
    ],
-   "stars": 19,
+   "stars": 21,
    "topics": [
     "camera",
     "firmware",
@@ -5044,16 +5477,20 @@
    "full_name": "RecompPort/asura-wrath-pc",
    "id": 1460373001,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-16T18:08:59Z",
    "star_history": [
     [
      "2026-11-23",
      158
+    ],
+    [
+     "2026-11-24",
+     162
     ]
    ],
-   "stars": 158,
+   "stars": 162,
    "topics": [],
    "url": "https://github.com/RecompPort/asura-wrath-pc"
   },
@@ -5078,7 +5515,7 @@
    "full_name": "Rodpad/SW2NES",
    "id": 1454598530,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T00:06:26Z",
    "star_history": [
@@ -5116,7 +5553,7 @@
    "full_name": "Rodpad/SW2PS2",
    "id": 1464449436,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-22T13:48:02Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -5210,7 +5647,7 @@
    "full_name": "RufflezAU/GreenBoy",
    "id": 1456631467,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T14:22:47Z",
    "star_history": [
@@ -5244,16 +5681,20 @@
    "full_name": "SandyPandyMandy/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570978,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:14Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -5291,9 +5732,9 @@
    "full_name": "Sashi-hub085/ue-bulk-export",
    "id": 1459232159,
    "language": "JavaScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T10:18:17Z",
+   "pushed_at": "2026-11-24T06:41:23Z",
    "star_history": [
     [
      "2026-11-23",
@@ -5412,16 +5853,20 @@
    "full_name": "Soap-n-Cartridge/flipper_amiibo",
    "id": 1456815425,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-21T19:21:17Z",
    "star_history": [
     [
      "2026-11-23",
      19
+    ],
+    [
+     "2026-11-24",
+     20
     ]
    ],
-   "stars": 19,
+   "stars": 20,
    "topics": [
     "3ds",
     "amiibo",
@@ -5458,16 +5903,20 @@
    "full_name": "SpiralRise/binary-audit-pipeline",
    "id": 1463821979,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-20T03:05:04Z",
    "star_history": [
     [
      "2026-11-23",
      9
+    ],
+    [
+     "2026-11-24",
+     11
     ]
    ],
-   "stars": 9,
+   "stars": 11,
    "topics": [
     "bandit",
     "binary-analysis",
@@ -5551,16 +6000,20 @@
    "full_name": "SrPereira117/ProjectMidas-360",
    "id": 1459686707,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-18T01:40:06Z",
    "star_history": [
     [
      "2026-11-23",
      9
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 9,
+   "stars": 10,
    "topics": [
     "decompilation",
     "goldeneye",
@@ -5593,9 +6046,9 @@
    "full_name": "StarkillerVv/switch-ports-daily",
    "id": 1458738599,
    "language": "HTML",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T10:05:36Z",
+   "pushed_at": "2026-11-24T10:06:16Z",
    "star_history": [
     [
      "2026-11-23",
@@ -5627,7 +6080,7 @@
    "full_name": "Syncr0ndi/DDHM-Recomp",
    "id": 1458243682,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-22T09:08:45Z",
    "star_history": [
@@ -5670,7 +6123,7 @@
    "full_name": "Syncr0ndi/LOHT-Recomp",
    "id": 1463800333,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-21T03:09:42Z",
    "star_history": [
@@ -5809,7 +6262,7 @@
    "full_name": "Tenome/Excitebike--Bun-Bun-Mario-Battle",
    "id": 1453499722,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T06:59:46Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -5853,7 +6306,7 @@
    "full_name": "TheAti1/metal-gear-solid-touch-patriots",
    "id": 1462165607,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T12:29:56Z",
    "star_history": [
@@ -5898,7 +6351,7 @@
    "full_name": "TheNxtBigThing8/Offline-WAN-Emulator",
    "id": 1456575543,
    "language": "Shell",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T12:52:44Z",
    "star_history": [
@@ -6034,18 +6487,22 @@
    "full_name": "Tokatta007/OpenTM2",
    "id": 1466035006,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-23T15:08:43Z",
+   "pushed_at": "2026-11-24T07:54:36Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 47,
    "star_history": [
     [
      "2026-11-23",
      47
+    ],
+    [
+     "2026-11-24",
+     49
     ]
    ],
-   "stars": 47,
+   "stars": 49,
    "topics": [
     "decompilation",
     "pc-port",
@@ -6055,6 +6512,40 @@
     "twisted-metal-2"
    ],
    "url": "https://github.com/Tokatta007/OpenTM2"
+  },
+  "Torisutan/rayman2-pc-sdl": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Windows x86 with MSVC and VC6 dependencies; the SDL3 backend is work in progress and off by default, and it needs the user's own game data, so it is not a near-term handheld candidate.",
+    "relevant": false,
+    "summary": "A fork of a Rayman 2 PC decompilation that builds a Windows 32-bit exe using MSVC, DirectX-era renderer and sound DLLs.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:26Z",
+   "created_at": "2026-11-23T10:29:47Z",
+   "description": "Portable engine fork of rayman2-pc-decomp (Rayman 2 PC decompilation)",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Torisutan/rayman2-pc-sdl",
+   "id": 1468612455,
+   "language": "C",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-24T11:29:19Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/Torisutan/rayman2-pc-sdl"
   },
   "Tupapa2712/xbox360-240p-plugin": {
    "archived": false,
@@ -6077,16 +6568,20 @@
    "full_name": "Tupapa2712/xbox360-240p-plugin",
    "id": 1461970923,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
-   "pushed_at": "2026-11-23T08:55:18Z",
+   "pushed_at": "2026-11-24T06:55:46Z",
    "star_history": [
     [
      "2026-11-23",
      23
+    ],
+    [
+     "2026-11-24",
+     25
     ]
    ],
-   "stars": 23,
+   "stars": 25,
    "topics": [],
    "url": "https://github.com/Tupapa2712/xbox360-240p-plugin"
   },
@@ -6111,7 +6606,7 @@
    "full_name": "Tuth/ob12-emu",
    "id": 1459509557,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T04:07:20Z",
    "star_history": [
@@ -6145,7 +6640,7 @@
    "full_name": "Uzai77/Uzai",
    "id": 1462176373,
    "language": "GDScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-18T02:02:29Z",
    "star_history": [
@@ -6188,9 +6683,9 @@
    "full_name": "Vampinity/GreenHatBoy",
    "id": 1455029392,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T17:14:39Z",
+   "pushed_at": "2026-11-24T09:46:39Z",
    "star_history": [
     [
      "2026-11-16",
@@ -6364,16 +6859,20 @@
    "full_name": "WLfear/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569679,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:17Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -6389,6 +6888,40 @@
     "gta6"
    ],
    "url": "https://github.com/WLfear/GTA-6-Switch-Version--PC-Emulator-2026"
+  },
+  "Wangblows2000/Sonic-Rush-Decomp": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "Decompilation targets the DS (ARM9 NDS SDK code, CodeWarrior build), not a handheld-ready SDL/GLES port; it needs original ROM data and the README says it is AI-generated (\"vibeslop\") with no open license, so it is not a clear PortMaster candidate.",
+    "relevant": false,
+    "summary": "A matching decompilation of Sonic Rush (Europe) for the Nintendo DS, built from the user's own ROM.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:13Z",
+   "created_at": "2026-11-15T18:05:05Z",
+   "description": "A decompilation of Sonic Rush (PAL) for the Nintendo DS.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "Wangblows2000/Sonic-Rush-Decomp",
+   "id": 1459092686,
+   "language": "C",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-24T00:12:26Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/Wangblows2000/Sonic-Rush-Decomp"
   },
   "XDD0043/dotd-decomp": {
    "archived": false,
@@ -6411,7 +6944,7 @@
    "full_name": "XDD0043/dotd-decomp",
    "id": 1465624978,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-20T16:13:02Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -6463,6 +6996,49 @@
    "stars": 7,
    "topics": [],
    "url": "https://github.com/XEmaz/NFC-Checker"
+  },
+  "Yakult00/Slotbound-iOS": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It repackages a commercial game's data files (needs original assets) and bundles a cheat trainer; it is an iOS-specific repackage rather than a portable open-source source port, and the repo contains no native source to port.",
+    "relevant": false,
+    "summary": "An iOS packaging of the commercial PC roguelike slot-machine game SlotBound, built with L\u00d6VE 11.5 and including a cheat/trainer panel.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:11Z",
+   "created_at": "2026-11-20T03:38:48Z",
+   "description": "SlotBound iOS \u79fb\u690d\u7248\uff1a\u5728 iPhone \u4e0a\u73a9 PC \u8001\u864e\u673a\u8089\u9e3d\u6e38\u620f\uff08L\u00d6VE 11.5 + LiveContainer\uff0c\u542b\u6e38\u620f\u8f85\u52a9\u9762\u677f\uff09",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "Yakult00/Slotbound-iOS",
+   "id": 1464941300,
+   "language": "Lua",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-24T09:52:00Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [
+    "altstore",
+    "game-port",
+    "ios",
+    "livecontainer",
+    "love2d",
+    "roguelike",
+    "slot-machine",
+    "slotbound"
+   ],
+   "url": "https://github.com/Yakult00/Slotbound-iOS"
   },
   "YashDThapliyal/GameBoyGPT": {
    "archived": false,
@@ -6553,7 +7129,7 @@
    "full_name": "Zenglidescribe/nintendo-switch-yuzu-emulator-free",
    "id": 1462331535,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-18T04:55:36Z",
    "star_history": [
@@ -6613,6 +7189,48 @@
    "topics": [],
    "url": "https://github.com/ZiZc3/PlayShell"
   },
+  "ZigZagBoi1/GTA6-PC-Native": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Windows-only D3D12 path requiring SM 6.6 and mesh shaders, needs a commercial game dump, and the game is not even rendering yet, so it is not a handheld-portable candidate.",
+    "relevant": false,
+    "summary": "A Windows-only Rust project that attempts to run GTA VI from a user-supplied Xbox Series dump, using x64 execution and GPU shader recompilation.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:02Z",
+   "created_at": "2026-11-24T09:36:26Z",
+   "description": "Grand Theft Auto VI running natively on Windows from your own Xbox Series dump. No emulator: the game's x64 code runs on your CPU and its GPU code is recompiled for your card.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "ZigZagBoi1/GTA6-PC-Native",
+   "id": 1469938415,
+   "language": "Rust",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-24T11:32:40Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     27
+    ]
+   ],
+   "stars": 27,
+   "topics": [
+    "d3d12",
+    "gta-vi",
+    "gta6",
+    "pc-port",
+    "rdna2",
+    "shader-recompiler",
+    "xbox"
+   ],
+   "url": "https://github.com/ZigZagBoi1/GTA6-PC-Native"
+  },
   "abedegno/borland-reborn": {
    "archived": false,
    "classification": {
@@ -6634,7 +7252,7 @@
    "full_name": "abedegno/borland-reborn",
    "id": 1455056972,
    "language": "Assembly",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-20T18:50:06Z",
    "star_history": [
@@ -6777,11 +7395,11 @@
    "description": "Windows, Android, Switch and 3DS ports of The SpongeBob SquarePants Movie, built on its matching decompilation. Bring your own game files.",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "aidp2/tssm-ports",
    "id": 1457420495,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-21T19:18:17Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -6790,9 +7408,13 @@
     [
      "2026-11-23",
      9
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 9,
+   "stars": 10,
    "topics": [],
    "url": "https://github.com/aidp2/tssm-ports"
   },
@@ -6861,7 +7483,7 @@
    "full_name": "aidrum/peggle-enhanced",
    "id": 1441345460,
    "language": "C#",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-11T01:29:41Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -7017,16 +7639,20 @@
    "full_name": "albatrossSKY/after-dark-win11",
    "id": 1467619134,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-22T23:09:27Z",
    "star_history": [
     [
      "2026-11-23",
      5
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 5,
+   "stars": 10,
    "topics": [],
    "url": "https://github.com/albatrossSKY/after-dark-win11"
   },
@@ -7084,7 +7710,7 @@
    "full_name": "alessioscand/neo-pi",
    "id": 1438120954,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T13:39:05Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -7204,7 +7830,7 @@
    "full_name": "andrewnakas/thug-decomp",
    "id": 1444612941,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-15T00:03:02Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -7336,7 +7962,7 @@
    "full_name": "aoxzh/bayo3-recomp",
    "id": 1449549319,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T17:24:23Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -7361,9 +7987,13 @@
     [
      "2026-11-23",
      51
+    ],
+    [
+     "2026-11-24",
+     52
     ]
    ],
-   "stars": 51,
+   "stars": 52,
    "topics": [
     "android",
     "arm64",
@@ -7401,7 +8031,7 @@
    "full_name": "artemnikonov/hpengine",
    "id": 1454277826,
    "language": "C#",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-22T19:22:21Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -7418,9 +8048,13 @@
     [
      "2026-11-23",
      15
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 15,
+   "stars": 17,
    "topics": [
     "apple-silicon",
     "csharp",
@@ -7505,7 +8139,7 @@
    "full_name": "atzski/ibox",
    "id": 1457715099,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-22T11:06:24Z",
    "star_history": [
@@ -7765,7 +8399,7 @@
    "full_name": "bourbonicfisky/macXenos",
    "id": 1453477532,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-17T06:11:40Z",
    "star_history": [
@@ -7832,6 +8466,40 @@
     "wasm"
    ],
    "url": "https://github.com/briksquared/fm1-emulator"
+  },
+  "byizmysh/IZPS2-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Switch 2 via a proprietary IZ2S platform rather than handheld ARM Linux, and PS2 emulation is very demanding for 1-4 GB handhelds; not a practical PortMaster candidate.",
+    "relevant": false,
+    "summary": "A PlayStation 2 emulator built on ARMSX2/PCSX2 code that runs on the Nintendo Switch 2 through the IZ2S platform.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:15Z",
+   "created_at": "2026-11-23T20:06:13Z",
+   "description": "PlayStation 2 emulator for Switch 2. Requires IZ2S",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "byizmysh/IZPS2-emulator",
+   "id": 1469253016,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-23T20:36:21Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     6
+    ]
+   ],
+   "stars": 6,
+   "topics": [],
+   "url": "https://github.com/byizmysh/IZPS2-emulator"
   },
   "byizmysh/IZPSX-emulator": {
    "archived": false,
@@ -7940,7 +8608,7 @@
    "full_name": "cacuracaptors/oot-miyoomini",
    "id": 1446300269,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-22T16:00:40Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -8067,7 +8735,7 @@
    "full_name": "cassiojsl/WiiUStation",
    "id": 1466829368,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-22T23:04:48Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -8151,11 +8819,11 @@
    "description": "Native port of OutRunners (Sega arcade, 1992) for PC and consoles, built on the verified C decompilation cheviman/outrunners-decomp. Bring your own ROM.",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 14,
+   "forks": 15,
    "full_name": "cheviman/outrunners-port",
    "id": 1438726841,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-19T23:52:27Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -8207,7 +8875,7 @@
    "full_name": "cheviman/simpsons-decomp",
    "id": 1447601439,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-22T23:39:45Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -8246,7 +8914,7 @@
    "full_name": "cheviman/tmnt-port",
    "id": 1446147388,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "BSD-3-Clause",
    "pushed_at": "2026-11-21T17:01:56Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -8267,9 +8935,13 @@
     [
      "2026-11-23",
      132
+    ],
+    [
+     "2026-11-24",
+     133
     ]
    ],
-   "stars": 132,
+   "stars": 133,
    "topics": [],
    "url": "https://github.com/cheviman/tmnt-port"
   },
@@ -8382,7 +9054,7 @@
    "full_name": "clearmoon247/Kyujo",
    "id": 1458625432,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-15T17:13:22Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -8395,9 +9067,13 @@
     [
      "2026-11-23",
      8
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 8,
+   "stars": 10,
    "topics": [
     "recomp",
     "recompilation"
@@ -8498,7 +9174,7 @@
    "full_name": "consolecenterstudio/ps5-backup-center",
    "id": 1455647599,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-20T20:51:07Z",
    "star_history": [
@@ -8623,7 +9299,7 @@
    "full_name": "danglingptr0x0/crosstalk",
    "id": 1437527805,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-23T07:43:09Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -8675,7 +9351,7 @@
    "full_name": "danielalves96/gow-pc-port",
    "id": 1440184002,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-13T02:13:50Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -8704,9 +9380,13 @@
     [
      "2026-11-23",
      217
+    ],
+    [
+     "2026-11-24",
+     219
     ]
    ],
-   "stars": 217,
+   "stars": 219,
    "topics": [],
    "url": "https://github.com/danielalves96/gow-pc-port"
   },
@@ -8879,16 +9559,20 @@
    "full_name": "davidkalil10/eden-nx2",
    "id": 1464941702,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T17:55:05Z",
+   "pushed_at": "2026-11-24T05:00:27Z",
    "star_history": [
     [
      "2026-11-23",
      26
+    ],
+    [
+     "2026-11-24",
+     29
     ]
    ],
-   "stars": 26,
+   "stars": 29,
    "topics": [],
    "url": "https://github.com/davidkalil10/eden-nx2"
   },
@@ -8913,7 +9597,7 @@
    "full_name": "debugactiveprocess/MaldocTrace",
    "id": 1454115710,
    "language": "Go",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-20T02:49:33Z",
    "star_history": [
@@ -8928,9 +9612,13 @@
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     21
     ]
    ],
-   "stars": 20,
+   "stars": 21,
    "topics": [
     "blue-team",
     "cybersecurity",
@@ -9002,9 +9690,9 @@
    "full_name": "donsimox0-wq/azerothcore-personal-loot-mod",
    "id": 1459168684,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T11:51:05Z",
+   "pushed_at": "2026-11-24T08:34:41Z",
    "star_history": [
     [
      "2026-11-23",
@@ -9079,16 +9767,20 @@
    "full_name": "doughslip/codex-executor-pc",
    "id": 1469020649,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-23T16:32:49Z",
+   "pushed_at": "2026-11-24T11:19:53Z",
    "star_history": [
     [
      "2026-11-23",
      56
+    ],
+    [
+     "2026-11-24",
+     102
     ]
    ],
-   "stars": 56,
+   "stars": 102,
    "topics": [
     "arceus-x-neo",
     "celery",
@@ -9122,20 +9814,24 @@
    "description": "A Xbox Series X|S Emulator Designed to map and shim system apis to run games seamlessly",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 12,
+   "forks": 11,
    "full_name": "drycheetah84/TomBox",
    "id": 1460931554,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-22T22:42:07Z",
    "star_history": [
     [
      "2026-11-23",
      90
+    ],
+    [
+     "2026-11-24",
+     97
     ]
    ],
-   "stars": 90,
+   "stars": 97,
    "topics": [],
    "url": "https://github.com/drycheetah84/TomBox"
   },
@@ -9421,16 +10117,20 @@
    "full_name": "eskastacy/Stellary.PX",
    "id": 1458497218,
    "language": "C#",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-22T15:22:12Z",
    "star_history": [
     [
      "2026-11-23",
      8
+    ],
+    [
+     "2026-11-24",
+     13
     ]
    ],
-   "stars": 8,
+   "stars": 13,
    "topics": [
     "android-emulator",
     "bluestacks",
@@ -9463,20 +10163,105 @@
    "full_name": "evilHazzarD/ReHoMM4",
    "id": 1463284407,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-22T18:14:44Z",
+   "pushed_at": "2026-11-24T09:07:45Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 14,
    "star_history": [
     [
      "2026-11-23",
      14
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 14,
+   "stars": 17,
    "topics": [],
    "url": "https://github.com/evilHazzarD/ReHoMM4"
+  },
+  "fablinoo/palmwave": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a Windows-only Direct3D 12 console compatibility layer for running commercial Xbox titles on PC, not a handheld-portable game or emulator, and it requires a high-end desktop GPU and large RAM.",
+    "relevant": false,
+    "summary": "Windows x64 compatibility layer that runs Xbox Series X|S game code and translates RDNA2 shaders to Direct3D 12 DXIL.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:00Z",
+   "created_at": "2026-11-23T18:24:29Z",
+   "description": "Xbox Series X|S compatibility layer for Windows x64, based on XCL. Native x64 execution and RDNA2 shader translation to Direct3D 12 (DXIL). By Moon AI / Stellarr Studio.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "fablinoo/palmwave",
+   "id": 1469149939,
+   "language": "Rust",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-24T11:24:11Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     40
+    ]
+   ],
+   "stars": 40,
+   "topics": [
+    "ai-assisted",
+    "compatibility-layer",
+    "direct3d12",
+    "directstorage",
+    "dxil",
+    "emulator",
+    "hlsl",
+    "moon-ai",
+    "rdna2",
+    "rust",
+    "shader-compiler",
+    "stellarr-studio"
+   ],
+   "url": "https://github.com/fablinoo/palmwave"
+  },
+  "faligame/Guardian-Heroes-HD-Remaster": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "Its releases are Windows/Vulkan-focused and it requires the user's own disc and a separate HD pack, and it is a fresh, barely-starred work-in-progress with no source published, so it is not a practical PortMaster candidate.",
+    "relevant": false,
+    "summary": "A commercial-game static recompilation of Guardian Heroes (Sega Saturn) with HD remaster features, distributed as a public home with downloads that need the user's own disc.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:36Z",
+   "created_at": "2026-11-15T11:26:23Z",
+   "description": "Native PC port of GUARDIAN HEROES (Sega Saturn) via static recompilation \u2014 widescreen, HD art, 5 languages. Not an emulator. Work in progress.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "faligame/Guardian-Heroes-HD-Remaster",
+   "id": 1458727388,
+   "language": null,
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-16T18:56:56Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/faligame/Guardian-Heroes-HD-Remaster"
   },
   "farfromoffice/margin": {
    "archived": false,
@@ -9499,7 +10284,7 @@
    "full_name": "farfromoffice/margin",
    "id": 1457641114,
    "language": "GDScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T17:24:49Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -9548,9 +10333,9 @@
    "full_name": "finalpantasy/new-pokemon-snap-recomp",
    "id": 1454602133,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T15:27:11Z",
+   "pushed_at": "2026-11-23T18:06:06Z",
    "renamed_from": "finalpantasy/new-poke-snap-switch-recomp",
    "star_history": [
     [
@@ -9604,7 +10389,7 @@
    "full_name": "folksheesh/PS-5-Emulator",
    "id": 1467234177,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T12:44:42Z",
    "star_history": [
@@ -9634,22 +10419,26 @@
    "description": "A native PC port of DuckTales (NES), powered by NESRecomp.",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 0,
+   "forks": 1,
    "full_name": "formae-group/ducktales-recompiled",
    "id": 1468190795,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-23T17:16:22Z",
+   "pushed_at": "2026-11-24T05:37:07Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 11,
    "star_history": [
     [
      "2026-11-23",
      11
+    ],
+    [
+     "2026-11-24",
+     15
     ]
    ],
-   "stars": 11,
+   "stars": 15,
    "topics": [
     "c",
     "decompilation",
@@ -9685,7 +10474,7 @@
    "full_name": "fractalstudio-sd/rally2-recomp-android",
    "id": 1455741211,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-12T20:08:28Z",
    "star_history": [
@@ -9719,7 +10508,7 @@
    "full_name": "freegroup/CncCraft",
    "id": 1455680186,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T14:11:57Z",
    "star_history": [
@@ -9757,7 +10546,7 @@
    "full_name": "fswolf/open-ultima8",
    "id": 1456526323,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T02:03:22Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -9799,23 +10588,27 @@
    },
    "classified_at": "2026-11-23T18:00:31Z",
    "created_at": "2026-11-22T06:43:09Z",
-   "description": "Run Apple-silicon macOS on your PC: desktops and laptops, NVIDIA graphics, installs over Ethernet or Wi-Fi. Join the Discord for the first release.",
+   "description": "Run Apple-silicon macOS on your PC: desktops and laptops, NVIDIA graphics (AMD/Intel experimental), installs over Ethernet or Wi-Fi. Stambha 0.6.0 is out: about 1.5x faster than Stela 0.5.0.",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 6,
+   "forks": 16,
    "full_name": "garvitsurana271/stambha",
    "id": 1467289630,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-23T02:07:27Z",
+   "pushed_at": "2026-11-24T05:55:56Z",
    "star_history": [
     [
      "2026-11-23",
      66
+    ],
+    [
+     "2026-11-24",
+     112
     ]
    ],
-   "stars": 66,
+   "stars": 112,
    "topics": [
     "apple-silicon",
     "arm64",
@@ -9853,7 +10646,7 @@
    "full_name": "gerisson1996/RESIDENT-CODE-VERONICA-NX-PORT",
    "id": 1456846112,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-16T15:07:48Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -9907,7 +10700,7 @@
    "full_name": "ghosty2004/sa-engine",
    "id": 1453861716,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-20T08:53:52Z",
    "star_history": [
@@ -9954,7 +10747,7 @@
    "full_name": "gibletto/mvc2-naomi-dc",
    "id": 1452554082,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-23T17:41:37Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -9975,9 +10768,13 @@
     [
      "2026-11-23",
      76
+    ],
+    [
+     "2026-11-24",
+     79
     ]
    ],
-   "stars": 76,
+   "stars": 79,
    "topics": [],
    "url": "https://github.com/gibletto/mvc2-naomi-dc"
   },
@@ -10002,9 +10799,9 @@
    "full_name": "gl91306/ctr64",
    "id": 1457535004,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-22T06:24:57Z",
+   "pushed_at": "2026-11-24T04:35:10Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 32,
    "star_history": [
@@ -10023,9 +10820,13 @@
     [
      "2026-11-23",
      32
+    ],
+    [
+     "2026-11-24",
+     33
     ]
    ],
-   "stars": 32,
+   "stars": 33,
    "topics": [],
    "url": "https://github.com/gl91306/ctr64"
   },
@@ -10049,9 +10850,9 @@
    "full_name": "gminustwo/msr2ds",
    "id": 1439059189,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-23T02:52:08Z",
+   "pushed_at": "2026-11-24T03:42:24Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 245,
    "star_history": [
@@ -10074,11 +10875,56 @@
     [
      "2026-11-23",
      278
+    ],
+    [
+     "2026-11-24",
+     280
     ]
    ],
-   "stars": 278,
+   "stars": 280,
    "topics": [],
    "url": "https://github.com/gminustwo/msr2ds"
+  },
+  "godofknife/TMSRecomp": {
+   "archived": false,
+   "classification": {
+    "category": "decompilation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Windows-only with Vulkan/DLSS desktop targets, and it requires the user's own game files; it is not a handheld-portable candidate.",
+    "relevant": false,
+    "summary": "A static recompilation of Tokyo Mirage Sessions #FE Encore from Switch ARM code into a native Windows x64 program using Vulkan.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:04Z",
+   "created_at": "2026-11-23T17:49:29Z",
+   "description": "Tokyo Mirage Sessions #FE Encore, recompiled to run natively on Windows (static recompilation, Vulkan, no emulator). Bring your own game.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "godofknife/TMSRecomp",
+   "id": 1469111261,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-23T20:05:31Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     13
+    ]
+   ],
+   "stars": 13,
+   "topics": [
+    "nintendo-switch",
+    "pc-port",
+    "recompilation",
+    "static-recompilation",
+    "tokyo-mirage-sessions",
+    "vulkan"
+   ],
+   "url": "https://github.com/godofknife/TMSRecomp"
   },
   "grnnk/CK3-DNA-Manager-Qt": {
    "archived": false,
@@ -10134,16 +10980,20 @@
    "full_name": "hanataki41-ui/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570426,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:09Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -10181,7 +11031,7 @@
    "full_name": "haveniiii/PES6ANDROIDPORT",
    "id": 1439955096,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-16T10:41:22Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -10227,7 +11077,7 @@
    "full_name": "hayesmaker/c64-skills",
    "id": 1464141883,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T15:01:07Z",
    "star_history": [
@@ -10401,7 +11251,7 @@
    "full_name": "hunter-zen-RU/Konsole-OS",
    "id": 1455170236,
    "language": "Java",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-16T12:05:02Z",
    "star_history": [
@@ -10439,7 +11289,7 @@
    "full_name": "huongdino443/J2MEX",
    "id": 1453703033,
    "language": "Java",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T09:47:24Z",
    "star_history": [
@@ -10633,16 +11483,20 @@
    "full_name": "ioma8/ghidra-decompile-skill",
    "id": 1454185551,
    "language": "Java",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-18T22:44:27Z",
    "star_history": [
     [
      "2026-11-23",
      47
+    ],
+    [
+     "2026-11-24",
+     49
     ]
    ],
-   "stars": 47,
+   "stars": 49,
    "topics": [
     "agent-skills",
     "binary-analysis",
@@ -10674,7 +11528,7 @@
    "full_name": "itar3/Fable2RecompMac",
    "id": 1455039278,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-14T14:05:10Z",
    "star_history": [
@@ -10725,9 +11579,9 @@
    "full_name": "itarqos5/Falcon",
    "id": 1457913399,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
-   "pushed_at": "2026-11-18T13:20:18Z",
+   "pushed_at": "2026-11-23T22:05:49Z",
    "star_history": [
     [
      "2026-11-17",
@@ -10763,7 +11617,7 @@
    "full_name": "j0braun/overbright",
    "id": 1459388032,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-21T13:54:45Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -10780,9 +11634,13 @@
     [
      "2026-11-23",
      79
+    ],
+    [
+     "2026-11-24",
+     80
     ]
    ],
-   "stars": 79,
+   "stars": 80,
    "topics": [
     "game-engine",
     "linux-gaming",
@@ -10817,7 +11675,7 @@
    "full_name": "j3tm0t0/pix68k",
    "id": 1458800701,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T16:34:46Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -10860,7 +11718,7 @@
    "full_name": "j92580498-max/Badanaut",
    "id": 1449584270,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-17T18:26:59Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -10900,7 +11758,7 @@
    "full_name": "jackspence7/GBA-kaiHEN",
    "id": 1457235896,
    "language": "Shell",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-14T04:11:51Z",
    "star_history": [
@@ -10912,6 +11770,46 @@
    "stars": 6,
    "topics": [],
    "url": "https://github.com/jackspence7/GBA-kaiHEN"
+  },
+  "jemimaravelomanantsoa020-tech/gta6-preload-emulator": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "Not a playable game, emulator, or portable source project; it is a Windows-only installer for a deceptive \"GTA6 free download\" lure, so it should not be shown to porters.",
+    "relevant": false,
+    "summary": "A Windows PowerShell-installed \"GTA6 preload emulator\" utility with a crypto-donation prompt and SEO-style topics about free GTA 6 downloads and PS5 emulators.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:35:58Z",
+   "created_at": "2026-11-23T22:12:25Z",
+   "description": "Gta6 Preload Emulator: simulates preload behavior to test loading workflows.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "jemimaravelomanantsoa020-tech/gta6-preload-emulator",
+   "id": 1469364901,
+   "language": "HTML",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": null,
+   "pushed_at": "2026-11-24T06:47:59Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     151
+    ]
+   ],
+   "stars": 151,
+   "topics": [
+    "free-ps5-emulator",
+    "gta6-disk-space",
+    "gta6-download-free",
+    "gta6-preload",
+    "ps5-emulator-windows-10"
+   ],
+   "url": "https://github.com/jemimaravelomanantsoa020-tech/gta6-preload-emulator"
   },
   "jhonnaker1/bmamiga": {
    "archived": false,
@@ -11064,7 +11962,7 @@
    "full_name": "jrdntnnr/EpaperSYS7",
    "id": 1454435861,
    "language": "C",
-   "last_checked": "2026-11-17T08:57:02Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-11T20:00:35Z",
    "star_history": [
@@ -11165,7 +12063,7 @@
    "full_name": "karimalsalah/guarana",
    "id": 1456371685,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T04:26:46Z",
    "star_history": [
@@ -11285,13 +12183,13 @@
    "description": "Native PC port of Parasite Eve II (PlayStation), built on the matching decompilation and PsyZ",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 2,
+   "forks": 1,
    "full_name": "khasinski/parasite-eve-ii-pc",
    "id": 1442141747,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
-   "pushed_at": "2026-11-23T17:56:40Z",
+   "pushed_at": "2026-11-23T23:43:37Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 5,
    "star_history": [
@@ -11333,9 +12231,9 @@
    "full_name": "khasinski/ridge-racer-type-4-pc",
    "id": 1453993935,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-23T17:03:26Z",
+   "pushed_at": "2026-11-24T11:31:11Z",
    "shown_at": "2026-11-16T09:59:11Z",
    "shown_stars": 5,
    "star_history": [
@@ -11346,9 +12244,13 @@
     [
      "2026-11-23",
      8
+    ],
+    [
+     "2026-11-24",
+     9
     ]
    ],
-   "stars": 8,
+   "stars": 9,
    "topics": [],
    "url": "https://github.com/khasinski/ridge-racer-type-4-pc"
   },
@@ -11373,7 +12275,7 @@
    "full_name": "kodediy/kode-sim",
    "id": 1459807618,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T16:10:06Z",
    "star_history": [
@@ -11445,6 +12347,55 @@
     "zero-dependencies"
    ],
    "url": "https://github.com/kostyk348/rlisp-engine"
+  },
+  "kromych/BK-0011M": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "medium",
+    "reason": "Emulator of a PDP-11 compatible home computer that could be packaged for PortMaster, but it is cycle-accurate and likely needs a desktop-class GUI/audio stack, so porting to handheld hardware is uncertain.",
+    "relevant": true,
+    "summary": "A Rust emulator of the Soviet Elektronika BK-0010, BK-0010.01 and BK-0011M home computers, running their original ROMs.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:17Z",
+   "created_at": "2026-11-18T19:37:15Z",
+   "description": "An emulator of the Elektronika BK-0010, BK-0010.01 and BK-0011M computers, with guides from the original manuals",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "kromych/BK-0011M",
+   "id": 1463253482,
+   "language": "Rust",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-19T17:56:11Z",
+   "shown_at": "2026-11-24T11:34:38Z",
+   "shown_stars": 5,
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "bk-0010",
+    "bk-0011m",
+    "cassette-tape",
+    "copy-protection",
+    "cycle-accurate",
+    "disassembler",
+    "elektronika-bk",
+    "emulator",
+    "home-computer",
+    "k1801vm1",
+    "macro-11",
+    "pdp-11"
+   ],
+   "url": "https://github.com/kromych/BK-0011M"
   },
   "krrr/BnbEmu": {
    "archived": false,
@@ -11554,7 +12505,7 @@
    "full_name": "kujeger/openregent",
    "id": 1453163700,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
    "pushed_at": "2026-11-21T07:02:42Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -11589,9 +12540,9 @@
    "full_name": "leafall903/ORPHEUS",
    "id": 1446582096,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T15:50:08Z",
+   "pushed_at": "2026-11-24T02:14:42Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 90,
    "star_history": [
@@ -11697,9 +12648,9 @@
    "full_name": "lemiur/shsm-decomp",
    "id": 1460290499,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
-   "pushed_at": "2026-11-21T12:05:29Z",
+   "pushed_at": "2026-11-23T23:41:47Z",
    "star_history": [
     [
      "2026-11-17",
@@ -11739,16 +12690,20 @@
    "full_name": "lenguyenkhang816792-arch/gta-6-pc-emulator",
    "id": 1468948318,
    "language": "HTML",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T15:37:12Z",
+   "pushed_at": "2026-11-24T02:43:48Z",
    "star_history": [
     [
      "2026-11-23",
      338
+    ],
+    [
+     "2026-11-24",
+     340
     ]
    ],
-   "stars": 338,
+   "stars": 340,
    "topics": [
     "gta-6-controller-config",
     "gta-6-emulator",
@@ -11762,6 +12717,49 @@
     "switch-emulator-pc"
    ],
    "url": "https://github.com/lenguyenkhang816792-arch/gta-6-pc-emulator"
+  },
+  "lilium360/FZH-Resurrection": {
+   "archived": false,
+   "classification": {
+    "category": "emulator",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Targets Windows launcher and PC VR via OpenXR, which is not a handheld-friendly path; it also requires a PS4 emulator stack far too heavy for RK3326-class devices, and the project is very new with 5 stars.",
+    "relevant": false,
+    "summary": "A modified shadPS4 PS4 emulator fork that renders Firewall Zero Hour to PC VR headsets via OpenXR, with a Windows launcher and online multiplayer backend.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:20Z",
+   "created_at": "2026-11-21T23:49:57Z",
+   "description": "Firewall Zero Hour (PS4) on PC VR headsets via a modified shadPS4 with OpenXR. Online multiplayer, Windows launcher. No game files included.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "lilium360/FZH-Resurrection",
+   "id": 1467053989,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-2.0",
+   "pushed_at": "2026-11-24T09:11:29Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "emulator",
+    "firewall-zero-hour",
+    "multiplayer",
+    "openxr",
+    "pc-vr",
+    "ps4",
+    "shadps4",
+    "tauri"
+   ],
+   "url": "https://github.com/lilium360/FZH-Resurrection"
   },
   "lloweryfn-rgb/GTA-6-Switch-Version--PC-Emulator-2026": {
    "archived": false,
@@ -11784,16 +12782,20 @@
    "full_name": "lloweryfn-rgb/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569250,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-19T19:23:47Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -11875,9 +12877,9 @@
    "full_name": "luyanaa/loongemu",
    "id": 1461037371,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
-   "pushed_at": "2026-11-23T15:21:23Z",
+   "pushed_at": "2026-11-24T11:25:16Z",
    "star_history": [
     [
      "2026-11-23",
@@ -12144,16 +13146,20 @@
    "full_name": "malvarezcastillo/highpriest-decomp",
    "id": 1468096582,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-23T01:43:57Z",
    "star_history": [
     [
      "2026-11-23",
      7
+    ],
+    [
+     "2026-11-24",
+     10
     ]
    ],
-   "stars": 7,
+   "stars": 10,
    "topics": [
     "decompilation",
     "msvc6",
@@ -12299,7 +13305,7 @@
    "full_name": "maximbilan/walkman",
    "id": 1453803827,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-13T17:17:11Z",
    "star_history": [
@@ -12346,9 +13352,9 @@
    "full_name": "meathax/inthehunt",
    "id": 1451888250,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T01:32:35Z",
+   "pushed_at": "2026-11-24T03:02:52Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 28,
    "star_history": [
@@ -12441,20 +13447,24 @@
    "description": "[Metal] Independent engine for GTA VI",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 1,
+   "forks": 3,
    "full_name": "meetox80/6stars",
    "id": 1466674722,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-22T12:37:16Z",
    "star_history": [
     [
      "2026-11-23",
      12
+    ],
+    [
+     "2026-11-24",
+     16
     ]
    ],
-   "stars": 12,
+   "stars": 16,
    "topics": [
     "game-engine",
     "gta-vi",
@@ -12486,16 +13496,20 @@
    "full_name": "meirz911/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464568555,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-19T19:22:49Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -12654,6 +13668,49 @@
    "topics": [],
    "url": "https://github.com/meta-pytorch/ptxv"
   },
+  "mewiof/Holy-Interoperability": {
+   "archived": false,
+   "classification": {
+    "category": "engine reimplementation",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "Windows-only, early bring-up with no rendering yet, and it runs commercial Xbox title packages rather than being a playable open-source game, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A compatibility layer that runs x64 Xbox Series X title packages natively on Windows by reimplementing console system libraries.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:05Z",
+   "created_at": "2026-11-23T16:30:37Z",
+   "description": "Compatibility layer that runs x64 Xbox title packages as native Windows processes, with no emulation: clean-room reimplementations of the console's system libraries. Early bring-up. For interoperability, research and preservation.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "mewiof/Holy-Interoperability",
+   "id": 1469018747,
+   "language": "C++",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "MIT",
+   "pushed_at": "2026-11-24T03:20:54Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     7
+    ]
+   ],
+   "stars": 7,
+   "topics": [
+    "cmake",
+    "compatibility-layer",
+    "cpp",
+    "interoperability",
+    "preservation",
+    "windows",
+    "xbox",
+    "xbox-series-x"
+   ],
+   "url": "https://github.com/mewiof/Holy-Interoperability"
+  },
   "mewiof/Shalltear": {
    "archived": false,
    "classification": {
@@ -12790,16 +13847,20 @@
    "full_name": "mohamedhamdytaha/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464568513,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:18Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -12837,7 +13898,7 @@
    "full_name": "moistman42069/JakAndDaxter-Quest-VR",
    "id": 1457978103,
    "language": "Java",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T16:26:37Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -12932,11 +13993,11 @@
    "description": "Fallout 3 decompilation: source only, bring your own copy of the game",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 5,
+   "forks": 6,
    "full_name": "momusdigital/f3_decomp",
    "id": 1465998022,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
    "pushed_at": "2026-11-20T23:44:57Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -12945,9 +14006,13 @@
     [
      "2026-11-23",
      49
+    ],
+    [
+     "2026-11-24",
+     53
     ]
    ],
-   "stars": 49,
+   "stars": 53,
    "topics": [],
    "url": "https://github.com/momusdigital/f3_decomp"
   },
@@ -12972,16 +14037,20 @@
    "full_name": "monirchemrubd/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570938,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:13Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -12997,6 +14066,40 @@
     "gta6"
    ],
    "url": "https://github.com/monirchemrubd/GTA-6-Switch-Version--PC-Emulator-2026"
+  },
+  "moose-modder/oot-remake-mod-manager": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "unknown",
+    "reason": "It is a mod manager tool, which is explicitly excluded, not a playable game, port, or engine.",
+    "relevant": false,
+    "summary": "A Rust desktop mod manager for Longshot and Hookshot (OoT remake fan projects) that toggles mods and rebuilds a resource size table.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:41Z",
+   "created_at": "2026-11-17T04:42:11Z",
+   "description": "Mods for Longshot, Hookshot and emulators: turn them on and off, with one resource size table for all of them (third-party tool)",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "moose-modder/oot-remake-mod-manager",
+   "id": 1460920274,
+   "language": "Rust",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-20T16:59:41Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/moose-modder/oot-remake-mod-manager"
   },
   "n0madic/KopruluSector": {
    "archived": false,
@@ -13018,7 +14121,7 @@
    "full_name": "n0madic/KopruluSector",
    "id": 1450491115,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T17:42:47Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -13066,9 +14169,9 @@
    "full_name": "nacholuver1/Blitz-TheLeague-II-Recomp",
    "id": 1466540621,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T00:07:51Z",
+   "pushed_at": "2026-11-23T23:58:36Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 6,
    "star_history": [
@@ -13110,9 +14213,9 @@
    "full_name": "nacholuver1/Blitz-TheLeague-Recomp",
    "id": 1466450267,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T00:11:16Z",
+   "pushed_at": "2026-11-23T23:58:10Z",
    "star_history": [
     [
      "2026-11-23",
@@ -13152,18 +14255,22 @@
    "full_name": "nacholuver1/Crimson-Skies-High-Road-To-Revenge-Repo",
    "id": 1466890039,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T01:43:45Z",
+   "pushed_at": "2026-11-24T02:52:47Z",
    "shown_at": "2026-11-23T17:59:00Z",
    "shown_stars": 39,
    "star_history": [
     [
      "2026-11-23",
      39
+    ],
+    [
+     "2026-11-24",
+     41
     ]
    ],
-   "stars": 39,
+   "stars": 41,
    "topics": [
     "crimson-skies",
     "direct3d12",
@@ -13309,11 +14416,11 @@
    "description": "A source port of the Alone in the Dark trilogy and Jack in the Dark for modern PCs (Windows and Linux): fixes, HD options and its own launcher. Built on FITD by yaz0r, with parts of Re-Haunted",
    "first_seen": "2026-11-10T07:26:32Z",
    "fork": false,
-   "forks": 4,
+   "forks": 5,
    "full_name": "nayo186/AloneInTheDarkClassicReborn",
    "id": 1436759286,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-22T21:43:54Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -13334,9 +14441,13 @@
     [
      "2026-11-23",
      72
+    ],
+    [
+     "2026-11-24",
+     73
     ]
    ],
-   "stars": 72,
+   "stars": 73,
    "topics": [
     "alone-in-the-dark",
     "fitd",
@@ -13369,7 +14480,7 @@
    "full_name": "nayo186/TimeGateClassicReborn",
    "id": 1454723631,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-22T17:52:47Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -13404,9 +14515,9 @@
    "full_name": "nekomancer01/DarkSoulsPS2",
    "id": 1441366661,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T13:32:39Z",
+   "pushed_at": "2026-11-24T11:23:38Z",
    "shown_at": "2026-11-10T16:40:23Z",
    "shown_stars": 92,
    "star_history": [
@@ -13562,7 +14673,7 @@
    "full_name": "nkahoang/hidizs-ap30-game-emu",
    "id": 1460233730,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-18T23:47:19Z",
    "star_history": [
@@ -13640,16 +14751,20 @@
    "full_name": "nulldc4wiiu/nulldc_wiiu",
    "id": 1457168795,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-22T21:05:15Z",
    "star_history": [
     [
      "2026-11-23",
      21
+    ],
+    [
+     "2026-11-24",
+     22
     ]
    ],
-   "stars": 21,
+   "stars": 22,
    "topics": [
     "dreamcast-emulator",
     "wiiu-homebrew"
@@ -13677,7 +14792,7 @@
    "full_name": "oChobani/fh2-recompiled-ios",
    "id": 1460961784,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-17T05:35:08Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -13802,20 +14917,24 @@
    "description": "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 99,
+   "forks": 115,
    "full_name": "omonkeyz/xbox-emulator",
    "id": 1466325515,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-23T11:58:17Z",
    "star_history": [
     [
      "2026-11-23",
      1573
+    ],
+    [
+     "2026-11-24",
+     1741
     ]
    ],
-   "stars": 1573,
+   "stars": 1741,
    "topics": [],
    "url": "https://github.com/omonkeyz/xbox-emulator"
   },
@@ -13840,7 +14959,7 @@
    "full_name": "onedeck-launcher/onedeck",
    "id": 1458918545,
    "language": "JavaScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T14:49:02Z",
    "renamed_from": "goodthanksdev/harbour",
@@ -13887,7 +15006,7 @@
    "full_name": "openorion2/openorion2",
    "id": 1439870972,
    "language": "Go",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-12T18:04:59Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -13931,18 +15050,56 @@
    "full_name": "otonomy/vampire-decomp",
    "id": 1466440218,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "CC0-1.0",
-   "pushed_at": "2026-11-23T10:26:14Z",
+   "pushed_at": "2026-11-24T08:33:44Z",
    "star_history": [
     [
      "2026-11-23",
      21
+    ],
+    [
+     "2026-11-24",
+     23
     ]
    ],
-   "stars": 21,
+   "stars": 23,
    "topics": [],
    "url": "https://github.com/otonomy/vampire-decomp"
+  },
+  "peckemu/peck": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": true,
+    "portability": "low",
+    "reason": "It is a backend server for a web-hosted game that requires PostgreSQL, Redis and Bun, so it cannot be packaged as a handheld game or emulator and needs unavailable commercial content.",
+    "relevant": false,
+    "summary": "A TypeScript/Bun server emulator for the online game Animal Jam Classic, meant to run on a server rather than as a game client.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:32Z",
+   "created_at": "2026-11-11T21:36:16Z",
+   "description": "An open source server emulator for Animal Jam Classic, written in TypeScript with Bun",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 1,
+   "full_name": "peckemu/peck",
+   "id": 1454524110,
+   "language": "TypeScript",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-19T22:15:29Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [],
+   "url": "https://github.com/peckemu/peck"
   },
   "penstic123-code/Threedog.js-Game-Engine": {
    "archived": false,
@@ -14054,13 +15211,13 @@
    "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
    "first_seen": "2026-11-17T06:50:07Z",
    "fork": false,
-   "forks": 129,
+   "forks": 164,
    "full_name": "pierridotite/mobile-agent-testers",
    "id": 1460452633,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T08:03:36Z",
+   "pushed_at": "2026-11-24T08:22:34Z",
    "star_history": [
     [
      "2026-11-17",
@@ -14073,9 +15230,13 @@
     [
      "2026-11-23",
      1352
+    ],
+    [
+     "2026-11-24",
+     1643
     ]
    ],
-   "stars": 1352,
+   "stars": 1643,
    "topics": [
     "accessibility-testing",
     "ai-agents",
@@ -14331,9 +15492,9 @@
    "full_name": "prowahaj13/yuzu-emulator-tutorial",
    "id": 1459242657,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T07:10:54Z",
+   "pushed_at": "2026-11-24T04:36:09Z",
    "star_history": [
     [
      "2026-11-23",
@@ -14378,7 +15539,7 @@
    "full_name": "pthinc/freegameenginethreejs",
    "id": 1456539886,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-14T21:25:53Z",
    "star_history": [
@@ -14425,16 +15586,20 @@
    "full_name": "python001-dev/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569209,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:21Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -14560,7 +15725,7 @@
    "full_name": "revival-forge/bytefield",
    "id": 1463217729,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-18T19:51:23Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -14643,7 +15808,7 @@
    "full_name": "rh1tech/frank-ecat",
    "id": 1451919537,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-09T21:54:26Z",
    "shown_at": "2026-11-17T06:50:07Z",
@@ -14848,7 +16013,7 @@
    "full_name": "royilkom-alt/PS2Apple",
    "id": 1457603560,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-15T12:15:34Z",
    "star_history": [
@@ -14903,7 +16068,7 @@
    "full_name": "rzrbld/ReNFS5",
    "id": 1447328041,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-13T19:05:51Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -14956,7 +16121,7 @@
    "full_name": "rzrbld/TheFamilia",
    "id": 1450658550,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-11T08:54:10Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -15097,7 +16262,7 @@
    "full_name": "sal063/AC3-decomp",
    "id": 1459004525,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-15T16:50:55Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -15106,9 +16271,13 @@
     [
      "2026-11-23",
      7
+    ],
+    [
+     "2026-11-24",
+     8
     ]
    ],
-   "stars": 7,
+   "stars": 8,
    "topics": [],
    "url": "https://github.com/sal063/AC3-decomp"
   },
@@ -15178,20 +16347,24 @@
    "description": "Experimental Xbox One (Durango) & Series X|S (Scarlett) compatibility layer for Windows",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 9,
+   "forks": 11,
    "full_name": "sammwyy/xvalkyrie",
    "id": 1464807522,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
-   "pushed_at": "2026-11-23T15:15:16Z",
+   "pushed_at": "2026-11-23T19:24:06Z",
    "star_history": [
     [
      "2026-11-23",
      159
+    ],
+    [
+     "2026-11-24",
+     213
     ]
    ],
-   "stars": 159,
+   "stars": 213,
    "topics": [
     "durango",
     "emulation",
@@ -15378,7 +16551,7 @@
    "full_name": "saulob/el-chavo-kart-recompiled",
    "id": 1441997668,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-2.0",
    "pushed_at": "2026-11-08T05:40:16Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -15483,7 +16656,7 @@
    "full_name": "scarxity/kirby-forgotten-land-recompiled",
    "id": 1456379332,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-20T13:09:24Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -15527,7 +16700,7 @@
    "full_name": "schuler-ph/nsmbw-switch",
    "id": 1455130148,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-22T20:24:25Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -15584,16 +16757,20 @@
    "full_name": "sebastianor08/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464568343,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:13Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -15630,7 +16807,7 @@
    "full_name": "sebaz07/crashwoc-vita",
    "id": 1447089092,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-06T11:42:12Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -15770,16 +16947,20 @@
    "full_name": "simadan11/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569813,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:14Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -15817,9 +16998,9 @@
    "full_name": "sjnorval/Ohmforge",
    "id": 1456294576,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "AGPL-3.0",
-   "pushed_at": "2026-11-23T17:06:14Z",
+   "pushed_at": "2026-11-24T05:08:14Z",
    "star_history": [
     [
      "2026-11-23",
@@ -16084,7 +17265,7 @@
    "full_name": "speedydevil007/road-sdl2-rash",
    "id": 1436793260,
    "language": "HTML",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-16T15:34:07Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -16177,7 +17358,7 @@
    "full_name": "sreddyiitr/homehub",
    "id": 1454706386,
    "language": "Java",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-12T04:02:38Z",
    "star_history": [
@@ -16211,16 +17392,20 @@
    "full_name": "stancaedy10-glitch/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464569351,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:20Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     18
     ]
    ],
-   "stars": 20,
+   "stars": 18,
    "topics": [
     "ai",
     "desktop-app",
@@ -16258,7 +17443,7 @@
    "full_name": "stingziz0u/mk64-ps3",
    "id": 1452949582,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-16T06:19:56Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -16302,7 +17487,7 @@
    "full_name": "stingziz0u/smashps3",
    "id": 1454249883,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-11T20:42:49Z",
    "star_history": [
@@ -16364,6 +17549,48 @@
     "webos"
    ],
    "url": "https://github.com/stremio-origin/webos"
+  },
+  "strise/spanbolt": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a server-side database emulator for testing cloud applications, not a game, emulator of a retro console, or game engine, so it has no relevance to handheld game porting.",
+    "relevant": false,
+    "summary": "A Rust reimplementation of the Google Cloud Spanner emulator for use in tests and CI.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:19Z",
+   "created_at": "2026-11-19T18:08:59Z",
+   "description": "Fast Cloud Spanner emulator in Rust, using GoogleSQL for analysis",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 0,
+   "full_name": "strise/spanbolt",
+   "id": 1464499601,
+   "language": "Rust",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-24T11:32:33Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "cloud-spanner",
+    "emulator",
+    "googlesql",
+    "grpc",
+    "rust",
+    "spanner",
+    "testing"
+   ],
+   "url": "https://github.com/strise/spanbolt"
   },
   "sylvieistaken/selevet-eglantine": {
    "archived": false,
@@ -16474,7 +17701,7 @@
    "full_name": "thecapibara/ARSA",
    "id": 1466544916,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-22T19:32:51Z",
    "star_history": [
@@ -16565,9 +17792,9 @@
    "full_name": "tinyc-z/PocketDeck",
    "id": 1463747333,
    "language": "Kotlin",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
-   "pushed_at": "2026-11-23T02:53:29Z",
+   "pushed_at": "2026-11-24T10:09:57Z",
    "star_history": [
     [
      "2026-11-23",
@@ -16608,20 +17835,24 @@
    "description": "High-performance Android ARM64 .so emulator, zero-copy binary tracer, QuickJS engine, async multi-core RPC & MCP server in pure Rust",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 26,
+   "forks": 27,
    "full_name": "tiwe0/runidbg",
    "id": 1464084020,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T16:31:26Z",
    "star_history": [
     [
      "2026-11-23",
      69
+    ],
+    [
+     "2026-11-24",
+     76
     ]
    ],
-   "stars": 69,
+   "stars": 76,
    "topics": [
     "android",
     "arm64",
@@ -16706,16 +17937,20 @@
    "full_name": "tonecockatoobrace/Xbox360Pad-XInputEmulator",
    "id": 1468683724,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-23T11:39:47Z",
    "star_history": [
     [
      "2026-11-23",
      30
+    ],
+    [
+     "2026-11-24",
+     29
     ]
    ],
-   "stars": 30,
+   "stars": 29,
    "topics": [
     "arcade-stick",
     "controller",
@@ -16751,9 +17986,9 @@
    "full_name": "twosugar/droidpier",
    "id": 1455118480,
    "language": "TypeScript",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T10:59:22Z",
+   "pushed_at": "2026-11-24T03:34:26Z",
    "star_history": [
     [
      "2026-11-16",
@@ -16795,7 +18030,7 @@
    "full_name": "u0rhs/burnout3-retail-decomp",
    "id": 1453242718,
    "language": "Assembly",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-10T22:49:32Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -16831,16 +18066,20 @@
    "full_name": "u6420771547-hash/hartbox",
    "id": 1462469731,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-19T17:07:04Z",
    "star_history": [
     [
      "2026-11-23",
      10
+    ],
+    [
+     "2026-11-24",
+     11
     ]
    ],
-   "stars": 10,
+   "stars": 11,
    "topics": [],
    "url": "https://github.com/u6420771547-hash/hartbox"
   },
@@ -16865,7 +18104,7 @@
    "full_name": "umagamer83182/Shinobido-Way-of-the-Ninja-Native-PC-Port",
    "id": 1462044714,
    "language": null,
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": null,
    "pushed_at": "2026-11-17T22:39:21Z",
    "star_history": [
@@ -16959,6 +18198,46 @@
    ],
    "url": "https://github.com/valentderah/totk-pc-recomp"
   },
+  "varun1505/floci-aws-ui": {
+   "archived": false,
+   "classification": {
+    "category": "not relevant",
+    "model": "claude-haiku-5-5",
+    "needs_assets": false,
+    "portability": "unknown",
+    "reason": "It is a developer tool for managing AWS-like cloud services, not a game, emulator, or game engine, so it is not a PortMaster candidate.",
+    "relevant": false,
+    "summary": "A web console for the floci local AWS emulator, built with Cloudscape.",
+    "version": 1
+   },
+   "classified_at": "2026-11-24T11:36:30Z",
+   "created_at": "2026-11-13T06:06:35Z",
+   "description": "A web console for floci, the local AWS emulator. Built with Cloudscape.",
+   "first_seen": "2026-11-24T11:34:38Z",
+   "fork": false,
+   "forks": 2,
+   "full_name": "varun1505/floci-aws-ui",
+   "id": 1456221469,
+   "language": "TypeScript",
+   "last_checked": "2026-11-24T11:34:38Z",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-17T13:16:32Z",
+   "star_history": [
+    [
+     "2026-11-24",
+     5
+    ]
+   ],
+   "stars": 5,
+   "topics": [
+    "aws",
+    "cloudscape",
+    "floci",
+    "local-development",
+    "showcase"
+   ],
+   "url": "https://github.com/varun1505/floci-aws-ui"
+  },
   "victor-akande/weistack": {
    "archived": false,
    "classification": {
@@ -17010,20 +18289,24 @@
    "description": "Cross-agent skill: query and subscribe Google AI hidden offers via Play Billing on rooted Android emulator",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 10,
+   "forks": 20,
    "full_name": "wc4440222/google-ai-offer-subscription",
    "id": 1468130501,
    "language": "Python",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T02:44:16Z",
    "star_history": [
     [
      "2026-11-23",
      40
+    ],
+    [
+     "2026-11-24",
+     63
     ]
    ],
-   "stars": 40,
+   "stars": 63,
    "topics": [],
    "url": "https://github.com/wc4440222/google-ai-offer-subscription"
   },
@@ -17048,7 +18331,7 @@
    "full_name": "wh1ter0se69/GeneralsVanguard",
    "id": 1451890527,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-23T05:30:36Z",
    "shown_at": "2026-11-16T09:59:11Z",
@@ -17188,9 +18471,9 @@
    "full_name": "xSAVIKx/aws-emulator-docker",
    "id": 1454486070,
    "language": "Go",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
-   "pushed_at": "2026-11-23T12:57:40Z",
+   "pushed_at": "2026-11-24T11:04:30Z",
    "star_history": [
     [
      "2026-11-16",
@@ -17239,16 +18522,20 @@
    "full_name": "xreamm1/unpack-it-easy",
    "id": 1467414101,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
-   "pushed_at": "2026-11-23T06:25:31Z",
+   "pushed_at": "2026-11-24T09:56:44Z",
    "star_history": [
     [
      "2026-11-23",
      13
+    ],
+    [
+     "2026-11-24",
+     14
     ]
    ],
-   "stars": 13,
+   "stars": 14,
    "topics": [
     "binary-analysis",
     "decompiler",
@@ -17286,7 +18573,7 @@
    "full_name": "xsaja/street-nx",
    "id": 1437801938,
    "language": "C++",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-10-29T01:24:38Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -17375,7 +18662,7 @@
    "full_name": "yan00png/Metroid-zero-mission-DX",
    "id": 1458065985,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "MIT",
    "pushed_at": "2026-11-20T01:52:41Z",
    "shown_at": "2026-11-23T17:59:00Z",
@@ -17411,16 +18698,20 @@
    "full_name": "yassinebourzza1/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570171,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:14Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -17458,7 +18749,7 @@
    "full_name": "yelnady/hercules-native",
    "id": 1445037931,
    "language": "C",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
    "pushed_at": "2026-11-11T15:38:10Z",
    "shown_at": "2026-11-10T16:40:23Z",
@@ -17501,20 +18792,24 @@
    "description": "Open-source DSP sound engine, CBIN/.ns4b/.ns4p binary preset toolkit, and Standalone + CLAP/VST3 DAW plugin emulator for the Nord Stage 4.",
    "first_seen": "2026-11-23T17:59:00Z",
    "fork": false,
-   "forks": 6,
+   "forks": 8,
    "full_name": "ymatrix1/nd-matrix-1",
    "id": 1453358474,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "NOASSERTION",
-   "pushed_at": "2026-11-23T17:26:00Z",
+   "pushed_at": "2026-11-24T04:33:43Z",
    "star_history": [
     [
      "2026-11-23",
      36
+    ],
+    [
+     "2026-11-24",
+     38
     ]
    ],
-   "stars": 36,
+   "stars": 38,
    "topics": [],
    "url": "https://github.com/ymatrix1/nd-matrix-1"
   },
@@ -17539,16 +18834,20 @@
    "full_name": "zalman-ua/GTA-6-Switch-Version--PC-Emulator-2026",
    "id": 1464570420,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "Apache-2.0",
    "pushed_at": "2026-11-21T11:49:12Z",
    "star_history": [
     [
      "2026-11-23",
      20
+    ],
+    [
+     "2026-11-24",
+     17
     ]
    ],
-   "stars": 20,
+   "stars": 17,
    "topics": [
     "ai",
     "desktop-app",
@@ -17743,7 +19042,7 @@
    "full_name": "zortos293/Lichii-rust",
    "id": 1455857580,
    "language": "Rust",
-   "last_checked": "2026-11-23T17:59:00Z",
+   "last_checked": "2026-11-24T11:34:38Z",
    "license": "GPL-3.0",
    "pushed_at": "2026-11-20T10:59:39Z",
    "star_history": [
@@ -17766,9 +19065,13 @@
     [
      "2026-11-23",
      104
+    ],
+    [
+     "2026-11-24",
+     106
     ]
    ],
-   "stars": 104,
+   "stars": 106,
    "topics": [],
    "url": "https://github.com/zortos293/Lichii-rust"
   }
@@ -17851,6 +19154,14 @@
    "new": 24,
    "rising": 9,
    "scanned": 177
+  },
+  {
+   "at": "2026-11-24T11:34:38Z",
+   "classified": 25,
+   "excluded": 24,
+   "new": 1,
+   "rising": 0,
+   "scanned": 185
   }
  ]
 }

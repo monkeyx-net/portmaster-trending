@@ -117,8 +117,8 @@
    "project": "OpenLoco",
    "game": "Chris Sawyer's Locomotion",
    "github": "OpenLoco/OpenLoco",
-   "stars": 1975,
-   "last_commit": "2026-11-23",
+   "stars": 1977,
+   "last_commit": "2026-11-24",
    "fit": 4,
    "status": "Not found",
    "cfw": [
@@ -178,7 +178,7 @@
    "game": "Pharaoh + Cleopatra",
    "github": "dalerank/Akhenaten",
    "stars": 540,
-   "last_commit": "2026-11-23",
+   "last_commit": "2026-11-24",
    "fit": 4,
    "status": "Not found",
    "cfw": [
@@ -218,7 +218,7 @@
    "project": "OpenJK",
    "game": "Jedi Academy / Jedi Outcast",
    "github": "JACoders/OpenJK",
-   "stars": 2342,
+   "stars": 2343,
    "last_commit": "2026-09-29",
    "fit": 3,
    "status": "Not found",
@@ -315,7 +315,7 @@
    "project": "KeeperFX",
    "game": "Dungeon Keeper",
    "github": "dkfans/keeperfx",
-   "stars": 1053,
+   "stars": 1052,
    "last_commit": "2026-11-22",
    "fit": 2,
    "status": "Rejected suggestion",
@@ -349,7 +349,7 @@
    "project": "OpenRA",
    "game": "C&C, Red Alert, Dune 2000",
    "github": "OpenRA/OpenRA",
-   "stars": 17828,
+   "stars": 17832,
    "last_commit": "2026-11-22",
    "fit": 2,
    "status": "Open suggestion",
@@ -481,7 +481,7 @@
    "project": "OpenTESArena",
    "game": "The Elder Scrolls: Arena",
    "github": "afritz1/OpenTESArena",
-   "stars": 1459,
+   "stars": 1462,
    "last_commit": "2026-11-23",
    "fit": 1,
    "status": "Open suggestion",
@@ -742,6 +742,6 @@
    "https://github.com/PortsMaster-MV/PortMaster-MV-New/tree/main/ports/melee"
   ]
  ],
- "repo_stats_checked": "2026-11-23",
- "suggestions_checked": "2026-11-23"
+ "repo_stats_checked": "2026-11-24",
+ "suggestions_checked": "2026-11-24"
 }
