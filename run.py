@@ -20,6 +20,7 @@ from crawler.classify import AuthError, classify
 from crawler.github import GitHub, slim
 from crawler.report import render
 from crawler.curated import refresh as refresh_curated, render_curated
+from crawler.backfill import render_if_present as render_backfill
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(ROOT, "data", "watchlist.json")
@@ -224,6 +225,7 @@ def main():
     stats = {"scanned": len(found), "classified": len(classified)}
     render(new, rising, tracked, excluded, stats, os.path.join(BUILD, "index.html"))
     render_curated(path=os.path.join(BUILD, "curated.html"))
+    render_backfill(os.path.join(BUILD, "backfill.html"))
     # Remember what each candidate looked like when shown, for next week's Rising.
     for e in new + rising:
         e["shown_stars"] = e["stars"]

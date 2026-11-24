@@ -14,6 +14,9 @@ API = "https://api.github.com"
 class GitHub:
     def __init__(self, token=None):
         self.token = token or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+        # Longest wait for a rate-limit reset. The weekly run keeps this short;
+        # the backfill raises it so it can sit out the hourly core limit.
+        self.max_wait = 90
 
     def _get(self, path, params=None, retries=3):
         url = API + path
@@ -37,7 +40,10 @@ class GitHub:
                 if e.code in (403, 429) and attempt < retries - 1:
                     reset = e.headers.get("X-RateLimit-Reset")
                     wait = max(5, int(reset) - int(time.time()) + 1) if reset else 30
-                    wait = min(wait, 90)
+                    retry_after = e.headers.get("Retry-After")
+                    if retry_after:
+                        wait = int(retry_after) + 1
+                    wait = min(wait, self.max_wait)
                     print(f"  rate limited, sleeping {wait}s")
                     time.sleep(wait)
                     continue
@@ -70,6 +76,15 @@ class GitHub:
         if len(items) >= limit:
             print(f"  note: hit the {limit}-result limit, query may be too broad: {query!r}")
         return items[:limit]
+
+    def search_page(self, query, page=1):
+        """One raw page of search results (includes total_count)."""
+        data = self._get(
+            "/search/repositories",
+            {"q": query, "sort": "stars", "order": "desc", "per_page": 100, "page": page},
+        )
+        time.sleep(2.2)
+        return data or {}
 
     def repo(self, full_name):
         """Lookup by name (urllib follows GitHub's rename redirect)."""

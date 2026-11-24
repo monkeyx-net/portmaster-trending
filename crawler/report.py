@@ -10,6 +10,58 @@ from .config import CLAUDE_MODEL
 ORDER = [c for c in CATEGORIES if c != "not relevant"]
 
 
+STYLE = """:root { --bg:#0f1115; --panel:#181b22; --line:#262b36; --fg:#e6e8ee; --dim:#9aa3b2; --acc:#d97757; --ok:#5fb67a; --mid:#d6b04a; --bad:#d26a6a; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+.wrap { max-width:1200px; margin:0 auto; padding:28px 18px 60px; }
+h1 { margin:0; font-size:28px; letter-spacing:-.01em; }
+h1 span { color:var(--acc); }
+.meta { color:var(--dim); margin:6px 0 18px; }
+.stats { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:22px; }
+.stat { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 14px; min-width:120px; }
+.stat b { display:block; font-size:22px; }
+.stat span { color:var(--dim); font-size:13px; }
+.tools { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px; position:sticky; top:0; background:var(--bg); padding:10px 0; z-index:2; }
+.tools input { flex:1 1 220px; background:var(--panel); border:1px solid var(--line); color:var(--fg); border-radius:8px; padding:8px 10px; font:inherit; }
+.tools button { background:var(--panel); border:1px solid var(--line); color:var(--dim); border-radius:999px; padding:5px 11px; cursor:pointer; font:13px system-ui,sans-serif; }
+.tools button.on { color:var(--bg); background:var(--acc); border-color:var(--acc); }
+h2 { font-size:19px; margin:28px 0 12px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+h2 small { color:var(--dim); font-weight:400; font-size:14px; margin-left:6px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:12px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; }
+.card header { display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+.card header a { color:var(--fg); font-weight:600; text-decoration:none; word-break:break-all; }
+.card header a:hover { color:var(--acc); }
+.stars { color:var(--mid); font-size:13px; margin-left:auto; white-space:nowrap; }
+.gain { color:var(--ok); font-size:13px; font-weight:600; }
+.sum { margin:0; }
+.why { margin:0; color:var(--dim); font-size:13px; }
+.card footer { display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:6px; }
+.tag, .port { font-size:12px; border:1px solid var(--line); border-radius:6px; padding:1px 7px; color:var(--dim); }
+.tag.cat { color:var(--acc); border-color:#5a3a2e; }
+.tag.warn { color:var(--mid); }
+.p-high { color:var(--ok); border-color:#2f5a3c; }
+.p-medium { color:var(--mid); border-color:#5c4f25; }
+.p-low { color:var(--bad); border-color:#5c2e2e; }
+.empty { color:var(--dim); }
+.hide { display:none !important; }
+details summary { cursor:pointer; list-style:none; }
+details summary::-webkit-details-marker { display:none; }
+details summary h2::before { content:"▸ "; color:var(--dim); }
+details[open] summary h2::before { content:"▾ "; }
+.xwrap { overflow-x:auto; }
+.xtable { width:100%; border-collapse:collapse; font-size:13px; }
+.xtable th, .xtable td { text-align:left; vertical-align:top; padding:6px 8px; border-bottom:1px solid var(--line); }
+.xtable th { color:var(--dim); font-weight:600; }
+.xtable td a { color:var(--fg); text-decoration:none; word-break:break-all; }
+.xtable td a:hover { color:var(--acc); }
+.xtable td.num { color:var(--mid); white-space:nowrap; }
+.xtable td:last-child { color:var(--dim); }
+.foot { color:var(--dim); font-size:13px; margin-top:40px; border-top:1px solid var(--line); padding-top:12px; }
+.foot a { color:var(--dim); }
+"""
+
+
 def esc(s):
     return html.escape(str(s or ""))
 
@@ -80,61 +132,13 @@ def render(new, rising, tracked, excluded, stats, path):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PortMaster Trending: weekly porting candidates</title>
 <style>
-:root {{ --bg:#0f1115; --panel:#181b22; --line:#262b36; --fg:#e6e8ee; --dim:#9aa3b2; --acc:#d97757; --ok:#5fb67a; --mid:#d6b04a; --bad:#d26a6a; }}
-* {{ box-sizing:border-box; }}
-body {{ margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }}
-.wrap {{ max-width:1200px; margin:0 auto; padding:28px 18px 60px; }}
-h1 {{ margin:0; font-size:28px; letter-spacing:-.01em; }}
-h1 span {{ color:var(--acc); }}
-.meta {{ color:var(--dim); margin:6px 0 18px; }}
-.stats {{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:22px; }}
-.stat {{ background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 14px; min-width:120px; }}
-.stat b {{ display:block; font-size:22px; }}
-.stat span {{ color:var(--dim); font-size:13px; }}
-.tools {{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px; position:sticky; top:0; background:var(--bg); padding:10px 0; z-index:2; }}
-.tools input {{ flex:1 1 220px; background:var(--panel); border:1px solid var(--line); color:var(--fg); border-radius:8px; padding:8px 10px; font:inherit; }}
-.tools button {{ background:var(--panel); border:1px solid var(--line); color:var(--dim); border-radius:999px; padding:5px 11px; cursor:pointer; font:13px system-ui,sans-serif; }}
-.tools button.on {{ color:var(--bg); background:var(--acc); border-color:var(--acc); }}
-h2 {{ font-size:19px; margin:28px 0 12px; border-bottom:1px solid var(--line); padding-bottom:6px; }}
-h2 small {{ color:var(--dim); font-weight:400; font-size:14px; margin-left:6px; }}
-.grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:12px; }}
-.card {{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; }}
-.card header {{ display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }}
-.card header a {{ color:var(--fg); font-weight:600; text-decoration:none; word-break:break-all; }}
-.card header a:hover {{ color:var(--acc); }}
-.stars {{ color:var(--mid); font-size:13px; margin-left:auto; white-space:nowrap; }}
-.gain {{ color:var(--ok); font-size:13px; font-weight:600; }}
-.sum {{ margin:0; }}
-.why {{ margin:0; color:var(--dim); font-size:13px; }}
-.card footer {{ display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:6px; }}
-.tag, .port {{ font-size:12px; border:1px solid var(--line); border-radius:6px; padding:1px 7px; color:var(--dim); }}
-.tag.cat {{ color:var(--acc); border-color:#5a3a2e; }}
-.tag.warn {{ color:var(--mid); }}
-.p-high {{ color:var(--ok); border-color:#2f5a3c; }}
-.p-medium {{ color:var(--mid); border-color:#5c4f25; }}
-.p-low {{ color:var(--bad); border-color:#5c2e2e; }}
-.empty {{ color:var(--dim); }}
-.hide {{ display:none !important; }}
-details summary {{ cursor:pointer; list-style:none; }}
-details summary::-webkit-details-marker {{ display:none; }}
-details summary h2::before {{ content:"▸ "; color:var(--dim); }}
-details[open] summary h2::before {{ content:"▾ "; }}
-.xwrap {{ overflow-x:auto; }}
-.xtable {{ width:100%; border-collapse:collapse; font-size:13px; }}
-.xtable th, .xtable td {{ text-align:left; vertical-align:top; padding:6px 8px; border-bottom:1px solid var(--line); }}
-.xtable th {{ color:var(--dim); font-weight:600; }}
-.xtable td a {{ color:var(--fg); text-decoration:none; word-break:break-all; }}
-.xtable td a:hover {{ color:var(--acc); }}
-.xtable td.num {{ color:var(--mid); white-space:nowrap; }}
-.xtable td:last-child {{ color:var(--dim); }}
-.foot {{ color:var(--dim); font-size:13px; margin-top:40px; border-top:1px solid var(--line); padding-top:12px; }}
-.foot a {{ color:var(--dim); }}
+{STYLE}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>PortMaster <span>Trending</span></h1>
-  <p class="meta">New GitHub projects that could be ported to retro handhelds, sorted by Claude. Updated {now}. See also the <a href="curated.html" style="color:var(--acc)">hand-picked candidates</a> checked against firmware limits.</p>
+  <p class="meta">New GitHub projects that could be ported to retro handhelds, sorted by Claude. Updated {now}. See also the <a href="curated.html" style="color:var(--acc)">hand-picked candidates</a> checked against firmware limits, and the <a href="backfill.html" style="color:var(--acc)">backfill</a> of older and smaller projects from the last six years.</p>
   <div class="stats">
     <div class="stat"><b>{stats['scanned']}</b><span>repos scanned</span></div>
     <div class="stat"><b>{stats['classified']}</b><span>classified this run</span></div>

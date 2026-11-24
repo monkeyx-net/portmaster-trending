@@ -342,7 +342,7 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="./">← Weekly report</a></nav>
+  <nav><a href="./">← Weekly report</a> · <a href="backfill.html">Backfill</a></nav>
   <h1>PortMaster <span>candidates</span></h1>
   <p class="meta">{esc(d['title'])} · checked {esc(d['as_of'])} · targets: {esc(', '.join(targets))}</p>
   <p class="intro">{esc(d['intro'])}</p>

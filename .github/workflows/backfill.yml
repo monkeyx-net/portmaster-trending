@@ -1,0 +1,83 @@
+name: Backfill
+
+# One-off: classify every matching repo from the last N years with M+ stars into
+# build/backfill.html. Resumable: each run saves progress to data/backfill.json
+# and stops before the 6-hour job limit. Run it again until the log says
+# "0 left to classify".
+
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Years to look back"
+        default: "6"
+      min_stars:
+        description: "Minimum stars"
+        default: "3"
+      max_minutes:
+        description: "Stop and save after this many minutes"
+        default: "300"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Shares the weekly report's group so the two never push or deploy at once.
+concurrency:
+  group: weekly-report
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run backfill
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: >
+          python backfill.py
+          --years "${{ inputs.years }}"
+          --min-stars "${{ inputs.min_stars }}"
+          --max-minutes "${{ inputs.max_minutes }}"
+
+      - name: Commit progress
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/backfill.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Backfill progress $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
+
+      # A Pages deploy replaces the whole site, so rebuild the other pages too.
+      # The weekly report is copied from the live site rather than re-crawled.
+      - name: Build site
+        run: |
+          python -c "from crawler.curated import render_curated; render_curated()"
+          curl -fsSL https://monkeyx-net.github.io/portmaster-trending/ -o build/index.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

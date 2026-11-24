@@ -14,6 +14,17 @@ Each run also refreshes every curated project's star count and last commit date 
 
 Every run also downloads PortMaster's suggestion list ([`suggestions_new.json`](https://github.com/PortsMaster/PortMaster-Wiki-New/blob/main/docs/assets/json/suggestions_new.json) in PortMaster-Wiki-New) and matches each candidate to a suggestion by its GitHub repo or exact title, storing the status, feasibility and votes as `pm_suggestion`. Where the names differ, pin the match with `suggestion_id`. Edit the JSON to change the list; preview with `python -m crawler.curated`.
 
+## Backfill: older and smaller projects
+
+The weekly crawl only sees repos created in the last 14 days with 5+ stars, which misses most SDL games: they are older, rarely tagged, and slow to collect stars. `backfill.py` is a one-off pass over every repo created in the last **6 years** with **3+ stars** that matches the weekly searches plus keyword searches for `sdl`/`sdl2` in names, descriptions and READMEs. Each repo is classified by Claude like the weekly ones (verdicts already in the watchlist are reused) and the candidates are published at https://monkeyx-net.github.io/portmaster-trending/backfill.html, with filters for SDL, portability, game data and category.
+
+GitHub search returns at most 1,000 results per query, so each query is split into date ranges until every range fits. The run is resumable: progress goes to [`data/backfill.json`](data/backfill.json) (rejected repos keep only a short reason), and `--max-minutes` stops it cleanly. Run the **Backfill** workflow from the Actions tab, and run it again until its log says `0 left to classify`. Expect roughly 20,000 repos, a few hours of GitHub API time (use a `GH_TOKEN` personal token: the built-in token's 1,000 requests an hour would take days) and about $8–10 of Haiku calls. The weekly run re-renders the page from the JSON so it stays on the site.
+
+```sh
+python backfill.py --max-minutes 60     # resume, stop after an hour
+python backfill.py --render-only        # rebuild build/backfill.html
+```
+
 ## How it works
 
 `run.py` runs these steps in order:
