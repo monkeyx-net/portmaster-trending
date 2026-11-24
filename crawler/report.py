@@ -119,7 +119,33 @@ def excluded_section(repos):
 </details></section>'''
 
 
-def render(new, rising, tracked, excluded, stats, path):
+PORTS_PAGE = "https://portmaster.games/games.html"
+
+
+def ported_section(pairs, what="candidates"):
+    """Collapsed table of repos hidden because PortMaster already has a port.
+    `pairs` is [(name, url, stars, port title)]."""
+    if not pairs:
+        return ""
+    rows = "".join(
+        f'''<tr class="xrow" data-text="{esc((name + ' ' + port).lower())}">
+  <td><a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a></td>
+  <td class="num">{'' if stars is None else stars}</td>
+  <td>{esc(port)}</td>
+</tr>'''
+        for name, url, stars, port in sorted(pairs, key=lambda p: -(p[2] or 0))
+    )
+    return f'''<section><details><summary><h2>Already on PortMaster <small>{len(pairs)}</small></h2></summary>
+<p class="empty">These {esc(what)} are hidden above because they match a port in PortMaster's <a href="https://github.com/PortsMaster/PortMaster-Info/blob/main/ports.json" style="color:var(--acc)">ports.json</a>, by a GitHub link on the port or by name. Check here for wrong matches.</p>
+<div class="xwrap"><table class="xtable"><thead><tr><th>Repo</th><th>★</th><th>Matched port</th></tr></thead><tbody>{rows}</tbody></table></div>
+</details></section>'''
+
+
+def repo_pairs(ported):
+    return [(r["full_name"], r["url"], r.get("stars"), port) for r, port in ported]
+
+
+def render(new, rising, tracked, excluded, stats, path, ported=()):
     now = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
     by_cat = sorted(new, key=lambda r: (ORDER.index(r["classification"]["category"]) if r["classification"]["category"] in ORDER else 99, -r["stars"]))
     tracked = sorted(tracked, key=lambda r: -r["stars"])
@@ -146,6 +172,7 @@ def render(new, rising, tracked, excluded, stats, path):
     <div class="stat"><b>{len(rising)}</b><span>rising</span></div>
     <div class="stat"><b>{len(tracked)}</b><span>tracked in total</span></div>
     <div class="stat"><b>{len(excluded)}</b><span>excluded this run</span></div>
+    <div class="stat"><b>{len(ported)}</b><span>already on PortMaster</span></div>
   </div>
   <div class="tools">
     <input id="q" type="search" placeholder="Filter by name or text…">
@@ -154,8 +181,9 @@ def render(new, rising, tracked, excluded, stats, path):
   {section("Rising", rising, "rising", "No tracked repo grew enough this week.")}
   {section("New this week", by_cat)}
   {section("All tracked candidates", tracked, empty="Nothing tracked yet.")}
+  {ported_section(repo_pairs(ported))}
   {excluded_section(excluded)}
-  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Rising = tracked repos that gained enough stars since they last appeared. Excluded = repos rejected this run. Data: <a href="https://github.com/monkeyx-net/portmaster-trending">monkeyx-net/portmaster-trending</a>. Inspired by <a href="https://github.com/Cebion/gh_trending_reports">Cebion/gh_trending_reports</a>.</p>
+  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Rising = tracked repos that gained enough stars since they last appeared. Excluded = repos rejected this run. Repos that match a port in PortMaster's ports.json are hidden. Data: <a href="https://github.com/monkeyx-net/portmaster-trending">monkeyx-net/portmaster-trending</a>. Inspired by <a href="https://github.com/Cebion/gh_trending_reports">Cebion/gh_trending_reports</a>.</p>
 </div>
 <script>
 const q = document.getElementById('q');

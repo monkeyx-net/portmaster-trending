@@ -21,6 +21,7 @@ from crawler.github import GitHub, slim
 from crawler.report import render
 from crawler.curated import refresh as refresh_curated, render_curated
 from crawler.backfill import render_if_present as render_backfill
+from crawler import portmaster
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(ROOT, "data", "watchlist.json")
@@ -219,11 +220,17 @@ def main():
     new, rising = promote(wl)
     print(f"  {len(new)} new candidates, {len(rising)} rising")
 
+    print("PortMaster ports")
+    ports = portmaster.load()
+    new, _ = portmaster.split(new, ports)
+    rising, _ = portmaster.split(rising, ports)
+    tracked, ported = portmaster.split((e for e in wl["repos"].values() if is_candidate(e)), ports)
+    print(f"  {len(ported)} tracked candidates already on PortMaster, hidden")
+
     print("Render")
     os.makedirs(BUILD, exist_ok=True)
-    tracked = [e for e in wl["repos"].values() if is_candidate(e)]
     stats = {"scanned": len(found), "classified": len(classified)}
-    render(new, rising, tracked, excluded, stats, os.path.join(BUILD, "index.html"))
+    render(new, rising, tracked, excluded, stats, os.path.join(BUILD, "index.html"), ported)
     render_curated(path=os.path.join(BUILD, "curated.html"))
     render_backfill(os.path.join(BUILD, "backfill.html"))
     # Remember what each candidate looked like when shown, for next week's Rising.
