@@ -18,7 +18,6 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 
-from . import config
 from .classify import CATEGORIES, AuthError, classify
 from .config import CLAUDE_MODEL
 from .report import STYLE
@@ -28,15 +27,28 @@ DATA = os.path.join(ROOT, "data", "backfill.json")
 
 ORDER = [c for c in CATEGORIES if c != "not relevant"]
 
-# The weekly queries without their date filter, plus keyword searches that
-# catch SDL games whose authors never added topic tags.
+# SDL and games only: the weekly crawl's emulator, decompilation and
+# reimplementation searches are left out to keep the backfill small. The
+# keyword searches catch SDL games whose authors never added topic tags.
 SDL_QUERIES = [
+    "topic:sdl2",
+    "topic:sdl",
+    "SDL2 game in:name,description",
     "sdl2 in:name,description,topics",
     "sdl in:name,description,topics",
     "sdl2 game in:name,description,readme",
     "sdl game in:name,description,readme",
 ]
-QUERIES = [q.replace(" created:>{since}", "") for q in config.SEARCH_QUERIES] + SDL_QUERIES
+GAME_QUERIES = [
+    "topic:game language:C",
+    "topic:game language:C++",
+    "topic:game language:Rust",
+    "topic:love2d",
+    "topic:godot topic:game",
+    "\"source port\" in:name,description",
+]
+QUERIES = SDL_QUERIES + GAME_QUERIES
+
 
 # Fields kept for every repo. Rejected repos keep less, so the file stays small.
 KEEP = ("id", "full_name", "url", "description", "language", "topics", "license",
@@ -289,7 +301,7 @@ nav a {{ color:var(--acc); margin-right:14px; }}
 <div class="wrap">
   <nav><a href="./">← Weekly report</a><a href="curated.html">Hand-picked candidates</a></nav>
   <h1>PortMaster <span>Backfill</span></h1>
-  <p class="meta">Every GitHub repo created since {esc(s.get('since'))} (about {esc(years)} years) with {esc(s.get('min_stars'))}+ stars that matched the crawler's game, SDL, decomp and emulator searches, sorted by Claude. Unlike the weekly report, this includes older and smaller projects.{esc(progress)} Updated {now}.</p>
+  <p class="meta">Every GitHub repo created since {esc(s.get('since'))} (about {esc(years)} years) with {esc(s.get('min_stars'))}+ stars that matched SDL and game searches (including SDL mentions in READMEs), sorted by Claude. Unlike the weekly report, this includes older and smaller projects.{esc(progress)} Updated {now}.</p>
   <div class="stats">
     <div class="stat"><b>{len(repos)}</b><span>repos found</span></div>
     <div class="stat"><b>{len(classified)}</b><span>classified</span></div>
