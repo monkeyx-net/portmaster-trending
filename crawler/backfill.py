@@ -20,7 +20,8 @@ from datetime import date, datetime, timedelta, timezone
 
 from .classify import CATEGORIES, AuthError, classify
 from .config import CLAUDE_MODEL
-from .report import STYLE
+from . import portmaster
+from .report import STYLE, ported_section, repo_pairs
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "backfill.json")
@@ -271,6 +272,7 @@ def render(d, path):
     repos = list(d["repos"].values())
     classified = [e for e in repos if e.get("classification")]
     relevant = [e for e in classified if e["classification"].get("relevant")]
+    relevant, ported = portmaster.split(relevant, portmaster.load())
     for e in relevant:
         e["sdl"] = is_sdl(e)
     relevant.sort(key=lambda e: -e.get("stars", 0))
@@ -307,6 +309,7 @@ nav a {{ color:var(--acc); margin-right:14px; }}
     <div class="stat"><b>{len(classified)}</b><span>classified</span></div>
     <div class="stat"><b>{len(relevant)}</b><span>candidates</span></div>
     <div class="stat"><b>{sdl_count}</b><span>SDL candidates</span></div>
+    <div class="stat"><b>{len(ported)}</b><span>already on PortMaster</span></div>
   </div>
   <div class="tools">
     <input id="q" type="search" placeholder="Filter by name, language or text…">
@@ -319,7 +322,8 @@ nav a {{ color:var(--acc); margin-right:14px; }}
   <p class="empty" id="count"></p>
   <div class="grid" id="grid">{''.join(card(e) for e in relevant)}</div>
   <button id="more">Show more</button>
-  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Repos Claude rejected are not listed. Data: <a href="https://github.com/monkeyx-net/portmaster-trending/blob/main/data/backfill.json">data/backfill.json</a>.</p>
+  {ported_section(repo_pairs(ported))}
+  <p class="foot">Classified by {esc(CLAUDE_MODEL)}. Repos Claude rejected are not listed, and repos that match a port in PortMaster's ports.json are hidden. Data: <a href="https://github.com/monkeyx-net/portmaster-trending/blob/main/data/backfill.json">data/backfill.json</a>.</p>
 </div>
 <script>
 const PAGE = 120;

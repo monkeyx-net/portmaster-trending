@@ -25,6 +25,10 @@ python backfill.py --max-minutes 60     # resume, stop after an hour
 python backfill.py --render-only        # rebuild build/backfill.html
 ```
 
+## Ports already on PortMaster
+
+Every page hides projects that PortMaster already ships. Each run downloads PortMaster's [`ports.json`](https://github.com/PortsMaster/PortMaster-Info/blob/main/ports.json) (`crawler/portmaster.py`) and matches a repo to a port when the port's description, store entry or URL links to that GitHub repo (install instructions are skipped, since they often link tools), or when the repo name equals the port's title, its title without a trailing `(...)`, or its zip name, ignoring case and punctuation. Hidden repos are listed in a collapsed **Already on PortMaster** table on each page, showing the port they matched, so wrong matches are easy to spot. If the download fails, nothing is hidden.
+
 ## How it works
 
 `run.py` runs these steps in order:

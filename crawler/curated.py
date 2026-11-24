@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+from . import portmaster
 from .report import esc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -271,13 +272,26 @@ def render_curated(src=SRC, path=None):
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     targets = d["targets"]
-    cands = sorted(d["candidates"], key=lambda c: (-c["fit"], c["project"].lower()))
+    kept, ported = portmaster.split(d["candidates"], portmaster.load(),
+                                    lambda c: (c.get("github"), c.get("project"), c.get("game")))
+    cands = sorted(kept, key=lambda c: (-c["fit"], c["project"].lower()))
     rows = "".join(candidate_row(c, targets) for c in cands)
     heads = "".join(f"<th>{esc(t)}</th>" for t in targets)
     have = "".join(
         f"<tr><td>{shot(a)}</td><td>{esc(a['project'])}</td><td>{esc(a['engine'])}</td><td class=\"dim\">{esc(a['evidence'])}</td></tr>"
         for a in d["already_on_portmaster"]
     )
+    listed = "".join(
+        f"<tr><td>{shot(c)}</td><td>{esc(c['project'])}<div class=\"dim\">{esc(c['game'])}</div></td>"
+        f"<td>{link(c.get('repo'), c.get('github'))}</td><td>{esc(port)}</td></tr>"
+        for c, port in sorted(ported, key=lambda p: p[0]["project"].lower())
+    )
+    listed_section = f"""<details><summary><h2>Candidates now in PortMaster's ports.json <small>{len(ported)}</small></h2></summary>
+  <p class="dim">Hidden from the table above because they match a port in PortMaster's <a href="https://github.com/PortsMaster/PortMaster-Info/blob/main/ports.json">ports.json</a>, by a GitHub link on the port or by name. Check here for wrong matches; to keep one as a candidate, rename it or move it to the already-on-PortMaster list in data/curated.json.</p>
+  <div class="xwrap"><table>
+    <thead><tr><th>Screenshot</th><th>Candidate</th><th>Repo</th><th>Matched port</th></tr></thead>
+    <tbody>{listed}</tbody>
+  </table></div></details>""" if ported else ""
     rt = "".join(
         f"<tr><td><b>{esc(r['name'])}</b><div class=\"dim\">{esc(r['state'])}</div></td>"
         f"<td>{esc(r['unlocks'])}</td><td>{esc(r['limits'])}</td><td class=\"dim\">{esc(r['cfw'])}</td></tr>"
@@ -336,6 +350,10 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
 .pill.ok {{ color:var(--ok); border-color:#2f5a3c; }} .pill.pos {{ color:var(--pos); border-color:#2e4a63; }}
 .pill.mid {{ color:var(--mid); border-color:#5c4f25; }} .pill.warn {{ color:var(--acc); border-color:#5a3a2e; }} .pill.bad {{ color:var(--bad); border-color:#5c2e2e; }}
 .hide {{ display:none !important; }}
+details summary {{ cursor:pointer; list-style:none; }}
+details summary::-webkit-details-marker {{ display:none; }}
+details summary h2::before {{ content:"▸ "; color:var(--dim); }}
+details[open] summary h2::before {{ content:"▾ "; }}
 .foot {{ color:var(--dim); font-size:13px; margin-top:40px; border-top:1px solid var(--line); padding-top:12px; }}
 .foot a {{ color:var(--dim); }}
 </style>
@@ -357,6 +375,8 @@ th.sort {{ cursor:pointer; user-select:none; }} th.sort::after {{ content:" ⇅"
     <thead><tr><th>Project</th><th>Repo</th><th class="sort" data-k="stars">Stars</th><th class="sort" data-k="commit">Last commit</th><th class="sort" data-k="fit">Fit</th><th>PortMaster</th>{heads}<th>Renderer / runtime</th><th>SDL3 shim</th><th>Blockers</th><th>Data</th><th>Notes</th></tr></thead>
     <tbody>{rows}</tbody>
   </table></div>
+
+  {listed_section}
 
   <h2>Runtimes: Westonpack, gl4es and the SDL3 shim <small>{len(d['runtimes'])}</small></h2>
   <div class="xwrap"><table>
